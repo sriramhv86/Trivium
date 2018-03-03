@@ -2795,7 +2795,7 @@ agreement for further details.
 	(input)
 	(rect 624 752 792 768)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "output" (rect 5 0 36 12)(font "Arial" ))
+	(text "clock" (rect 5 0 31 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -2811,7 +2811,7 @@ agreement for further details.
 	(output)
 	(rect 10808 1296 10984 1312)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
-	(text "pin_name289" (rect 90 0 154 12)(font "Arial" ))
+	(text "outputpin" (rect 90 0 134 12)(font "Arial" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8))
@@ -20857,14 +20857,6 @@ agreement for further details.
 	(pt 6168 2760)
 )
 (connector
-	(pt 6248 2744)
-	(pt 6232 2744)
-)
-(connector
-	(pt 6248 2760)
-	(pt 6240 2760)
-)
-(connector
 	(pt 6320 2760)
 	(pt 6328 2760)
 )
@@ -20943,18 +20935,6 @@ agreement for further details.
 (connector
 	(pt 7120 2760)
 	(pt 7128 2760)
-)
-(connector
-	(pt 7208 2744)
-	(pt 7192 2744)
-)
-(connector
-	(pt 7208 2760)
-	(pt 7200 2760)
-)
-(connector
-	(pt 7272 2744)
-	(pt 7288 2744)
 )
 (connector
 	(pt 7280 2760)
@@ -21153,10 +21133,6 @@ agreement for further details.
 	(pt 6160 2816)
 )
 (connector
-	(pt 6240 2760)
-	(pt 6240 2816)
-)
-(connector
 	(pt 6320 2760)
 	(pt 6320 2816)
 )
@@ -21199,10 +21175,6 @@ agreement for further details.
 (connector
 	(pt 7120 2760)
 	(pt 7120 2816)
-)
-(connector
-	(pt 7200 2760)
-	(pt 7200 2816)
 )
 (connector
 	(pt 7280 2760)
@@ -21263,18 +21235,6 @@ agreement for further details.
 (connector
 	(pt 7848 2760)
 	(pt 7840 2760)
-)
-(connector
-	(pt 7912 2744)
-	(pt 7928 2744)
-)
-(connector
-	(pt 7920 2760)
-	(pt 7928 2760)
-)
-(connector
-	(pt 8008 2744)
-	(pt 7992 2744)
 )
 (connector
 	(pt 8008 2760)
@@ -21487,10 +21447,6 @@ agreement for further details.
 (connector
 	(pt 7840 2760)
 	(pt 7840 2816)
-)
-(connector
-	(pt 7920 2760)
-	(pt 7920 2816)
 )
 (connector
 	(pt 8000 2760)
@@ -21861,20 +21817,8 @@ agreement for further details.
 	(pt 696 2040)
 )
 (connector
-	(pt 6960 2456)
-	(pt 6960 2744)
-)
-(connector
 	(pt 776 2808)
 	(pt 720 2808)
-)
-(connector
-	(pt 6960 2456)
-	(pt 720 2456)
-)
-(connector
-	(pt 720 2808)
-	(pt 720 2456)
 )
 (connector
 	(pt 8064 2328)
@@ -21955,10 +21899,6 @@ agreement for further details.
 (connector
 	(pt 664 232)
 	(pt 6480 232)
-)
-(connector
-	(pt 10488 1304)
-	(pt 10808 1304)
 )
 (connector
 	(pt 1200 688)
@@ -22841,14 +22781,6 @@ agreement for further details.
 	(pt 6160 2816)
 )
 (connector
-	(pt 6160 2816)
-	(pt 6240 2816)
-)
-(connector
-	(pt 6240 2816)
-	(pt 6320 2816)
-)
-(connector
 	(pt 6320 2816)
 	(pt 6400 2816)
 )
@@ -22961,28 +22893,12 @@ agreement for further details.
 	(pt 7840 2816)
 )
 (connector
-	(pt 7840 2816)
-	(pt 7920 2816)
-)
-(connector
-	(pt 7920 2816)
-	(pt 8000 2816)
-)
-(connector
 	(pt 6960 2816)
 	(pt 7040 2816)
 )
 (connector
 	(pt 7040 2816)
 	(pt 7120 2816)
-)
-(connector
-	(pt 7120 2816)
-	(pt 7200 2816)
-)
-(connector
-	(pt 7200 2816)
-	(pt 7280 2816)
 )
 (connector
 	(pt 7280 2816)
@@ -23089,14 +23005,6 @@ agreement for further details.
 	(pt 9848 2816)
 )
 (connector
-	(pt 6312 2744)
-	(pt 6320 2744)
-)
-(connector
-	(pt 6320 2744)
-	(pt 6328 2744)
-)
-(connector
 	(pt 7248 1960)
 	(pt 7256 1960)
 )
@@ -23111,14 +23019,6 @@ agreement for further details.
 (connector
 	(pt 8688 968)
 	(pt 8688 1288)
-)
-(connector
-	(pt 6952 2744)
-	(pt 6960 2744)
-)
-(connector
-	(pt 6960 2744)
-	(pt 6968 2744)
 )
 (connector
 	(pt 7920 1952)
@@ -23211,6 +23111,106 @@ agreement for further details.
 (connector
 	(pt 1200 2816)
 	(pt 1280 2816)
+)
+(connector
+	(pt 6232 2744)
+	(pt 6248 2744)
+)
+(connector
+	(pt 6240 2760)
+	(pt 6248 2760)
+)
+(connector
+	(pt 6240 2816)
+	(pt 6240 2760)
+)
+(connector
+	(pt 6160 2816)
+	(pt 6240 2816)
+)
+(connector
+	(pt 6240 2816)
+	(pt 6320 2816)
+)
+(connector
+	(pt 6312 2744)
+	(pt 6320 2744)
+)
+(connector
+	(pt 6320 2744)
+	(pt 6328 2744)
+)
+(connector
+	(pt 7192 2744)
+	(pt 7208 2744)
+)
+(connector
+	(pt 7200 2760)
+	(pt 7208 2760)
+)
+(connector
+	(pt 7288 2744)
+	(pt 7272 2744)
+)
+(connector
+	(pt 7200 2816)
+	(pt 7200 2760)
+)
+(connector
+	(pt 7120 2816)
+	(pt 7200 2816)
+)
+(connector
+	(pt 7200 2816)
+	(pt 7280 2816)
+)
+(connector
+	(pt 7912 2744)
+	(pt 7928 2744)
+)
+(connector
+	(pt 7920 2760)
+	(pt 7928 2760)
+)
+(connector
+	(pt 7920 2816)
+	(pt 7920 2760)
+)
+(connector
+	(pt 7840 2816)
+	(pt 7920 2816)
+)
+(connector
+	(pt 7920 2816)
+	(pt 8000 2816)
+)
+(connector
+	(pt 7992 2744)
+	(pt 8000 2744)
+)
+(connector
+	(pt 8000 2744)
+	(pt 8008 2744)
+)
+(connector
+	(pt 6952 2744)
+	(pt 6968 2744)
+)
+(connector
+	(pt 720 2808)
+	(pt 720 2464)
+)
+(connector
+	(pt 720 2464)
+	(pt 8000 2464)
+)
+(connector
+	(pt 8000 2464)
+	(pt 8000 2744)
+)
+(connector
+	(pt 10488 1304)
+	(pt 10808 1304)
 )
 (junction (pt 1120 688))
 (junction (pt 1200 688))
@@ -23502,7 +23502,6 @@ agreement for further details.
 (junction (pt 6320 2744))
 (junction (pt 7256 1960))
 (junction (pt 8688 968))
-(junction (pt 6960 2744))
 (junction (pt 8064 1952))
 (junction (pt 10192 2744))
 (junction (pt 6480 616))
@@ -23514,3 +23513,4 @@ agreement for further details.
 (junction (pt 912 760))
 (junction (pt 1040 2816))
 (junction (pt 1120 2816))
+(junction (pt 8000 2744))

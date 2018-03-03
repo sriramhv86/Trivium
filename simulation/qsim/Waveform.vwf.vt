@@ -19,7 +19,7 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "03/03/2018 22:22:26"
+// Generated on "03/04/2018 00:31:29"
                                                                         
 // Verilog Self-Checking Test Bench (with test vectors) for design :    trivium1
 // 
@@ -28,6 +28,7 @@
 
 `timescale 1 ps/ 1 ps
 module trivium1_vlg_sample_tst(
+	clock,
 	pin_name1,
 	pin_name2,
 	pin_name3,
@@ -191,9 +192,9 @@ module trivium1_vlg_sample_tst(
 	pin_name286,
 	pin_name287,
 	pin_name288,
-	pin_name290,
 	sampler_tx
 );
+input  clock;
 input  pin_name1;
 input  pin_name2;
 input  pin_name3;
@@ -357,12 +358,11 @@ input  pin_name173;
 input  pin_name286;
 input  pin_name287;
 input  pin_name288;
-input  pin_name290;
 output sampler_tx;
 
 reg sample;
 time current_time;
-always @(pin_name1 or pin_name2 or pin_name3 or pin_name4 or pin_name5 or pin_name6 or pin_name7 or pin_name8 or pin_name9 or pin_name10 or pin_name11 or pin_name12 or pin_name13 or pin_name14 or pin_name15 or pin_name16 or pin_name17 or pin_name18 or pin_name19 or pin_name20 or pin_name21 or pin_name22 or pin_name23 or pin_name24 or pin_name25 or pin_name26 or pin_name27 or pin_name28 or pin_name29 or pin_name30 or pin_name31 or pin_name32 or pin_name33 or pin_name34 or pin_name35 or pin_name36 or pin_name37 or pin_name38 or pin_name39 or pin_name40 or pin_name41 or pin_name42 or pin_name43 or pin_name44 or pin_name45 or pin_name46 or pin_name47 or pin_name48 or pin_name49 or pin_name50 or pin_name51 or pin_name52 or pin_name53 or pin_name54 or pin_name55 or pin_name56 or pin_name57 or pin_name58 or pin_name59 or pin_name60 or pin_name61 or pin_name62 or pin_name63 or pin_name64 or pin_name65 or pin_name66 or pin_name67 or pin_name68 or pin_name69 or pin_name70 or pin_name71 or pin_name72 or pin_name73 or pin_name74 or pin_name75 or pin_name76 or pin_name77 or pin_name78 or pin_name79 or pin_name80 or pin_name94 or pin_name95 or pin_name96 or pin_name97 or pin_name98 or pin_name99 or pin_name100 or pin_name101 or pin_name102 or pin_name103 or pin_name104 or pin_name105 or pin_name106 or pin_name107 or pin_name108 or pin_name109 or pin_name110 or pin_name111 or pin_name112 or pin_name113 or pin_name114 or pin_name115 or pin_name116 or pin_name117 or pin_name118 or pin_name119 or pin_name120 or pin_name121 or pin_name122 or pin_name123 or pin_name124 or pin_name125 or pin_name126 or pin_name127 or pin_name128 or pin_name129 or pin_name130 or pin_name131 or pin_name132 or pin_name133 or pin_name134 or pin_name135 or pin_name136 or pin_name137 or pin_name138 or pin_name139 or pin_name140 or pin_name141 or pin_name142 or pin_name143 or pin_name144 or pin_name145 or pin_name146 or pin_name147 or pin_name148 or pin_name149 or pin_name150 or pin_name151 or pin_name152 or pin_name153 or pin_name154 or pin_name155 or pin_name156 or pin_name157 or pin_name158 or pin_name159 or pin_name160 or pin_name161 or pin_name162 or pin_name163 or pin_name164 or pin_name165 or pin_name166 or pin_name167 or pin_name168 or pin_name169 or pin_name170 or pin_name171 or pin_name172 or pin_name173 or pin_name286 or pin_name287 or pin_name288 or pin_name290)
+always @(clock or pin_name1 or pin_name2 or pin_name3 or pin_name4 or pin_name5 or pin_name6 or pin_name7 or pin_name8 or pin_name9 or pin_name10 or pin_name11 or pin_name12 or pin_name13 or pin_name14 or pin_name15 or pin_name16 or pin_name17 or pin_name18 or pin_name19 or pin_name20 or pin_name21 or pin_name22 or pin_name23 or pin_name24 or pin_name25 or pin_name26 or pin_name27 or pin_name28 or pin_name29 or pin_name30 or pin_name31 or pin_name32 or pin_name33 or pin_name34 or pin_name35 or pin_name36 or pin_name37 or pin_name38 or pin_name39 or pin_name40 or pin_name41 or pin_name42 or pin_name43 or pin_name44 or pin_name45 or pin_name46 or pin_name47 or pin_name48 or pin_name49 or pin_name50 or pin_name51 or pin_name52 or pin_name53 or pin_name54 or pin_name55 or pin_name56 or pin_name57 or pin_name58 or pin_name59 or pin_name60 or pin_name61 or pin_name62 or pin_name63 or pin_name64 or pin_name65 or pin_name66 or pin_name67 or pin_name68 or pin_name69 or pin_name70 or pin_name71 or pin_name72 or pin_name73 or pin_name74 or pin_name75 or pin_name76 or pin_name77 or pin_name78 or pin_name79 or pin_name80 or pin_name94 or pin_name95 or pin_name96 or pin_name97 or pin_name98 or pin_name99 or pin_name100 or pin_name101 or pin_name102 or pin_name103 or pin_name104 or pin_name105 or pin_name106 or pin_name107 or pin_name108 or pin_name109 or pin_name110 or pin_name111 or pin_name112 or pin_name113 or pin_name114 or pin_name115 or pin_name116 or pin_name117 or pin_name118 or pin_name119 or pin_name120 or pin_name121 or pin_name122 or pin_name123 or pin_name124 or pin_name125 or pin_name126 or pin_name127 or pin_name128 or pin_name129 or pin_name130 or pin_name131 or pin_name132 or pin_name133 or pin_name134 or pin_name135 or pin_name136 or pin_name137 or pin_name138 or pin_name139 or pin_name140 or pin_name141 or pin_name142 or pin_name143 or pin_name144 or pin_name145 or pin_name146 or pin_name147 or pin_name148 or pin_name149 or pin_name150 or pin_name151 or pin_name152 or pin_name153 or pin_name154 or pin_name155 or pin_name156 or pin_name157 or pin_name158 or pin_name159 or pin_name160 or pin_name161 or pin_name162 or pin_name163 or pin_name164 or pin_name165 or pin_name166 or pin_name167 or pin_name168 or pin_name169 or pin_name170 or pin_name171 or pin_name172 or pin_name173 or pin_name286 or pin_name287 or pin_name288)
                                                                                 
 begin                                                 
  if ($realtime > 0)                                   
@@ -382,19 +382,19 @@ assign sampler_tx = sample;
 endmodule
 
 module trivium1_vlg_check_tst (
-	pin_name289,
+	outputpin,
 	sampler_rx
 );
-input  pin_name289;
+input  outputpin;
 input sampler_rx;
 
-reg  pin_name289_expected;
+reg  outputpin_expected;
 
-reg  pin_name289_prev;
+reg  outputpin_prev;
 
-reg  pin_name289_expected_prev;
+reg  outputpin_expected_prev;
 
-reg  last_pin_name289_exp;
+reg  last_outputpin_exp;
 
 reg trigger;
 
@@ -416,26 +416,25 @@ end
 
 always @(trigger)
 begin
-	pin_name289_prev = pin_name289;
+	outputpin_prev = outputpin;
 end
 
 // update expected /o prevs
 
 always @(trigger)
 begin
-	pin_name289_expected_prev = pin_name289_expected;
+	outputpin_expected_prev = outputpin_expected;
 end
 
 
 
-// expected pin_name289
+// expected outputpin
 initial
 begin
-	pin_name289_expected = 1'bX;
-	pin_name289_expected = #9999000 1'b0;
+	outputpin_expected = 1'bX;
 end 
 // generate trigger
-always @(pin_name289_expected or pin_name289)
+always @(outputpin_expected or outputpin)
 begin
 	trigger <= ~trigger;
 end
@@ -445,21 +444,21 @@ begin
 `ifdef debug_tbench
 	$display("Scanning pattern %d @time = %t",i,$realtime );
 	i = i + 1;
-	$display("| expected pin_name289 = %b | ",pin_name289_expected_prev);
-	$display("| real pin_name289 = %b | ",pin_name289_prev);
+	$display("| expected outputpin = %b | ",outputpin_expected_prev);
+	$display("| real outputpin = %b | ",outputpin_prev);
 `endif
 	if (
-		( pin_name289_expected_prev !== 1'bx ) && ( pin_name289_prev !== pin_name289_expected_prev )
-		&& ((pin_name289_expected_prev !== last_pin_name289_exp) ||
+		( outputpin_expected_prev !== 1'bx ) && ( outputpin_prev !== outputpin_expected_prev )
+		&& ((outputpin_expected_prev !== last_outputpin_exp) ||
 			on_first_change[1])
 	)
 	begin
-		$display ("ERROR! Vector Mismatch for output port pin_name289 :: @time = %t",  $realtime);
-		$display ("     Expected value = %b", pin_name289_expected_prev);
-		$display ("     Real value = %b", pin_name289_prev);
+		$display ("ERROR! Vector Mismatch for output port outputpin :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", outputpin_expected_prev);
+		$display ("     Real value = %b", outputpin_prev);
 		nummismatches = nummismatches + 1;
 		on_first_change[1] = 1'b0;
-		last_pin_name289_exp = pin_name289_expected_prev;
+		last_outputpin_exp = outputpin_expected_prev;
 	end
 
 	trigger <= ~trigger;
@@ -468,7 +467,7 @@ initial
 
 begin 
 $timeformat(-12,3," ps",6);
-#100000000;
+#1400000;
 if (nummismatches > 0)
 	$display ("%d mismatched vectors : Simulation failed !",nummismatches);
 else
@@ -480,6 +479,7 @@ endmodule
 module trivium1_vlg_vec_tst();
 // constants                                           
 // general purpose registers
+reg clock;
 reg pin_name1;
 reg pin_name2;
 reg pin_name3;
@@ -643,15 +643,16 @@ reg pin_name173;
 reg pin_name286;
 reg pin_name287;
 reg pin_name288;
-reg pin_name290;
 // wires                                               
-wire pin_name289;
+wire outputpin;
 
 wire sampler;                             
 
 // assign statements (if any)                          
 trivium1 i1 (
 // port map - connection between master ports and signals/registers   
+	.clock(clock),
+	.outputpin(outputpin),
 	.pin_name1(pin_name1),
 	.pin_name2(pin_name2),
 	.pin_name3(pin_name3),
@@ -814,490 +815,495 @@ trivium1 i1 (
 	.pin_name173(pin_name173),
 	.pin_name286(pin_name286),
 	.pin_name287(pin_name287),
-	.pin_name288(pin_name288),
-	.pin_name289(pin_name289),
-	.pin_name290(pin_name290)
+	.pin_name288(pin_name288)
 );
+
+// clock
+always
+begin
+	clock = 1'b0;
+	clock = #500 1'b1;
+	#500;
+end 
 
 // pin_name1
 initial
 begin
-	pin_name1 = 1'b0;
+	pin_name1 = 1'b1;
 end 
 
 // pin_name2
 initial
 begin
-	pin_name2 = 1'b0;
+	pin_name2 = 1'b1;
 end 
 
 // pin_name3
 initial
 begin
-	pin_name3 = 1'b0;
+	pin_name3 = 1'b1;
 end 
 
 // pin_name4
 initial
 begin
-	pin_name4 = 1'b0;
+	pin_name4 = 1'b1;
 end 
 
 // pin_name5
 initial
 begin
-	pin_name5 = 1'b0;
+	pin_name5 = 1'b1;
 end 
 
 // pin_name6
 initial
 begin
-	pin_name6 = 1'b0;
+	pin_name6 = 1'b1;
 end 
 
 // pin_name7
 initial
 begin
-	pin_name7 = 1'b0;
+	pin_name7 = 1'b1;
 end 
 
 // pin_name8
 initial
 begin
-	pin_name8 = 1'b0;
+	pin_name8 = 1'b1;
 end 
 
 // pin_name9
 initial
 begin
-	pin_name9 = 1'b0;
+	pin_name9 = 1'b1;
 end 
 
 // pin_name10
 initial
 begin
-	pin_name10 = 1'b0;
+	pin_name10 = 1'b1;
 end 
 
 // pin_name11
 initial
 begin
-	pin_name11 = 1'b0;
+	pin_name11 = 1'b1;
 end 
 
 // pin_name12
 initial
 begin
-	pin_name12 = 1'b0;
+	pin_name12 = 1'b1;
 end 
 
 // pin_name13
 initial
 begin
-	pin_name13 = 1'b0;
+	pin_name13 = 1'b1;
 end 
 
 // pin_name14
 initial
 begin
-	pin_name14 = 1'b0;
+	pin_name14 = 1'b1;
 end 
 
 // pin_name15
 initial
 begin
-	pin_name15 = 1'b0;
+	pin_name15 = 1'b1;
 end 
 
 // pin_name16
 initial
 begin
-	pin_name16 = 1'b0;
+	pin_name16 = 1'b1;
 end 
 
 // pin_name17
 initial
 begin
-	pin_name17 = 1'b0;
+	pin_name17 = 1'b1;
 end 
 
 // pin_name18
 initial
 begin
-	pin_name18 = 1'b0;
+	pin_name18 = 1'b1;
 end 
 
 // pin_name19
 initial
 begin
-	pin_name19 = 1'b0;
+	pin_name19 = 1'b1;
 end 
 
 // pin_name20
 initial
 begin
-	pin_name20 = 1'b0;
+	pin_name20 = 1'b1;
 end 
 
 // pin_name21
 initial
 begin
-	pin_name21 = 1'b0;
+	pin_name21 = 1'b1;
 end 
 
 // pin_name22
 initial
 begin
-	pin_name22 = 1'b0;
+	pin_name22 = 1'b1;
 end 
 
 // pin_name23
 initial
 begin
-	pin_name23 = 1'b0;
+	pin_name23 = 1'b1;
 end 
 
 // pin_name24
 initial
 begin
-	pin_name24 = 1'b0;
+	pin_name24 = 1'b1;
 end 
 
 // pin_name25
 initial
 begin
-	pin_name25 = 1'b0;
+	pin_name25 = 1'b1;
 end 
 
 // pin_name26
 initial
 begin
-	pin_name26 = 1'b0;
+	pin_name26 = 1'b1;
 end 
 
 // pin_name27
 initial
 begin
-	pin_name27 = 1'b0;
+	pin_name27 = 1'b1;
 end 
 
 // pin_name28
 initial
 begin
-	pin_name28 = 1'b0;
+	pin_name28 = 1'b1;
 end 
 
 // pin_name29
 initial
 begin
-	pin_name29 = 1'b0;
+	pin_name29 = 1'b1;
 end 
 
 // pin_name30
 initial
 begin
-	pin_name30 = 1'b0;
+	pin_name30 = 1'b1;
 end 
 
 // pin_name31
 initial
 begin
-	pin_name31 = 1'b0;
+	pin_name31 = 1'b1;
 end 
 
 // pin_name32
 initial
 begin
-	pin_name32 = 1'b0;
+	pin_name32 = 1'b1;
 end 
 
 // pin_name33
 initial
 begin
-	pin_name33 = 1'b0;
+	pin_name33 = 1'b1;
 end 
 
 // pin_name34
 initial
 begin
-	pin_name34 = 1'b0;
+	pin_name34 = 1'b1;
 end 
 
 // pin_name35
 initial
 begin
-	pin_name35 = 1'b0;
+	pin_name35 = 1'b1;
 end 
 
 // pin_name36
 initial
 begin
-	pin_name36 = 1'b0;
+	pin_name36 = 1'b1;
 end 
 
 // pin_name37
 initial
 begin
-	pin_name37 = 1'b0;
+	pin_name37 = 1'b1;
 end 
 
 // pin_name38
 initial
 begin
-	pin_name38 = 1'b0;
+	pin_name38 = 1'b1;
 end 
 
 // pin_name39
 initial
 begin
-	pin_name39 = 1'b0;
+	pin_name39 = 1'b1;
 end 
 
 // pin_name40
 initial
 begin
-	pin_name40 = 1'b0;
+	pin_name40 = 1'b1;
 end 
 
 // pin_name41
 initial
 begin
-	pin_name41 = 1'b0;
+	pin_name41 = 1'b1;
 end 
 
 // pin_name42
 initial
 begin
-	pin_name42 = 1'b0;
+	pin_name42 = 1'b1;
 end 
 
 // pin_name43
 initial
 begin
-	pin_name43 = 1'b0;
+	pin_name43 = 1'b1;
 end 
 
 // pin_name44
 initial
 begin
-	pin_name44 = 1'b0;
+	pin_name44 = 1'b1;
 end 
 
 // pin_name45
 initial
 begin
-	pin_name45 = 1'b0;
+	pin_name45 = 1'b1;
 end 
 
 // pin_name46
 initial
 begin
-	pin_name46 = 1'b0;
+	pin_name46 = 1'b1;
 end 
 
 // pin_name47
 initial
 begin
-	pin_name47 = 1'b0;
+	pin_name47 = 1'b1;
 end 
 
 // pin_name48
 initial
 begin
-	pin_name48 = 1'b0;
+	pin_name48 = 1'b1;
 end 
 
 // pin_name49
 initial
 begin
-	pin_name49 = 1'b0;
+	pin_name49 = 1'b1;
 end 
 
 // pin_name50
 initial
 begin
-	pin_name50 = 1'b0;
+	pin_name50 = 1'b1;
 end 
 
 // pin_name51
 initial
 begin
-	pin_name51 = 1'b0;
+	pin_name51 = 1'b1;
 end 
 
 // pin_name52
 initial
 begin
-	pin_name52 = 1'b0;
+	pin_name52 = 1'b1;
 end 
 
 // pin_name53
 initial
 begin
-	pin_name53 = 1'b0;
+	pin_name53 = 1'b1;
 end 
 
 // pin_name54
 initial
 begin
-	pin_name54 = 1'b0;
+	pin_name54 = 1'b1;
 end 
 
 // pin_name55
 initial
 begin
-	pin_name55 = 1'b0;
+	pin_name55 = 1'b1;
 end 
 
 // pin_name56
 initial
 begin
-	pin_name56 = 1'b0;
+	pin_name56 = 1'b1;
 end 
 
 // pin_name57
 initial
 begin
-	pin_name57 = 1'b0;
+	pin_name57 = 1'b1;
 end 
 
 // pin_name58
 initial
 begin
-	pin_name58 = 1'b0;
+	pin_name58 = 1'b1;
 end 
 
 // pin_name59
 initial
 begin
-	pin_name59 = 1'b0;
+	pin_name59 = 1'b1;
 end 
 
 // pin_name60
 initial
 begin
-	pin_name60 = 1'b0;
+	pin_name60 = 1'b1;
 end 
 
 // pin_name61
 initial
 begin
-	pin_name61 = 1'b0;
+	pin_name61 = 1'b1;
 end 
 
 // pin_name62
 initial
 begin
-	pin_name62 = 1'b0;
+	pin_name62 = 1'b1;
 end 
 
 // pin_name63
 initial
 begin
-	pin_name63 = 1'b0;
+	pin_name63 = 1'b1;
 end 
 
 // pin_name64
 initial
 begin
-	pin_name64 = 1'b0;
+	pin_name64 = 1'b1;
 end 
 
 // pin_name65
 initial
 begin
-	pin_name65 = 1'b0;
+	pin_name65 = 1'b1;
 end 
 
 // pin_name66
 initial
 begin
-	pin_name66 = 1'b0;
+	pin_name66 = 1'b1;
 end 
 
 // pin_name67
 initial
 begin
-	pin_name67 = 1'b0;
+	pin_name67 = 1'b1;
 end 
 
 // pin_name68
 initial
 begin
-	pin_name68 = 1'b0;
+	pin_name68 = 1'b1;
 end 
 
 // pin_name69
 initial
 begin
-	pin_name69 = 1'b0;
+	pin_name69 = 1'b1;
 end 
 
 // pin_name70
 initial
 begin
-	pin_name70 = 1'b0;
+	pin_name70 = 1'b1;
 end 
 
 // pin_name71
 initial
 begin
-	pin_name71 = 1'b0;
+	pin_name71 = 1'b1;
 end 
 
 // pin_name72
 initial
 begin
-	pin_name72 = 1'b0;
+	pin_name72 = 1'b1;
 end 
 
 // pin_name73
 initial
 begin
-	pin_name73 = 1'b0;
+	pin_name73 = 1'b1;
 end 
 
 // pin_name74
 initial
 begin
-	pin_name74 = 1'b0;
+	pin_name74 = 1'b1;
 end 
 
 // pin_name75
 initial
 begin
-	pin_name75 = 1'b0;
+	pin_name75 = 1'b1;
 end 
 
 // pin_name76
 initial
 begin
-	pin_name76 = 1'b0;
+	pin_name76 = 1'b1;
 end 
 
 // pin_name77
 initial
 begin
-	pin_name77 = 1'b0;
+	pin_name77 = 1'b1;
 end 
 
 // pin_name78
 initial
 begin
-	pin_name78 = 1'b0;
+	pin_name78 = 1'b1;
 end 
 
 // pin_name79
 initial
 begin
-	pin_name79 = 1'b0;
+	pin_name79 = 1'b1;
 end 
 
 // pin_name80
 initial
 begin
 	pin_name80 = 1'b1;
-	pin_name80 = #9999000 1'b0;
 end 
 
 // pin_name94
@@ -1784,32 +1790,22 @@ end
 initial
 begin
 	pin_name286 = 1'b1;
-	pin_name286 = #9999000 1'b0;
 end 
 
 // pin_name287
 initial
 begin
 	pin_name287 = 1'b1;
-	pin_name287 = #9999000 1'b0;
 end 
 
 // pin_name288
 initial
 begin
 	pin_name288 = 1'b1;
-	pin_name288 = #9999000 1'b0;
-end 
-
-// pin_name290
-always
-begin
-	pin_name290 = 1'b0;
-	pin_name290 = #5000 1'b1;
-	#5000;
 end 
 
 trivium1_vlg_sample_tst tb_sample (
+	.clock(clock),
 	.pin_name1(pin_name1),
 	.pin_name2(pin_name2),
 	.pin_name3(pin_name3),
@@ -1973,12 +1969,11 @@ trivium1_vlg_sample_tst tb_sample (
 	.pin_name286(pin_name286),
 	.pin_name287(pin_name287),
 	.pin_name288(pin_name288),
-	.pin_name290(pin_name290),
 	.sampler_tx(sampler)
 );
 
 trivium1_vlg_check_tst tb_out(
-	.pin_name289(pin_name289),
+	.outputpin(outputpin),
 	.sampler_rx(sampler)
 );
 endmodule
