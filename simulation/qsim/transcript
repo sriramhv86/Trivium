@@ -1,0 +1,48 @@
+# do trivium1.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 23:36:42 on Mar 03,2018
+# vlog -work work trivium1.vo 
+# -- Compiling module trivium1
+# 
+# Top level modules:
+# 	trivium1
+# End time: 23:36:42 on Mar 03,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 23:36:42 on Mar 03,2018
+# vlog -work work Waveform2.vwf.vt 
+# -- Compiling module trivium1_vlg_sample_tst
+# -- Compiling module trivium1_vlg_check_tst
+# -- Compiling module trivium1_vlg_vec_tst
+# 
+# Top level modules:
+# 	trivium1_vlg_vec_tst
+# End time: 23:36:42 on Mar 03,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -c -do "trivium1.do" 
+# Start time: 23:36:42 on Mar 03,2018
+# Loading work.trivium1_vlg_vec_tst
+# Loading work.trivium1
+# Loading cycloneive_ver.cycloneive_io_obuf
+# Loading cycloneive_ver.cycloneive_io_ibuf
+# Loading cycloneive_ver.cycloneive_clkctrl
+# Loading cycloneive_ver.cycloneive_mux41
+# Loading cycloneive_ver.cycloneive_ena_reg
+# Loading cycloneive_ver.cycloneive_lcell_comb
+# Loading altera_ver.dffeas
+# Loading cycloneive_ver.cycloneive_ram_block
+# Loading cycloneive_ver.cycloneive_ram_register
+# Loading cycloneive_ver.cycloneive_ram_pulse_generator
+# Loading work.trivium1_vlg_sample_tst
+# Loading work.trivium1_vlg_check_tst
+# Loading altera_ver.PRIM_GDFF_LOW
+# ERROR! Vector Mismatch for output port pin_name289 :: @time = 999500.000 ps
+#      Expected value = 0
+#      Real value = 1
+#           1 mismatched vectors : Simulation failed !
+# ** Note: $finish    : Waveform2.vwf.vt(476)
+#    Time: 1400 ns  Iteration: 0  Instance: /trivium1_vlg_vec_tst/tb_out
+# End time: 23:36:43 on Mar 03,2018, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0

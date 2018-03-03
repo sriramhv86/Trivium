@@ -1,0 +1,90 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/sriram/Desktop/Trivium1/simulation/qsim
+vtrivium1
+Z1 !s110 1520116602
+!i10b 1
+!s100 kT<OLUQYJChDal9QzT@a81
+Ibe[R@ZRL^]<o;<A<79gM72
+Z2 V`JN@9S9cnhjKRR_L]QIcM3
+R0
+w1520116600
+8trivium1.vo
+Ftrivium1.vo
+L0 32
+Z3 OV;L;10.3d;59
+r1
+!s85 0
+31
+!s108 1520116602.134000
+!s107 trivium1.vo|
+!s90 -work|work|trivium1.vo|
+!i113 1
+Z4 o-work work
+vtrivium1_vlg_check_tst
+R1
+!i10b 1
+!s100 33ShPMOznY2;:ZOHCV@N83
+I_aDP8N<Im0P9=`<5FCidz2
+R2
+R0
+Z5 w1520116597
+Z6 8Waveform2.vwf.vt
+Z7 FWaveform2.vwf.vt
+L0 384
+R3
+r1
+!s85 0
+31
+Z8 !s108 1520116602.358000
+Z9 !s107 Waveform2.vwf.vt|
+Z10 !s90 -work|work|Waveform2.vwf.vt|
+!i113 1
+R4
+vtrivium1_vlg_sample_tst
+R1
+!i10b 1
+!s100 ZFH>aLzfB[5EiH9:PRlh`1
+IeLN9mPJT=jaNE?G?N04aR2
+R2
+R0
+R5
+R6
+R7
+L0 30
+R3
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R4
+vtrivium1_vlg_vec_tst
+R1
+!i10b 1
+!s100 YT;4=Y7Mge[QWnOQlzA5<2
+IMaW6Z[GGET=_`zBY<10>=0
+R2
+R0
+R5
+R6
+R7
+L0 480
+R3
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R4

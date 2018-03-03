@@ -1,0 +1,1985 @@
+// Copyright (C) 1991-2015 Altera Corporation. All rights reserved.
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, the Altera Quartus II License Agreement,
+// the Altera MegaCore Function License Agreement, or other 
+// applicable license agreement, including, without limitation, 
+// that your use is for the sole purpose of programming logic 
+// devices manufactured by Altera and sold by Altera or its 
+// authorized distributors.  Please refer to the applicable 
+// agreement for further details.
+
+// *****************************************************************************
+// This file contains a Verilog test bench with test vectors .The test vectors  
+// are exported from a vector file in the Quartus Waveform Editor and apply to  
+// the top level entity of the current Quartus project .The user can use this   
+// testbench to simulate his design using a third-party simulation tool .       
+// *****************************************************************************
+// Generated on "03/03/2018 22:22:26"
+                                                                        
+// Verilog Self-Checking Test Bench (with test vectors) for design :    trivium1
+// 
+// Simulation tool : 3rd Party
+// 
+
+`timescale 1 ps/ 1 ps
+module trivium1_vlg_sample_tst(
+	pin_name1,
+	pin_name2,
+	pin_name3,
+	pin_name4,
+	pin_name5,
+	pin_name6,
+	pin_name7,
+	pin_name8,
+	pin_name9,
+	pin_name10,
+	pin_name11,
+	pin_name12,
+	pin_name13,
+	pin_name14,
+	pin_name15,
+	pin_name16,
+	pin_name17,
+	pin_name18,
+	pin_name19,
+	pin_name20,
+	pin_name21,
+	pin_name22,
+	pin_name23,
+	pin_name24,
+	pin_name25,
+	pin_name26,
+	pin_name27,
+	pin_name28,
+	pin_name29,
+	pin_name30,
+	pin_name31,
+	pin_name32,
+	pin_name33,
+	pin_name34,
+	pin_name35,
+	pin_name36,
+	pin_name37,
+	pin_name38,
+	pin_name39,
+	pin_name40,
+	pin_name41,
+	pin_name42,
+	pin_name43,
+	pin_name44,
+	pin_name45,
+	pin_name46,
+	pin_name47,
+	pin_name48,
+	pin_name49,
+	pin_name50,
+	pin_name51,
+	pin_name52,
+	pin_name53,
+	pin_name54,
+	pin_name55,
+	pin_name56,
+	pin_name57,
+	pin_name58,
+	pin_name59,
+	pin_name60,
+	pin_name61,
+	pin_name62,
+	pin_name63,
+	pin_name64,
+	pin_name65,
+	pin_name66,
+	pin_name67,
+	pin_name68,
+	pin_name69,
+	pin_name70,
+	pin_name71,
+	pin_name72,
+	pin_name73,
+	pin_name74,
+	pin_name75,
+	pin_name76,
+	pin_name77,
+	pin_name78,
+	pin_name79,
+	pin_name80,
+	pin_name94,
+	pin_name95,
+	pin_name96,
+	pin_name97,
+	pin_name98,
+	pin_name99,
+	pin_name100,
+	pin_name101,
+	pin_name102,
+	pin_name103,
+	pin_name104,
+	pin_name105,
+	pin_name106,
+	pin_name107,
+	pin_name108,
+	pin_name109,
+	pin_name110,
+	pin_name111,
+	pin_name112,
+	pin_name113,
+	pin_name114,
+	pin_name115,
+	pin_name116,
+	pin_name117,
+	pin_name118,
+	pin_name119,
+	pin_name120,
+	pin_name121,
+	pin_name122,
+	pin_name123,
+	pin_name124,
+	pin_name125,
+	pin_name126,
+	pin_name127,
+	pin_name128,
+	pin_name129,
+	pin_name130,
+	pin_name131,
+	pin_name132,
+	pin_name133,
+	pin_name134,
+	pin_name135,
+	pin_name136,
+	pin_name137,
+	pin_name138,
+	pin_name139,
+	pin_name140,
+	pin_name141,
+	pin_name142,
+	pin_name143,
+	pin_name144,
+	pin_name145,
+	pin_name146,
+	pin_name147,
+	pin_name148,
+	pin_name149,
+	pin_name150,
+	pin_name151,
+	pin_name152,
+	pin_name153,
+	pin_name154,
+	pin_name155,
+	pin_name156,
+	pin_name157,
+	pin_name158,
+	pin_name159,
+	pin_name160,
+	pin_name161,
+	pin_name162,
+	pin_name163,
+	pin_name164,
+	pin_name165,
+	pin_name166,
+	pin_name167,
+	pin_name168,
+	pin_name169,
+	pin_name170,
+	pin_name171,
+	pin_name172,
+	pin_name173,
+	pin_name286,
+	pin_name287,
+	pin_name288,
+	pin_name290,
+	sampler_tx
+);
+input  pin_name1;
+input  pin_name2;
+input  pin_name3;
+input  pin_name4;
+input  pin_name5;
+input  pin_name6;
+input  pin_name7;
+input  pin_name8;
+input  pin_name9;
+input  pin_name10;
+input  pin_name11;
+input  pin_name12;
+input  pin_name13;
+input  pin_name14;
+input  pin_name15;
+input  pin_name16;
+input  pin_name17;
+input  pin_name18;
+input  pin_name19;
+input  pin_name20;
+input  pin_name21;
+input  pin_name22;
+input  pin_name23;
+input  pin_name24;
+input  pin_name25;
+input  pin_name26;
+input  pin_name27;
+input  pin_name28;
+input  pin_name29;
+input  pin_name30;
+input  pin_name31;
+input  pin_name32;
+input  pin_name33;
+input  pin_name34;
+input  pin_name35;
+input  pin_name36;
+input  pin_name37;
+input  pin_name38;
+input  pin_name39;
+input  pin_name40;
+input  pin_name41;
+input  pin_name42;
+input  pin_name43;
+input  pin_name44;
+input  pin_name45;
+input  pin_name46;
+input  pin_name47;
+input  pin_name48;
+input  pin_name49;
+input  pin_name50;
+input  pin_name51;
+input  pin_name52;
+input  pin_name53;
+input  pin_name54;
+input  pin_name55;
+input  pin_name56;
+input  pin_name57;
+input  pin_name58;
+input  pin_name59;
+input  pin_name60;
+input  pin_name61;
+input  pin_name62;
+input  pin_name63;
+input  pin_name64;
+input  pin_name65;
+input  pin_name66;
+input  pin_name67;
+input  pin_name68;
+input  pin_name69;
+input  pin_name70;
+input  pin_name71;
+input  pin_name72;
+input  pin_name73;
+input  pin_name74;
+input  pin_name75;
+input  pin_name76;
+input  pin_name77;
+input  pin_name78;
+input  pin_name79;
+input  pin_name80;
+input  pin_name94;
+input  pin_name95;
+input  pin_name96;
+input  pin_name97;
+input  pin_name98;
+input  pin_name99;
+input  pin_name100;
+input  pin_name101;
+input  pin_name102;
+input  pin_name103;
+input  pin_name104;
+input  pin_name105;
+input  pin_name106;
+input  pin_name107;
+input  pin_name108;
+input  pin_name109;
+input  pin_name110;
+input  pin_name111;
+input  pin_name112;
+input  pin_name113;
+input  pin_name114;
+input  pin_name115;
+input  pin_name116;
+input  pin_name117;
+input  pin_name118;
+input  pin_name119;
+input  pin_name120;
+input  pin_name121;
+input  pin_name122;
+input  pin_name123;
+input  pin_name124;
+input  pin_name125;
+input  pin_name126;
+input  pin_name127;
+input  pin_name128;
+input  pin_name129;
+input  pin_name130;
+input  pin_name131;
+input  pin_name132;
+input  pin_name133;
+input  pin_name134;
+input  pin_name135;
+input  pin_name136;
+input  pin_name137;
+input  pin_name138;
+input  pin_name139;
+input  pin_name140;
+input  pin_name141;
+input  pin_name142;
+input  pin_name143;
+input  pin_name144;
+input  pin_name145;
+input  pin_name146;
+input  pin_name147;
+input  pin_name148;
+input  pin_name149;
+input  pin_name150;
+input  pin_name151;
+input  pin_name152;
+input  pin_name153;
+input  pin_name154;
+input  pin_name155;
+input  pin_name156;
+input  pin_name157;
+input  pin_name158;
+input  pin_name159;
+input  pin_name160;
+input  pin_name161;
+input  pin_name162;
+input  pin_name163;
+input  pin_name164;
+input  pin_name165;
+input  pin_name166;
+input  pin_name167;
+input  pin_name168;
+input  pin_name169;
+input  pin_name170;
+input  pin_name171;
+input  pin_name172;
+input  pin_name173;
+input  pin_name286;
+input  pin_name287;
+input  pin_name288;
+input  pin_name290;
+output sampler_tx;
+
+reg sample;
+time current_time;
+always @(pin_name1 or pin_name2 or pin_name3 or pin_name4 or pin_name5 or pin_name6 or pin_name7 or pin_name8 or pin_name9 or pin_name10 or pin_name11 or pin_name12 or pin_name13 or pin_name14 or pin_name15 or pin_name16 or pin_name17 or pin_name18 or pin_name19 or pin_name20 or pin_name21 or pin_name22 or pin_name23 or pin_name24 or pin_name25 or pin_name26 or pin_name27 or pin_name28 or pin_name29 or pin_name30 or pin_name31 or pin_name32 or pin_name33 or pin_name34 or pin_name35 or pin_name36 or pin_name37 or pin_name38 or pin_name39 or pin_name40 or pin_name41 or pin_name42 or pin_name43 or pin_name44 or pin_name45 or pin_name46 or pin_name47 or pin_name48 or pin_name49 or pin_name50 or pin_name51 or pin_name52 or pin_name53 or pin_name54 or pin_name55 or pin_name56 or pin_name57 or pin_name58 or pin_name59 or pin_name60 or pin_name61 or pin_name62 or pin_name63 or pin_name64 or pin_name65 or pin_name66 or pin_name67 or pin_name68 or pin_name69 or pin_name70 or pin_name71 or pin_name72 or pin_name73 or pin_name74 or pin_name75 or pin_name76 or pin_name77 or pin_name78 or pin_name79 or pin_name80 or pin_name94 or pin_name95 or pin_name96 or pin_name97 or pin_name98 or pin_name99 or pin_name100 or pin_name101 or pin_name102 or pin_name103 or pin_name104 or pin_name105 or pin_name106 or pin_name107 or pin_name108 or pin_name109 or pin_name110 or pin_name111 or pin_name112 or pin_name113 or pin_name114 or pin_name115 or pin_name116 or pin_name117 or pin_name118 or pin_name119 or pin_name120 or pin_name121 or pin_name122 or pin_name123 or pin_name124 or pin_name125 or pin_name126 or pin_name127 or pin_name128 or pin_name129 or pin_name130 or pin_name131 or pin_name132 or pin_name133 or pin_name134 or pin_name135 or pin_name136 or pin_name137 or pin_name138 or pin_name139 or pin_name140 or pin_name141 or pin_name142 or pin_name143 or pin_name144 or pin_name145 or pin_name146 or pin_name147 or pin_name148 or pin_name149 or pin_name150 or pin_name151 or pin_name152 or pin_name153 or pin_name154 or pin_name155 or pin_name156 or pin_name157 or pin_name158 or pin_name159 or pin_name160 or pin_name161 or pin_name162 or pin_name163 or pin_name164 or pin_name165 or pin_name166 or pin_name167 or pin_name168 or pin_name169 or pin_name170 or pin_name171 or pin_name172 or pin_name173 or pin_name286 or pin_name287 or pin_name288 or pin_name290)
+                                                                                
+begin                                                 
+ if ($realtime > 0)                                   
+ begin                                                
+    if ($realtime == 0 || $realtime != current_time)  
+    begin                                             
+        if (sample === 1'bx)                          
+            sample = 0;                               
+        else                                          
+            sample = ~sample;                         
+    end                                               
+    current_time = $realtime;                         
+ end                                                  
+end                                                   
+
+assign sampler_tx = sample;
+endmodule
+
+module trivium1_vlg_check_tst (
+	pin_name289,
+	sampler_rx
+);
+input  pin_name289;
+input sampler_rx;
+
+reg  pin_name289_expected;
+
+reg  pin_name289_prev;
+
+reg  pin_name289_expected_prev;
+
+reg  last_pin_name289_exp;
+
+reg trigger;
+
+integer i;
+integer nummismatches;
+
+reg [1:1] on_first_change ;
+
+
+initial
+begin
+trigger = 0;
+i = 0;
+nummismatches = 0;
+on_first_change = 1'b1;
+end
+
+// update real /o prevs
+
+always @(trigger)
+begin
+	pin_name289_prev = pin_name289;
+end
+
+// update expected /o prevs
+
+always @(trigger)
+begin
+	pin_name289_expected_prev = pin_name289_expected;
+end
+
+
+
+// expected pin_name289
+initial
+begin
+	pin_name289_expected = 1'bX;
+	pin_name289_expected = #9999000 1'b0;
+end 
+// generate trigger
+always @(pin_name289_expected or pin_name289)
+begin
+	trigger <= ~trigger;
+end
+
+always @(posedge sampler_rx or negedge sampler_rx)
+begin
+`ifdef debug_tbench
+	$display("Scanning pattern %d @time = %t",i,$realtime );
+	i = i + 1;
+	$display("| expected pin_name289 = %b | ",pin_name289_expected_prev);
+	$display("| real pin_name289 = %b | ",pin_name289_prev);
+`endif
+	if (
+		( pin_name289_expected_prev !== 1'bx ) && ( pin_name289_prev !== pin_name289_expected_prev )
+		&& ((pin_name289_expected_prev !== last_pin_name289_exp) ||
+			on_first_change[1])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port pin_name289 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", pin_name289_expected_prev);
+		$display ("     Real value = %b", pin_name289_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[1] = 1'b0;
+		last_pin_name289_exp = pin_name289_expected_prev;
+	end
+
+	trigger <= ~trigger;
+end
+initial 
+
+begin 
+$timeformat(-12,3," ps",6);
+#100000000;
+if (nummismatches > 0)
+	$display ("%d mismatched vectors : Simulation failed !",nummismatches);
+else
+	$display ("Simulation passed !");
+$finish;
+end 
+endmodule
+
+module trivium1_vlg_vec_tst();
+// constants                                           
+// general purpose registers
+reg pin_name1;
+reg pin_name2;
+reg pin_name3;
+reg pin_name4;
+reg pin_name5;
+reg pin_name6;
+reg pin_name7;
+reg pin_name8;
+reg pin_name9;
+reg pin_name10;
+reg pin_name11;
+reg pin_name12;
+reg pin_name13;
+reg pin_name14;
+reg pin_name15;
+reg pin_name16;
+reg pin_name17;
+reg pin_name18;
+reg pin_name19;
+reg pin_name20;
+reg pin_name21;
+reg pin_name22;
+reg pin_name23;
+reg pin_name24;
+reg pin_name25;
+reg pin_name26;
+reg pin_name27;
+reg pin_name28;
+reg pin_name29;
+reg pin_name30;
+reg pin_name31;
+reg pin_name32;
+reg pin_name33;
+reg pin_name34;
+reg pin_name35;
+reg pin_name36;
+reg pin_name37;
+reg pin_name38;
+reg pin_name39;
+reg pin_name40;
+reg pin_name41;
+reg pin_name42;
+reg pin_name43;
+reg pin_name44;
+reg pin_name45;
+reg pin_name46;
+reg pin_name47;
+reg pin_name48;
+reg pin_name49;
+reg pin_name50;
+reg pin_name51;
+reg pin_name52;
+reg pin_name53;
+reg pin_name54;
+reg pin_name55;
+reg pin_name56;
+reg pin_name57;
+reg pin_name58;
+reg pin_name59;
+reg pin_name60;
+reg pin_name61;
+reg pin_name62;
+reg pin_name63;
+reg pin_name64;
+reg pin_name65;
+reg pin_name66;
+reg pin_name67;
+reg pin_name68;
+reg pin_name69;
+reg pin_name70;
+reg pin_name71;
+reg pin_name72;
+reg pin_name73;
+reg pin_name74;
+reg pin_name75;
+reg pin_name76;
+reg pin_name77;
+reg pin_name78;
+reg pin_name79;
+reg pin_name80;
+reg pin_name94;
+reg pin_name95;
+reg pin_name96;
+reg pin_name97;
+reg pin_name98;
+reg pin_name99;
+reg pin_name100;
+reg pin_name101;
+reg pin_name102;
+reg pin_name103;
+reg pin_name104;
+reg pin_name105;
+reg pin_name106;
+reg pin_name107;
+reg pin_name108;
+reg pin_name109;
+reg pin_name110;
+reg pin_name111;
+reg pin_name112;
+reg pin_name113;
+reg pin_name114;
+reg pin_name115;
+reg pin_name116;
+reg pin_name117;
+reg pin_name118;
+reg pin_name119;
+reg pin_name120;
+reg pin_name121;
+reg pin_name122;
+reg pin_name123;
+reg pin_name124;
+reg pin_name125;
+reg pin_name126;
+reg pin_name127;
+reg pin_name128;
+reg pin_name129;
+reg pin_name130;
+reg pin_name131;
+reg pin_name132;
+reg pin_name133;
+reg pin_name134;
+reg pin_name135;
+reg pin_name136;
+reg pin_name137;
+reg pin_name138;
+reg pin_name139;
+reg pin_name140;
+reg pin_name141;
+reg pin_name142;
+reg pin_name143;
+reg pin_name144;
+reg pin_name145;
+reg pin_name146;
+reg pin_name147;
+reg pin_name148;
+reg pin_name149;
+reg pin_name150;
+reg pin_name151;
+reg pin_name152;
+reg pin_name153;
+reg pin_name154;
+reg pin_name155;
+reg pin_name156;
+reg pin_name157;
+reg pin_name158;
+reg pin_name159;
+reg pin_name160;
+reg pin_name161;
+reg pin_name162;
+reg pin_name163;
+reg pin_name164;
+reg pin_name165;
+reg pin_name166;
+reg pin_name167;
+reg pin_name168;
+reg pin_name169;
+reg pin_name170;
+reg pin_name171;
+reg pin_name172;
+reg pin_name173;
+reg pin_name286;
+reg pin_name287;
+reg pin_name288;
+reg pin_name290;
+// wires                                               
+wire pin_name289;
+
+wire sampler;                             
+
+// assign statements (if any)                          
+trivium1 i1 (
+// port map - connection between master ports and signals/registers   
+	.pin_name1(pin_name1),
+	.pin_name2(pin_name2),
+	.pin_name3(pin_name3),
+	.pin_name4(pin_name4),
+	.pin_name5(pin_name5),
+	.pin_name6(pin_name6),
+	.pin_name7(pin_name7),
+	.pin_name8(pin_name8),
+	.pin_name9(pin_name9),
+	.pin_name10(pin_name10),
+	.pin_name11(pin_name11),
+	.pin_name12(pin_name12),
+	.pin_name13(pin_name13),
+	.pin_name14(pin_name14),
+	.pin_name15(pin_name15),
+	.pin_name16(pin_name16),
+	.pin_name17(pin_name17),
+	.pin_name18(pin_name18),
+	.pin_name19(pin_name19),
+	.pin_name20(pin_name20),
+	.pin_name21(pin_name21),
+	.pin_name22(pin_name22),
+	.pin_name23(pin_name23),
+	.pin_name24(pin_name24),
+	.pin_name25(pin_name25),
+	.pin_name26(pin_name26),
+	.pin_name27(pin_name27),
+	.pin_name28(pin_name28),
+	.pin_name29(pin_name29),
+	.pin_name30(pin_name30),
+	.pin_name31(pin_name31),
+	.pin_name32(pin_name32),
+	.pin_name33(pin_name33),
+	.pin_name34(pin_name34),
+	.pin_name35(pin_name35),
+	.pin_name36(pin_name36),
+	.pin_name37(pin_name37),
+	.pin_name38(pin_name38),
+	.pin_name39(pin_name39),
+	.pin_name40(pin_name40),
+	.pin_name41(pin_name41),
+	.pin_name42(pin_name42),
+	.pin_name43(pin_name43),
+	.pin_name44(pin_name44),
+	.pin_name45(pin_name45),
+	.pin_name46(pin_name46),
+	.pin_name47(pin_name47),
+	.pin_name48(pin_name48),
+	.pin_name49(pin_name49),
+	.pin_name50(pin_name50),
+	.pin_name51(pin_name51),
+	.pin_name52(pin_name52),
+	.pin_name53(pin_name53),
+	.pin_name54(pin_name54),
+	.pin_name55(pin_name55),
+	.pin_name56(pin_name56),
+	.pin_name57(pin_name57),
+	.pin_name58(pin_name58),
+	.pin_name59(pin_name59),
+	.pin_name60(pin_name60),
+	.pin_name61(pin_name61),
+	.pin_name62(pin_name62),
+	.pin_name63(pin_name63),
+	.pin_name64(pin_name64),
+	.pin_name65(pin_name65),
+	.pin_name66(pin_name66),
+	.pin_name67(pin_name67),
+	.pin_name68(pin_name68),
+	.pin_name69(pin_name69),
+	.pin_name70(pin_name70),
+	.pin_name71(pin_name71),
+	.pin_name72(pin_name72),
+	.pin_name73(pin_name73),
+	.pin_name74(pin_name74),
+	.pin_name75(pin_name75),
+	.pin_name76(pin_name76),
+	.pin_name77(pin_name77),
+	.pin_name78(pin_name78),
+	.pin_name79(pin_name79),
+	.pin_name80(pin_name80),
+	.pin_name94(pin_name94),
+	.pin_name95(pin_name95),
+	.pin_name96(pin_name96),
+	.pin_name97(pin_name97),
+	.pin_name98(pin_name98),
+	.pin_name99(pin_name99),
+	.pin_name100(pin_name100),
+	.pin_name101(pin_name101),
+	.pin_name102(pin_name102),
+	.pin_name103(pin_name103),
+	.pin_name104(pin_name104),
+	.pin_name105(pin_name105),
+	.pin_name106(pin_name106),
+	.pin_name107(pin_name107),
+	.pin_name108(pin_name108),
+	.pin_name109(pin_name109),
+	.pin_name110(pin_name110),
+	.pin_name111(pin_name111),
+	.pin_name112(pin_name112),
+	.pin_name113(pin_name113),
+	.pin_name114(pin_name114),
+	.pin_name115(pin_name115),
+	.pin_name116(pin_name116),
+	.pin_name117(pin_name117),
+	.pin_name118(pin_name118),
+	.pin_name119(pin_name119),
+	.pin_name120(pin_name120),
+	.pin_name121(pin_name121),
+	.pin_name122(pin_name122),
+	.pin_name123(pin_name123),
+	.pin_name124(pin_name124),
+	.pin_name125(pin_name125),
+	.pin_name126(pin_name126),
+	.pin_name127(pin_name127),
+	.pin_name128(pin_name128),
+	.pin_name129(pin_name129),
+	.pin_name130(pin_name130),
+	.pin_name131(pin_name131),
+	.pin_name132(pin_name132),
+	.pin_name133(pin_name133),
+	.pin_name134(pin_name134),
+	.pin_name135(pin_name135),
+	.pin_name136(pin_name136),
+	.pin_name137(pin_name137),
+	.pin_name138(pin_name138),
+	.pin_name139(pin_name139),
+	.pin_name140(pin_name140),
+	.pin_name141(pin_name141),
+	.pin_name142(pin_name142),
+	.pin_name143(pin_name143),
+	.pin_name144(pin_name144),
+	.pin_name145(pin_name145),
+	.pin_name146(pin_name146),
+	.pin_name147(pin_name147),
+	.pin_name148(pin_name148),
+	.pin_name149(pin_name149),
+	.pin_name150(pin_name150),
+	.pin_name151(pin_name151),
+	.pin_name152(pin_name152),
+	.pin_name153(pin_name153),
+	.pin_name154(pin_name154),
+	.pin_name155(pin_name155),
+	.pin_name156(pin_name156),
+	.pin_name157(pin_name157),
+	.pin_name158(pin_name158),
+	.pin_name159(pin_name159),
+	.pin_name160(pin_name160),
+	.pin_name161(pin_name161),
+	.pin_name162(pin_name162),
+	.pin_name163(pin_name163),
+	.pin_name164(pin_name164),
+	.pin_name165(pin_name165),
+	.pin_name166(pin_name166),
+	.pin_name167(pin_name167),
+	.pin_name168(pin_name168),
+	.pin_name169(pin_name169),
+	.pin_name170(pin_name170),
+	.pin_name171(pin_name171),
+	.pin_name172(pin_name172),
+	.pin_name173(pin_name173),
+	.pin_name286(pin_name286),
+	.pin_name287(pin_name287),
+	.pin_name288(pin_name288),
+	.pin_name289(pin_name289),
+	.pin_name290(pin_name290)
+);
+
+// pin_name1
+initial
+begin
+	pin_name1 = 1'b0;
+end 
+
+// pin_name2
+initial
+begin
+	pin_name2 = 1'b0;
+end 
+
+// pin_name3
+initial
+begin
+	pin_name3 = 1'b0;
+end 
+
+// pin_name4
+initial
+begin
+	pin_name4 = 1'b0;
+end 
+
+// pin_name5
+initial
+begin
+	pin_name5 = 1'b0;
+end 
+
+// pin_name6
+initial
+begin
+	pin_name6 = 1'b0;
+end 
+
+// pin_name7
+initial
+begin
+	pin_name7 = 1'b0;
+end 
+
+// pin_name8
+initial
+begin
+	pin_name8 = 1'b0;
+end 
+
+// pin_name9
+initial
+begin
+	pin_name9 = 1'b0;
+end 
+
+// pin_name10
+initial
+begin
+	pin_name10 = 1'b0;
+end 
+
+// pin_name11
+initial
+begin
+	pin_name11 = 1'b0;
+end 
+
+// pin_name12
+initial
+begin
+	pin_name12 = 1'b0;
+end 
+
+// pin_name13
+initial
+begin
+	pin_name13 = 1'b0;
+end 
+
+// pin_name14
+initial
+begin
+	pin_name14 = 1'b0;
+end 
+
+// pin_name15
+initial
+begin
+	pin_name15 = 1'b0;
+end 
+
+// pin_name16
+initial
+begin
+	pin_name16 = 1'b0;
+end 
+
+// pin_name17
+initial
+begin
+	pin_name17 = 1'b0;
+end 
+
+// pin_name18
+initial
+begin
+	pin_name18 = 1'b0;
+end 
+
+// pin_name19
+initial
+begin
+	pin_name19 = 1'b0;
+end 
+
+// pin_name20
+initial
+begin
+	pin_name20 = 1'b0;
+end 
+
+// pin_name21
+initial
+begin
+	pin_name21 = 1'b0;
+end 
+
+// pin_name22
+initial
+begin
+	pin_name22 = 1'b0;
+end 
+
+// pin_name23
+initial
+begin
+	pin_name23 = 1'b0;
+end 
+
+// pin_name24
+initial
+begin
+	pin_name24 = 1'b0;
+end 
+
+// pin_name25
+initial
+begin
+	pin_name25 = 1'b0;
+end 
+
+// pin_name26
+initial
+begin
+	pin_name26 = 1'b0;
+end 
+
+// pin_name27
+initial
+begin
+	pin_name27 = 1'b0;
+end 
+
+// pin_name28
+initial
+begin
+	pin_name28 = 1'b0;
+end 
+
+// pin_name29
+initial
+begin
+	pin_name29 = 1'b0;
+end 
+
+// pin_name30
+initial
+begin
+	pin_name30 = 1'b0;
+end 
+
+// pin_name31
+initial
+begin
+	pin_name31 = 1'b0;
+end 
+
+// pin_name32
+initial
+begin
+	pin_name32 = 1'b0;
+end 
+
+// pin_name33
+initial
+begin
+	pin_name33 = 1'b0;
+end 
+
+// pin_name34
+initial
+begin
+	pin_name34 = 1'b0;
+end 
+
+// pin_name35
+initial
+begin
+	pin_name35 = 1'b0;
+end 
+
+// pin_name36
+initial
+begin
+	pin_name36 = 1'b0;
+end 
+
+// pin_name37
+initial
+begin
+	pin_name37 = 1'b0;
+end 
+
+// pin_name38
+initial
+begin
+	pin_name38 = 1'b0;
+end 
+
+// pin_name39
+initial
+begin
+	pin_name39 = 1'b0;
+end 
+
+// pin_name40
+initial
+begin
+	pin_name40 = 1'b0;
+end 
+
+// pin_name41
+initial
+begin
+	pin_name41 = 1'b0;
+end 
+
+// pin_name42
+initial
+begin
+	pin_name42 = 1'b0;
+end 
+
+// pin_name43
+initial
+begin
+	pin_name43 = 1'b0;
+end 
+
+// pin_name44
+initial
+begin
+	pin_name44 = 1'b0;
+end 
+
+// pin_name45
+initial
+begin
+	pin_name45 = 1'b0;
+end 
+
+// pin_name46
+initial
+begin
+	pin_name46 = 1'b0;
+end 
+
+// pin_name47
+initial
+begin
+	pin_name47 = 1'b0;
+end 
+
+// pin_name48
+initial
+begin
+	pin_name48 = 1'b0;
+end 
+
+// pin_name49
+initial
+begin
+	pin_name49 = 1'b0;
+end 
+
+// pin_name50
+initial
+begin
+	pin_name50 = 1'b0;
+end 
+
+// pin_name51
+initial
+begin
+	pin_name51 = 1'b0;
+end 
+
+// pin_name52
+initial
+begin
+	pin_name52 = 1'b0;
+end 
+
+// pin_name53
+initial
+begin
+	pin_name53 = 1'b0;
+end 
+
+// pin_name54
+initial
+begin
+	pin_name54 = 1'b0;
+end 
+
+// pin_name55
+initial
+begin
+	pin_name55 = 1'b0;
+end 
+
+// pin_name56
+initial
+begin
+	pin_name56 = 1'b0;
+end 
+
+// pin_name57
+initial
+begin
+	pin_name57 = 1'b0;
+end 
+
+// pin_name58
+initial
+begin
+	pin_name58 = 1'b0;
+end 
+
+// pin_name59
+initial
+begin
+	pin_name59 = 1'b0;
+end 
+
+// pin_name60
+initial
+begin
+	pin_name60 = 1'b0;
+end 
+
+// pin_name61
+initial
+begin
+	pin_name61 = 1'b0;
+end 
+
+// pin_name62
+initial
+begin
+	pin_name62 = 1'b0;
+end 
+
+// pin_name63
+initial
+begin
+	pin_name63 = 1'b0;
+end 
+
+// pin_name64
+initial
+begin
+	pin_name64 = 1'b0;
+end 
+
+// pin_name65
+initial
+begin
+	pin_name65 = 1'b0;
+end 
+
+// pin_name66
+initial
+begin
+	pin_name66 = 1'b0;
+end 
+
+// pin_name67
+initial
+begin
+	pin_name67 = 1'b0;
+end 
+
+// pin_name68
+initial
+begin
+	pin_name68 = 1'b0;
+end 
+
+// pin_name69
+initial
+begin
+	pin_name69 = 1'b0;
+end 
+
+// pin_name70
+initial
+begin
+	pin_name70 = 1'b0;
+end 
+
+// pin_name71
+initial
+begin
+	pin_name71 = 1'b0;
+end 
+
+// pin_name72
+initial
+begin
+	pin_name72 = 1'b0;
+end 
+
+// pin_name73
+initial
+begin
+	pin_name73 = 1'b0;
+end 
+
+// pin_name74
+initial
+begin
+	pin_name74 = 1'b0;
+end 
+
+// pin_name75
+initial
+begin
+	pin_name75 = 1'b0;
+end 
+
+// pin_name76
+initial
+begin
+	pin_name76 = 1'b0;
+end 
+
+// pin_name77
+initial
+begin
+	pin_name77 = 1'b0;
+end 
+
+// pin_name78
+initial
+begin
+	pin_name78 = 1'b0;
+end 
+
+// pin_name79
+initial
+begin
+	pin_name79 = 1'b0;
+end 
+
+// pin_name80
+initial
+begin
+	pin_name80 = 1'b1;
+	pin_name80 = #9999000 1'b0;
+end 
+
+// pin_name94
+initial
+begin
+	pin_name94 = 1'b0;
+end 
+
+// pin_name95
+initial
+begin
+	pin_name95 = 1'b0;
+end 
+
+// pin_name96
+initial
+begin
+	pin_name96 = 1'b0;
+end 
+
+// pin_name97
+initial
+begin
+	pin_name97 = 1'b0;
+end 
+
+// pin_name98
+initial
+begin
+	pin_name98 = 1'b0;
+end 
+
+// pin_name99
+initial
+begin
+	pin_name99 = 1'b0;
+end 
+
+// pin_name100
+initial
+begin
+	pin_name100 = 1'b0;
+end 
+
+// pin_name101
+initial
+begin
+	pin_name101 = 1'b0;
+end 
+
+// pin_name102
+initial
+begin
+	pin_name102 = 1'b0;
+end 
+
+// pin_name103
+initial
+begin
+	pin_name103 = 1'b0;
+end 
+
+// pin_name104
+initial
+begin
+	pin_name104 = 1'b0;
+end 
+
+// pin_name105
+initial
+begin
+	pin_name105 = 1'b0;
+end 
+
+// pin_name106
+initial
+begin
+	pin_name106 = 1'b0;
+end 
+
+// pin_name107
+initial
+begin
+	pin_name107 = 1'b0;
+end 
+
+// pin_name108
+initial
+begin
+	pin_name108 = 1'b0;
+end 
+
+// pin_name109
+initial
+begin
+	pin_name109 = 1'b0;
+end 
+
+// pin_name110
+initial
+begin
+	pin_name110 = 1'b0;
+end 
+
+// pin_name111
+initial
+begin
+	pin_name111 = 1'b0;
+end 
+
+// pin_name112
+initial
+begin
+	pin_name112 = 1'b0;
+end 
+
+// pin_name113
+initial
+begin
+	pin_name113 = 1'b0;
+end 
+
+// pin_name114
+initial
+begin
+	pin_name114 = 1'b0;
+end 
+
+// pin_name115
+initial
+begin
+	pin_name115 = 1'b0;
+end 
+
+// pin_name116
+initial
+begin
+	pin_name116 = 1'b0;
+end 
+
+// pin_name117
+initial
+begin
+	pin_name117 = 1'b0;
+end 
+
+// pin_name118
+initial
+begin
+	pin_name118 = 1'b0;
+end 
+
+// pin_name119
+initial
+begin
+	pin_name119 = 1'b0;
+end 
+
+// pin_name120
+initial
+begin
+	pin_name120 = 1'b0;
+end 
+
+// pin_name121
+initial
+begin
+	pin_name121 = 1'b0;
+end 
+
+// pin_name122
+initial
+begin
+	pin_name122 = 1'b0;
+end 
+
+// pin_name123
+initial
+begin
+	pin_name123 = 1'b0;
+end 
+
+// pin_name124
+initial
+begin
+	pin_name124 = 1'b0;
+end 
+
+// pin_name125
+initial
+begin
+	pin_name125 = 1'b0;
+end 
+
+// pin_name126
+initial
+begin
+	pin_name126 = 1'b0;
+end 
+
+// pin_name127
+initial
+begin
+	pin_name127 = 1'b0;
+end 
+
+// pin_name128
+initial
+begin
+	pin_name128 = 1'b0;
+end 
+
+// pin_name129
+initial
+begin
+	pin_name129 = 1'b0;
+end 
+
+// pin_name130
+initial
+begin
+	pin_name130 = 1'b0;
+end 
+
+// pin_name131
+initial
+begin
+	pin_name131 = 1'b0;
+end 
+
+// pin_name132
+initial
+begin
+	pin_name132 = 1'b0;
+end 
+
+// pin_name133
+initial
+begin
+	pin_name133 = 1'b0;
+end 
+
+// pin_name134
+initial
+begin
+	pin_name134 = 1'b0;
+end 
+
+// pin_name135
+initial
+begin
+	pin_name135 = 1'b0;
+end 
+
+// pin_name136
+initial
+begin
+	pin_name136 = 1'b0;
+end 
+
+// pin_name137
+initial
+begin
+	pin_name137 = 1'b0;
+end 
+
+// pin_name138
+initial
+begin
+	pin_name138 = 1'b0;
+end 
+
+// pin_name139
+initial
+begin
+	pin_name139 = 1'b0;
+end 
+
+// pin_name140
+initial
+begin
+	pin_name140 = 1'b0;
+end 
+
+// pin_name141
+initial
+begin
+	pin_name141 = 1'b0;
+end 
+
+// pin_name142
+initial
+begin
+	pin_name142 = 1'b0;
+end 
+
+// pin_name143
+initial
+begin
+	pin_name143 = 1'b0;
+end 
+
+// pin_name144
+initial
+begin
+	pin_name144 = 1'b0;
+end 
+
+// pin_name145
+initial
+begin
+	pin_name145 = 1'b0;
+end 
+
+// pin_name146
+initial
+begin
+	pin_name146 = 1'b0;
+end 
+
+// pin_name147
+initial
+begin
+	pin_name147 = 1'b0;
+end 
+
+// pin_name148
+initial
+begin
+	pin_name148 = 1'b0;
+end 
+
+// pin_name149
+initial
+begin
+	pin_name149 = 1'b0;
+end 
+
+// pin_name150
+initial
+begin
+	pin_name150 = 1'b0;
+end 
+
+// pin_name151
+initial
+begin
+	pin_name151 = 1'b0;
+end 
+
+// pin_name152
+initial
+begin
+	pin_name152 = 1'b0;
+end 
+
+// pin_name153
+initial
+begin
+	pin_name153 = 1'b0;
+end 
+
+// pin_name154
+initial
+begin
+	pin_name154 = 1'b0;
+end 
+
+// pin_name155
+initial
+begin
+	pin_name155 = 1'b0;
+end 
+
+// pin_name156
+initial
+begin
+	pin_name156 = 1'b0;
+end 
+
+// pin_name157
+initial
+begin
+	pin_name157 = 1'b0;
+end 
+
+// pin_name158
+initial
+begin
+	pin_name158 = 1'b0;
+end 
+
+// pin_name159
+initial
+begin
+	pin_name159 = 1'b0;
+end 
+
+// pin_name160
+initial
+begin
+	pin_name160 = 1'b0;
+end 
+
+// pin_name161
+initial
+begin
+	pin_name161 = 1'b0;
+end 
+
+// pin_name162
+initial
+begin
+	pin_name162 = 1'b0;
+end 
+
+// pin_name163
+initial
+begin
+	pin_name163 = 1'b0;
+end 
+
+// pin_name164
+initial
+begin
+	pin_name164 = 1'b0;
+end 
+
+// pin_name165
+initial
+begin
+	pin_name165 = 1'b0;
+end 
+
+// pin_name166
+initial
+begin
+	pin_name166 = 1'b0;
+end 
+
+// pin_name167
+initial
+begin
+	pin_name167 = 1'b0;
+end 
+
+// pin_name168
+initial
+begin
+	pin_name168 = 1'b0;
+end 
+
+// pin_name169
+initial
+begin
+	pin_name169 = 1'b0;
+end 
+
+// pin_name170
+initial
+begin
+	pin_name170 = 1'b0;
+end 
+
+// pin_name171
+initial
+begin
+	pin_name171 = 1'b0;
+end 
+
+// pin_name172
+initial
+begin
+	pin_name172 = 1'b0;
+end 
+
+// pin_name173
+initial
+begin
+	pin_name173 = 1'b0;
+end 
+
+// pin_name286
+initial
+begin
+	pin_name286 = 1'b1;
+	pin_name286 = #9999000 1'b0;
+end 
+
+// pin_name287
+initial
+begin
+	pin_name287 = 1'b1;
+	pin_name287 = #9999000 1'b0;
+end 
+
+// pin_name288
+initial
+begin
+	pin_name288 = 1'b1;
+	pin_name288 = #9999000 1'b0;
+end 
+
+// pin_name290
+always
+begin
+	pin_name290 = 1'b0;
+	pin_name290 = #5000 1'b1;
+	#5000;
+end 
+
+trivium1_vlg_sample_tst tb_sample (
+	.pin_name1(pin_name1),
+	.pin_name2(pin_name2),
+	.pin_name3(pin_name3),
+	.pin_name4(pin_name4),
+	.pin_name5(pin_name5),
+	.pin_name6(pin_name6),
+	.pin_name7(pin_name7),
+	.pin_name8(pin_name8),
+	.pin_name9(pin_name9),
+	.pin_name10(pin_name10),
+	.pin_name11(pin_name11),
+	.pin_name12(pin_name12),
+	.pin_name13(pin_name13),
+	.pin_name14(pin_name14),
+	.pin_name15(pin_name15),
+	.pin_name16(pin_name16),
+	.pin_name17(pin_name17),
+	.pin_name18(pin_name18),
+	.pin_name19(pin_name19),
+	.pin_name20(pin_name20),
+	.pin_name21(pin_name21),
+	.pin_name22(pin_name22),
+	.pin_name23(pin_name23),
+	.pin_name24(pin_name24),
+	.pin_name25(pin_name25),
+	.pin_name26(pin_name26),
+	.pin_name27(pin_name27),
+	.pin_name28(pin_name28),
+	.pin_name29(pin_name29),
+	.pin_name30(pin_name30),
+	.pin_name31(pin_name31),
+	.pin_name32(pin_name32),
+	.pin_name33(pin_name33),
+	.pin_name34(pin_name34),
+	.pin_name35(pin_name35),
+	.pin_name36(pin_name36),
+	.pin_name37(pin_name37),
+	.pin_name38(pin_name38),
+	.pin_name39(pin_name39),
+	.pin_name40(pin_name40),
+	.pin_name41(pin_name41),
+	.pin_name42(pin_name42),
+	.pin_name43(pin_name43),
+	.pin_name44(pin_name44),
+	.pin_name45(pin_name45),
+	.pin_name46(pin_name46),
+	.pin_name47(pin_name47),
+	.pin_name48(pin_name48),
+	.pin_name49(pin_name49),
+	.pin_name50(pin_name50),
+	.pin_name51(pin_name51),
+	.pin_name52(pin_name52),
+	.pin_name53(pin_name53),
+	.pin_name54(pin_name54),
+	.pin_name55(pin_name55),
+	.pin_name56(pin_name56),
+	.pin_name57(pin_name57),
+	.pin_name58(pin_name58),
+	.pin_name59(pin_name59),
+	.pin_name60(pin_name60),
+	.pin_name61(pin_name61),
+	.pin_name62(pin_name62),
+	.pin_name63(pin_name63),
+	.pin_name64(pin_name64),
+	.pin_name65(pin_name65),
+	.pin_name66(pin_name66),
+	.pin_name67(pin_name67),
+	.pin_name68(pin_name68),
+	.pin_name69(pin_name69),
+	.pin_name70(pin_name70),
+	.pin_name71(pin_name71),
+	.pin_name72(pin_name72),
+	.pin_name73(pin_name73),
+	.pin_name74(pin_name74),
+	.pin_name75(pin_name75),
+	.pin_name76(pin_name76),
+	.pin_name77(pin_name77),
+	.pin_name78(pin_name78),
+	.pin_name79(pin_name79),
+	.pin_name80(pin_name80),
+	.pin_name94(pin_name94),
+	.pin_name95(pin_name95),
+	.pin_name96(pin_name96),
+	.pin_name97(pin_name97),
+	.pin_name98(pin_name98),
+	.pin_name99(pin_name99),
+	.pin_name100(pin_name100),
+	.pin_name101(pin_name101),
+	.pin_name102(pin_name102),
+	.pin_name103(pin_name103),
+	.pin_name104(pin_name104),
+	.pin_name105(pin_name105),
+	.pin_name106(pin_name106),
+	.pin_name107(pin_name107),
+	.pin_name108(pin_name108),
+	.pin_name109(pin_name109),
+	.pin_name110(pin_name110),
+	.pin_name111(pin_name111),
+	.pin_name112(pin_name112),
+	.pin_name113(pin_name113),
+	.pin_name114(pin_name114),
+	.pin_name115(pin_name115),
+	.pin_name116(pin_name116),
+	.pin_name117(pin_name117),
+	.pin_name118(pin_name118),
+	.pin_name119(pin_name119),
+	.pin_name120(pin_name120),
+	.pin_name121(pin_name121),
+	.pin_name122(pin_name122),
+	.pin_name123(pin_name123),
+	.pin_name124(pin_name124),
+	.pin_name125(pin_name125),
+	.pin_name126(pin_name126),
+	.pin_name127(pin_name127),
+	.pin_name128(pin_name128),
+	.pin_name129(pin_name129),
+	.pin_name130(pin_name130),
+	.pin_name131(pin_name131),
+	.pin_name132(pin_name132),
+	.pin_name133(pin_name133),
+	.pin_name134(pin_name134),
+	.pin_name135(pin_name135),
+	.pin_name136(pin_name136),
+	.pin_name137(pin_name137),
+	.pin_name138(pin_name138),
+	.pin_name139(pin_name139),
+	.pin_name140(pin_name140),
+	.pin_name141(pin_name141),
+	.pin_name142(pin_name142),
+	.pin_name143(pin_name143),
+	.pin_name144(pin_name144),
+	.pin_name145(pin_name145),
+	.pin_name146(pin_name146),
+	.pin_name147(pin_name147),
+	.pin_name148(pin_name148),
+	.pin_name149(pin_name149),
+	.pin_name150(pin_name150),
+	.pin_name151(pin_name151),
+	.pin_name152(pin_name152),
+	.pin_name153(pin_name153),
+	.pin_name154(pin_name154),
+	.pin_name155(pin_name155),
+	.pin_name156(pin_name156),
+	.pin_name157(pin_name157),
+	.pin_name158(pin_name158),
+	.pin_name159(pin_name159),
+	.pin_name160(pin_name160),
+	.pin_name161(pin_name161),
+	.pin_name162(pin_name162),
+	.pin_name163(pin_name163),
+	.pin_name164(pin_name164),
+	.pin_name165(pin_name165),
+	.pin_name166(pin_name166),
+	.pin_name167(pin_name167),
+	.pin_name168(pin_name168),
+	.pin_name169(pin_name169),
+	.pin_name170(pin_name170),
+	.pin_name171(pin_name171),
+	.pin_name172(pin_name172),
+	.pin_name173(pin_name173),
+	.pin_name286(pin_name286),
+	.pin_name287(pin_name287),
+	.pin_name288(pin_name288),
+	.pin_name290(pin_name290),
+	.sampler_tx(sampler)
+);
+
+trivium1_vlg_check_tst tb_out(
+	.pin_name289(pin_name289),
+	.sampler_rx(sampler)
+);
+endmodule
+
