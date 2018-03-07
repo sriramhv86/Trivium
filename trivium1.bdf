@@ -1365,7 +1365,7 @@ agreement for further details.
 )
 (pin
 	(input)
-	(rect 7312 392 7328 560)
+	(rect 7312 360 7328 528)
 	(text "INPUT" (rect 6 125 16 153)(font "Arial" (font_size 6))(vertical))
 	(text "pin_name80" (rect 4 5 16 64)(font "Arial" )(vertical))
 	(pt 8 168)
@@ -2742,7 +2742,7 @@ agreement for further details.
 )
 (pin
 	(input)
-	(rect 9712 2520 9728 2688)
+	(rect 9712 2488 9728 2656)
 	(text "INPUT" (rect 6 125 16 153)(font "Arial" (font_size 6))(vertical))
 	(text "pin_name286" (rect 4 5 16 69)(font "Arial" )(vertical))
 	(pt 8 168)
@@ -2759,7 +2759,7 @@ agreement for further details.
 )
 (pin
 	(input)
-	(rect 9792 2520 9808 2688)
+	(rect 9792 2488 9808 2656)
 	(text "INPUT" (rect 6 125 16 153)(font "Arial" (font_size 6))(vertical))
 	(text "pin_name287" (rect 4 5 16 69)(font "Arial" )(vertical))
 	(pt 8 168)
@@ -2776,7 +2776,7 @@ agreement for further details.
 )
 (pin
 	(input)
-	(rect 9872 2520 9888 2688)
+	(rect 9872 2480 9888 2648)
 	(text "INPUT" (rect 6 125 16 153)(font "Arial" (font_size 6))(vertical))
 	(text "pin_name288" (rect 4 5 16 69)(font "Arial" )(vertical))
 	(pt 8 168)
@@ -2795,7 +2795,7 @@ agreement for further details.
 	(input)
 	(rect 624 752 792 768)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "clock" (rect 5 0 31 12)(font "Arial" ))
+	(text "clock" (rect 5 0 30 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -2812,6 +2812,73 @@ agreement for further details.
 	(rect 10808 1296 10984 1312)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "outputpin" (rect 90 0 134 12)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+)
+(pin
+	(output)
+	(rect 7408 1728 7424 1904)
+	(text "OUTPUT" (rect 0 137 10 175)(font "Arial" (font_size 6))(vertical))
+	(text "ivout" (rect 0 5 12 29)(font "Arial" )(vertical))
+	(pt 8 176)
+	(drawing
+		(line (pt 8 176)(pt 8 124))
+		(line (pt 4 124)(pt 4 98))
+		(line (pt 12 124)(pt 12 98))
+		(line (pt 12 124)(pt 4 124))
+		(line (pt 4 98)(pt 8 94))
+		(line (pt 8 94)(pt 12 98))
+		(line (pt 12 98)(pt 8 94))
+	)
+	(rotate90)
+)
+(pin
+	(output)
+	(rect 7352 392 7368 568)
+	(text "OUTPUT" (rect 0 137 10 175)(font "Arial" (font_size 6))(vertical))
+	(text "output80" (rect 0 5 12 48)(font "Arial" )(vertical))
+	(pt 8 176)
+	(drawing
+		(line (pt 8 176)(pt 8 124))
+		(line (pt 4 124)(pt 4 98))
+		(line (pt 12 124)(pt 12 98))
+		(line (pt 12 124)(pt 4 124))
+		(line (pt 4 98)(pt 8 94))
+		(line (pt 8 94)(pt 12 98))
+		(line (pt 12 98)(pt 8 94))
+	)
+	(rotate90)
+)
+(pin
+	(output)
+	(rect 7432 416 7448 592)
+	(text "OUTPUT" (rect 0 137 10 175)(font "Arial" (font_size 6))(vertical))
+	(text "output81" (rect 0 5 12 48)(font "Arial" )(vertical))
+	(pt 8 176)
+	(drawing
+		(line (pt 8 176)(pt 8 124))
+		(line (pt 4 124)(pt 4 98))
+		(line (pt 12 124)(pt 12 98))
+		(line (pt 12 124)(pt 4 124))
+		(line (pt 4 98)(pt 8 94))
+		(line (pt 8 94)(pt 12 98))
+		(line (pt 12 98)(pt 8 94))
+	)
+	(rotate90)
+)
+(pin
+	(output)
+	(rect 9984 2952 10160 2968)
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
+	(text "andop" (rect 90 0 119 12)(font "Arial" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8))
@@ -17580,17 +17647,87 @@ agreement for further details.
 	)
 	(rotate270)
 )
-(connector
-	(pt 1000 592)
-	(pt 1000 560)
+(symbol
+	(rect 9704 2664 9736 2712)
+	(text "NOT" (rect 22 1 32 21)(font "Arial" (font_size 6))(vertical))
+	(text "inst290" (rect -1 3 11 38)(font "Arial" )(vertical))
+	(port
+		(pt 16 0)
+		(input)
+		(text "IN" (rect 2 7 13 19)(font "Courier New" (bold))(invisible))
+		(text "IN" (rect 13 2 25 13)(font "Courier New" (bold))(vertical)(invisible))
+		(line (pt 16 0)(pt 16 13))
+	)
+	(port
+		(pt 16 48)
+		(output)
+		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 13 32 25 49)(font "Courier New" (bold))(vertical)(invisible))
+		(line (pt 16 39)(pt 16 48))
+	)
+	(drawing
+		(line (pt 7 13)(pt 25 13))
+		(line (pt 25 13)(pt 16 31))
+		(line (pt 7 13)(pt 16 31))
+		(circle (rect 12 31 20 39))
+	)
+	(rotate270)
+)
+(symbol
+	(rect 9784 2664 9816 2712)
+	(text "NOT" (rect 22 1 32 21)(font "Arial" (font_size 6))(vertical))
+	(text "inst292" (rect -1 3 11 38)(font "Arial" )(vertical))
+	(port
+		(pt 16 0)
+		(input)
+		(text "IN" (rect 2 7 13 19)(font "Courier New" (bold))(invisible))
+		(text "IN" (rect 13 2 25 13)(font "Courier New" (bold))(vertical)(invisible))
+		(line (pt 16 0)(pt 16 13))
+	)
+	(port
+		(pt 16 48)
+		(output)
+		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 13 32 25 49)(font "Courier New" (bold))(vertical)(invisible))
+		(line (pt 16 39)(pt 16 48))
+	)
+	(drawing
+		(line (pt 7 13)(pt 25 13))
+		(line (pt 25 13)(pt 16 31))
+		(line (pt 7 13)(pt 16 31))
+		(circle (rect 12 31 20 39))
+	)
+	(rotate270)
+)
+(symbol
+	(rect 9864 2664 9896 2712)
+	(text "NOT" (rect 22 1 32 21)(font "Arial" (font_size 6))(vertical))
+	(text "inst293" (rect -1 3 11 38)(font "Arial" )(vertical))
+	(port
+		(pt 16 0)
+		(input)
+		(text "IN" (rect 2 7 13 19)(font "Courier New" (bold))(invisible))
+		(text "IN" (rect 13 2 25 13)(font "Courier New" (bold))(vertical)(invisible))
+		(line (pt 16 0)(pt 16 13))
+	)
+	(port
+		(pt 16 48)
+		(output)
+		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 13 32 25 49)(font "Courier New" (bold))(vertical)(invisible))
+		(line (pt 16 39)(pt 16 48))
+	)
+	(drawing
+		(line (pt 7 13)(pt 25 13))
+		(line (pt 25 13)(pt 16 31))
+		(line (pt 7 13)(pt 16 31))
+		(circle (rect 12 31 20 39))
+	)
+	(rotate270)
 )
 (connector
 	(pt 968 632)
 	(pt 960 632)
-)
-(connector
-	(pt 1080 560)
-	(pt 1080 592)
 )
 (connector
 	(pt 1032 616)
@@ -17605,10 +17742,6 @@ agreement for further details.
 	(pt 1040 632)
 )
 (connector
-	(pt 1160 592)
-	(pt 1160 560)
-)
-(connector
 	(pt 1128 616)
 	(pt 1112 616)
 )
@@ -17619,10 +17752,6 @@ agreement for further details.
 (connector
 	(pt 1120 632)
 	(pt 1120 688)
-)
-(connector
-	(pt 1240 560)
-	(pt 1240 592)
 )
 (connector
 	(pt 1192 616)
@@ -17637,10 +17766,6 @@ agreement for further details.
 	(pt 1200 632)
 )
 (connector
-	(pt 1320 592)
-	(pt 1320 560)
-)
-(connector
 	(pt 1288 616)
 	(pt 1272 616)
 )
@@ -17651,10 +17776,6 @@ agreement for further details.
 (connector
 	(pt 1280 632)
 	(pt 1280 688)
-)
-(connector
-	(pt 1400 560)
-	(pt 1400 592)
 )
 (connector
 	(pt 1352 616)
@@ -17669,10 +17790,6 @@ agreement for further details.
 	(pt 1360 632)
 )
 (connector
-	(pt 1480 592)
-	(pt 1480 560)
-)
-(connector
 	(pt 1448 616)
 	(pt 1432 616)
 )
@@ -17683,10 +17800,6 @@ agreement for further details.
 (connector
 	(pt 1440 632)
 	(pt 1440 688)
-)
-(connector
-	(pt 1560 560)
-	(pt 1560 592)
 )
 (connector
 	(pt 1512 616)
@@ -17701,10 +17814,6 @@ agreement for further details.
 	(pt 1520 632)
 )
 (connector
-	(pt 1640 592)
-	(pt 1640 560)
-)
-(connector
 	(pt 1608 616)
 	(pt 1592 616)
 )
@@ -17715,10 +17824,6 @@ agreement for further details.
 (connector
 	(pt 1600 632)
 	(pt 1600 688)
-)
-(connector
-	(pt 1720 560)
-	(pt 1720 592)
 )
 (connector
 	(pt 1672 616)
@@ -17733,10 +17838,6 @@ agreement for further details.
 	(pt 1680 632)
 )
 (connector
-	(pt 1800 592)
-	(pt 1800 560)
-)
-(connector
 	(pt 1768 616)
 	(pt 1752 616)
 )
@@ -17747,10 +17848,6 @@ agreement for further details.
 (connector
 	(pt 1760 632)
 	(pt 1760 688)
-)
-(connector
-	(pt 1880 560)
-	(pt 1880 592)
 )
 (connector
 	(pt 1832 616)
@@ -17765,10 +17862,6 @@ agreement for further details.
 	(pt 1840 632)
 )
 (connector
-	(pt 1960 592)
-	(pt 1960 560)
-)
-(connector
 	(pt 1928 616)
 	(pt 1912 616)
 )
@@ -17779,10 +17872,6 @@ agreement for further details.
 (connector
 	(pt 1920 632)
 	(pt 1920 688)
-)
-(connector
-	(pt 2040 560)
-	(pt 2040 592)
 )
 (connector
 	(pt 1992 616)
@@ -17797,10 +17886,6 @@ agreement for further details.
 	(pt 2000 632)
 )
 (connector
-	(pt 2120 592)
-	(pt 2120 560)
-)
-(connector
 	(pt 2088 616)
 	(pt 2072 616)
 )
@@ -17811,10 +17896,6 @@ agreement for further details.
 (connector
 	(pt 2080 632)
 	(pt 2080 688)
-)
-(connector
-	(pt 2200 560)
-	(pt 2200 592)
 )
 (connector
 	(pt 2152 616)
@@ -17829,10 +17910,6 @@ agreement for further details.
 	(pt 2160 632)
 )
 (connector
-	(pt 2280 592)
-	(pt 2280 560)
-)
-(connector
 	(pt 2248 616)
 	(pt 2232 616)
 )
@@ -17843,10 +17920,6 @@ agreement for further details.
 (connector
 	(pt 2240 632)
 	(pt 2240 688)
-)
-(connector
-	(pt 2360 560)
-	(pt 2360 592)
 )
 (connector
 	(pt 2312 616)
@@ -17861,10 +17934,6 @@ agreement for further details.
 	(pt 2320 632)
 )
 (connector
-	(pt 2440 592)
-	(pt 2440 560)
-)
-(connector
 	(pt 2408 616)
 	(pt 2392 616)
 )
@@ -17875,10 +17944,6 @@ agreement for further details.
 (connector
 	(pt 2400 632)
 	(pt 2400 688)
-)
-(connector
-	(pt 2520 560)
-	(pt 2520 592)
 )
 (connector
 	(pt 2472 616)
@@ -17893,10 +17958,6 @@ agreement for further details.
 	(pt 2480 632)
 )
 (connector
-	(pt 2600 592)
-	(pt 2600 560)
-)
-(connector
 	(pt 2568 616)
 	(pt 2552 616)
 )
@@ -17907,10 +17968,6 @@ agreement for further details.
 (connector
 	(pt 2560 632)
 	(pt 2560 688)
-)
-(connector
-	(pt 2680 560)
-	(pt 2680 592)
 )
 (connector
 	(pt 2632 616)
@@ -17925,10 +17982,6 @@ agreement for further details.
 	(pt 2640 632)
 )
 (connector
-	(pt 2760 592)
-	(pt 2760 560)
-)
-(connector
 	(pt 2728 616)
 	(pt 2712 616)
 )
@@ -17939,10 +17992,6 @@ agreement for further details.
 (connector
 	(pt 2720 632)
 	(pt 2720 688)
-)
-(connector
-	(pt 2840 560)
-	(pt 2840 592)
 )
 (connector
 	(pt 2792 616)
@@ -17957,10 +18006,6 @@ agreement for further details.
 	(pt 2800 632)
 )
 (connector
-	(pt 2920 592)
-	(pt 2920 560)
-)
-(connector
 	(pt 2888 616)
 	(pt 2872 616)
 )
@@ -17971,10 +18016,6 @@ agreement for further details.
 (connector
 	(pt 2880 632)
 	(pt 2880 688)
-)
-(connector
-	(pt 3000 560)
-	(pt 3000 592)
 )
 (connector
 	(pt 2952 616)
@@ -17989,10 +18030,6 @@ agreement for further details.
 	(pt 2960 632)
 )
 (connector
-	(pt 3080 592)
-	(pt 3080 560)
-)
-(connector
 	(pt 3048 616)
 	(pt 3032 616)
 )
@@ -18003,10 +18040,6 @@ agreement for further details.
 (connector
 	(pt 3040 632)
 	(pt 3040 688)
-)
-(connector
-	(pt 3160 560)
-	(pt 3160 592)
 )
 (connector
 	(pt 3112 616)
@@ -18021,10 +18054,6 @@ agreement for further details.
 	(pt 3120 632)
 )
 (connector
-	(pt 3240 592)
-	(pt 3240 560)
-)
-(connector
 	(pt 3208 616)
 	(pt 3192 616)
 )
@@ -18035,10 +18064,6 @@ agreement for further details.
 (connector
 	(pt 3200 632)
 	(pt 3200 688)
-)
-(connector
-	(pt 3320 560)
-	(pt 3320 592)
 )
 (connector
 	(pt 3272 616)
@@ -18053,10 +18078,6 @@ agreement for further details.
 	(pt 3280 632)
 )
 (connector
-	(pt 3400 592)
-	(pt 3400 560)
-)
-(connector
 	(pt 3368 616)
 	(pt 3352 616)
 )
@@ -18067,10 +18088,6 @@ agreement for further details.
 (connector
 	(pt 3360 632)
 	(pt 3360 688)
-)
-(connector
-	(pt 3480 560)
-	(pt 3480 592)
 )
 (connector
 	(pt 3432 616)
@@ -18085,10 +18102,6 @@ agreement for further details.
 	(pt 3440 632)
 )
 (connector
-	(pt 3560 592)
-	(pt 3560 560)
-)
-(connector
 	(pt 3528 616)
 	(pt 3512 616)
 )
@@ -18101,20 +18114,12 @@ agreement for further details.
 	(pt 3520 688)
 )
 (connector
-	(pt 3640 560)
-	(pt 3640 592)
-)
-(connector
 	(pt 3592 616)
 	(pt 3608 616)
 )
 (connector
 	(pt 3600 632)
 	(pt 3608 632)
-)
-(connector
-	(pt 3720 592)
-	(pt 3720 560)
 )
 (connector
 	(pt 3688 616)
@@ -18125,20 +18130,12 @@ agreement for further details.
 	(pt 3680 632)
 )
 (connector
-	(pt 3800 560)
-	(pt 3800 592)
-)
-(connector
 	(pt 3752 616)
 	(pt 3768 616)
 )
 (connector
 	(pt 3760 632)
 	(pt 3768 632)
-)
-(connector
-	(pt 3880 592)
-	(pt 3880 560)
 )
 (connector
 	(pt 3848 616)
@@ -18149,20 +18146,12 @@ agreement for further details.
 	(pt 3840 632)
 )
 (connector
-	(pt 3960 560)
-	(pt 3960 592)
-)
-(connector
 	(pt 3912 616)
 	(pt 3928 616)
 )
 (connector
 	(pt 3920 632)
 	(pt 3928 632)
-)
-(connector
-	(pt 4040 592)
-	(pt 4040 560)
 )
 (connector
 	(pt 4008 616)
@@ -18173,20 +18162,12 @@ agreement for further details.
 	(pt 4000 632)
 )
 (connector
-	(pt 4120 560)
-	(pt 4120 592)
-)
-(connector
 	(pt 4072 616)
 	(pt 4088 616)
 )
 (connector
 	(pt 4080 632)
 	(pt 4088 632)
-)
-(connector
-	(pt 4200 592)
-	(pt 4200 560)
 )
 (connector
 	(pt 4168 616)
@@ -18197,20 +18178,12 @@ agreement for further details.
 	(pt 4160 632)
 )
 (connector
-	(pt 4280 560)
-	(pt 4280 592)
-)
-(connector
 	(pt 4232 616)
 	(pt 4248 616)
 )
 (connector
 	(pt 4240 632)
 	(pt 4248 632)
-)
-(connector
-	(pt 4360 592)
-	(pt 4360 560)
 )
 (connector
 	(pt 4328 616)
@@ -18221,20 +18194,12 @@ agreement for further details.
 	(pt 4320 632)
 )
 (connector
-	(pt 4440 560)
-	(pt 4440 592)
-)
-(connector
 	(pt 4392 616)
 	(pt 4408 616)
 )
 (connector
 	(pt 4400 632)
 	(pt 4408 632)
-)
-(connector
-	(pt 4520 592)
-	(pt 4520 560)
 )
 (connector
 	(pt 4488 616)
@@ -18245,20 +18210,12 @@ agreement for further details.
 	(pt 4480 632)
 )
 (connector
-	(pt 4600 560)
-	(pt 4600 592)
-)
-(connector
 	(pt 4552 616)
 	(pt 4568 616)
 )
 (connector
 	(pt 4560 632)
 	(pt 4568 632)
-)
-(connector
-	(pt 4680 592)
-	(pt 4680 560)
 )
 (connector
 	(pt 4648 616)
@@ -18269,20 +18226,12 @@ agreement for further details.
 	(pt 4640 632)
 )
 (connector
-	(pt 4760 560)
-	(pt 4760 592)
-)
-(connector
 	(pt 4712 616)
 	(pt 4728 616)
 )
 (connector
 	(pt 4720 632)
 	(pt 4728 632)
-)
-(connector
-	(pt 4840 592)
-	(pt 4840 560)
 )
 (connector
 	(pt 4808 616)
@@ -18293,20 +18242,12 @@ agreement for further details.
 	(pt 4800 632)
 )
 (connector
-	(pt 4920 560)
-	(pt 4920 592)
-)
-(connector
 	(pt 4872 616)
 	(pt 4888 616)
 )
 (connector
 	(pt 4880 632)
 	(pt 4888 632)
-)
-(connector
-	(pt 5000 592)
-	(pt 5000 560)
 )
 (connector
 	(pt 4968 616)
@@ -18317,20 +18258,12 @@ agreement for further details.
 	(pt 4960 632)
 )
 (connector
-	(pt 5080 560)
-	(pt 5080 592)
-)
-(connector
 	(pt 5032 616)
 	(pt 5048 616)
 )
 (connector
 	(pt 5040 632)
 	(pt 5048 632)
-)
-(connector
-	(pt 5160 592)
-	(pt 5160 560)
 )
 (connector
 	(pt 5128 616)
@@ -18341,20 +18274,12 @@ agreement for further details.
 	(pt 5120 632)
 )
 (connector
-	(pt 5240 560)
-	(pt 5240 592)
-)
-(connector
 	(pt 5192 616)
 	(pt 5208 616)
 )
 (connector
 	(pt 5200 632)
 	(pt 5208 632)
-)
-(connector
-	(pt 5320 592)
-	(pt 5320 560)
 )
 (connector
 	(pt 5288 616)
@@ -18365,20 +18290,12 @@ agreement for further details.
 	(pt 5280 632)
 )
 (connector
-	(pt 5400 560)
-	(pt 5400 592)
-)
-(connector
 	(pt 5352 616)
 	(pt 5368 616)
 )
 (connector
 	(pt 5360 632)
 	(pt 5368 632)
-)
-(connector
-	(pt 5480 592)
-	(pt 5480 560)
 )
 (connector
 	(pt 5448 616)
@@ -18389,20 +18306,12 @@ agreement for further details.
 	(pt 5440 632)
 )
 (connector
-	(pt 5560 560)
-	(pt 5560 592)
-)
-(connector
 	(pt 5512 616)
 	(pt 5528 616)
 )
 (connector
 	(pt 5520 632)
 	(pt 5528 632)
-)
-(connector
-	(pt 5640 592)
-	(pt 5640 560)
 )
 (connector
 	(pt 5608 616)
@@ -18413,20 +18322,12 @@ agreement for further details.
 	(pt 5600 632)
 )
 (connector
-	(pt 5720 560)
-	(pt 5720 592)
-)
-(connector
 	(pt 5672 616)
 	(pt 5688 616)
 )
 (connector
 	(pt 5680 632)
 	(pt 5688 632)
-)
-(connector
-	(pt 5800 592)
-	(pt 5800 560)
 )
 (connector
 	(pt 5768 616)
@@ -18437,10 +18338,6 @@ agreement for further details.
 	(pt 5760 632)
 )
 (connector
-	(pt 5880 560)
-	(pt 5880 592)
-)
-(connector
 	(pt 5832 616)
 	(pt 5848 616)
 )
@@ -18449,20 +18346,12 @@ agreement for further details.
 	(pt 5848 632)
 )
 (connector
-	(pt 5960 592)
-	(pt 5960 560)
-)
-(connector
 	(pt 5928 616)
 	(pt 5912 616)
 )
 (connector
 	(pt 5928 632)
 	(pt 5920 632)
-)
-(connector
-	(pt 6040 560)
-	(pt 6040 592)
 )
 (connector
 	(pt 5992 616)
@@ -18597,10 +18486,6 @@ agreement for further details.
 	(pt 6000 688)
 )
 (connector
-	(pt 6120 592)
-	(pt 6120 560)
-)
-(connector
 	(pt 6088 616)
 	(pt 6072 616)
 )
@@ -18611,10 +18496,6 @@ agreement for further details.
 (connector
 	(pt 6080 632)
 	(pt 6080 688)
-)
-(connector
-	(pt 6200 560)
-	(pt 6200 592)
 )
 (connector
 	(pt 6152 616)
@@ -18629,16 +18510,8 @@ agreement for further details.
 	(pt 6160 632)
 )
 (connector
-	(pt 6280 592)
-	(pt 6280 560)
-)
-(connector
 	(pt 6248 632)
 	(pt 6240 632)
-)
-(connector
-	(pt 6360 560)
-	(pt 6360 592)
 )
 (connector
 	(pt 6312 616)
@@ -18653,20 +18526,12 @@ agreement for further details.
 	(pt 6488 632)
 )
 (connector
-	(pt 6600 592)
-	(pt 6600 560)
-)
-(connector
 	(pt 6568 616)
 	(pt 6552 616)
 )
 (connector
 	(pt 6568 632)
 	(pt 6560 632)
-)
-(connector
-	(pt 6680 560)
-	(pt 6680 592)
 )
 (connector
 	(pt 6632 616)
@@ -18677,20 +18542,12 @@ agreement for further details.
 	(pt 6648 632)
 )
 (connector
-	(pt 6760 592)
-	(pt 6760 560)
-)
-(connector
 	(pt 6728 616)
 	(pt 6712 616)
 )
 (connector
 	(pt 6728 632)
 	(pt 6720 632)
-)
-(connector
-	(pt 6840 560)
-	(pt 6840 592)
 )
 (connector
 	(pt 6792 616)
@@ -18701,20 +18558,12 @@ agreement for further details.
 	(pt 6808 632)
 )
 (connector
-	(pt 6920 592)
-	(pt 6920 560)
-)
-(connector
 	(pt 6888 616)
 	(pt 6872 616)
 )
 (connector
 	(pt 6888 632)
 	(pt 6880 632)
-)
-(connector
-	(pt 7000 560)
-	(pt 7000 592)
 )
 (connector
 	(pt 6952 616)
@@ -18725,20 +18574,12 @@ agreement for further details.
 	(pt 6968 632)
 )
 (connector
-	(pt 7080 592)
-	(pt 7080 560)
-)
-(connector
 	(pt 7048 616)
 	(pt 7032 616)
 )
 (connector
 	(pt 7048 632)
 	(pt 7040 632)
-)
-(connector
-	(pt 7160 560)
-	(pt 7160 592)
 )
 (connector
 	(pt 7112 616)
@@ -18749,20 +18590,12 @@ agreement for further details.
 	(pt 7128 632)
 )
 (connector
-	(pt 7240 592)
-	(pt 7240 560)
-)
-(connector
 	(pt 7208 616)
 	(pt 7192 616)
 )
 (connector
 	(pt 7208 632)
 	(pt 7200 632)
-)
-(connector
-	(pt 7320 560)
-	(pt 7320 592)
 )
 (connector
 	(pt 7272 616)
@@ -18773,16 +18606,8 @@ agreement for further details.
 	(pt 7288 632)
 )
 (connector
-	(pt 7368 616)
-	(pt 7352 616)
-)
-(connector
 	(pt 7368 632)
 	(pt 7360 632)
-)
-(connector
-	(pt 7432 616)
-	(pt 7448 616)
 )
 (connector
 	(pt 7440 632)
@@ -18969,16 +18794,8 @@ agreement for further details.
 	(pt 8240 688)
 )
 (connector
-	(pt 1056 1904)
-	(pt 1056 1936)
-)
-(connector
 	(pt 1016 1976)
 	(pt 1024 1976)
-)
-(connector
-	(pt 1136 1936)
-	(pt 1136 1904)
 )
 (connector
 	(pt 1104 1960)
@@ -18989,20 +18806,12 @@ agreement for further details.
 	(pt 1096 1976)
 )
 (connector
-	(pt 1216 1904)
-	(pt 1216 1936)
-)
-(connector
 	(pt 1168 1960)
 	(pt 1184 1960)
 )
 (connector
 	(pt 1176 1976)
 	(pt 1184 1976)
-)
-(connector
-	(pt 1296 1936)
-	(pt 1296 1904)
 )
 (connector
 	(pt 1264 1960)
@@ -19013,20 +18822,12 @@ agreement for further details.
 	(pt 1256 1976)
 )
 (connector
-	(pt 1376 1904)
-	(pt 1376 1936)
-)
-(connector
 	(pt 1328 1960)
 	(pt 1344 1960)
 )
 (connector
 	(pt 1336 1976)
 	(pt 1344 1976)
-)
-(connector
-	(pt 1456 1936)
-	(pt 1456 1904)
 )
 (connector
 	(pt 1424 1960)
@@ -19037,20 +18838,12 @@ agreement for further details.
 	(pt 1416 1976)
 )
 (connector
-	(pt 1536 1904)
-	(pt 1536 1936)
-)
-(connector
 	(pt 1488 1960)
 	(pt 1504 1960)
 )
 (connector
 	(pt 1496 1976)
 	(pt 1504 1976)
-)
-(connector
-	(pt 1616 1936)
-	(pt 1616 1904)
 )
 (connector
 	(pt 1584 1960)
@@ -19061,20 +18854,12 @@ agreement for further details.
 	(pt 1576 1976)
 )
 (connector
-	(pt 1696 1904)
-	(pt 1696 1936)
-)
-(connector
 	(pt 1648 1960)
 	(pt 1664 1960)
 )
 (connector
 	(pt 1656 1976)
 	(pt 1664 1976)
-)
-(connector
-	(pt 1776 1936)
-	(pt 1776 1904)
 )
 (connector
 	(pt 1744 1960)
@@ -19085,20 +18870,12 @@ agreement for further details.
 	(pt 1736 1976)
 )
 (connector
-	(pt 1856 1904)
-	(pt 1856 1936)
-)
-(connector
 	(pt 1808 1960)
 	(pt 1824 1960)
 )
 (connector
 	(pt 1816 1976)
 	(pt 1824 1976)
-)
-(connector
-	(pt 1936 1936)
-	(pt 1936 1904)
 )
 (connector
 	(pt 1904 1960)
@@ -19109,20 +18886,12 @@ agreement for further details.
 	(pt 1896 1976)
 )
 (connector
-	(pt 2016 1904)
-	(pt 2016 1936)
-)
-(connector
 	(pt 1968 1960)
 	(pt 1984 1960)
 )
 (connector
 	(pt 1976 1976)
 	(pt 1984 1976)
-)
-(connector
-	(pt 2096 1936)
-	(pt 2096 1904)
 )
 (connector
 	(pt 2064 1960)
@@ -19133,20 +18902,12 @@ agreement for further details.
 	(pt 2056 1976)
 )
 (connector
-	(pt 2176 1904)
-	(pt 2176 1936)
-)
-(connector
 	(pt 2128 1960)
 	(pt 2144 1960)
 )
 (connector
 	(pt 2136 1976)
 	(pt 2144 1976)
-)
-(connector
-	(pt 2256 1936)
-	(pt 2256 1904)
 )
 (connector
 	(pt 2224 1960)
@@ -19157,20 +18918,12 @@ agreement for further details.
 	(pt 2216 1976)
 )
 (connector
-	(pt 2336 1904)
-	(pt 2336 1936)
-)
-(connector
 	(pt 2288 1960)
 	(pt 2304 1960)
 )
 (connector
 	(pt 2296 1976)
 	(pt 2304 1976)
-)
-(connector
-	(pt 2416 1936)
-	(pt 2416 1904)
 )
 (connector
 	(pt 2384 1960)
@@ -19181,20 +18934,12 @@ agreement for further details.
 	(pt 2376 1976)
 )
 (connector
-	(pt 2496 1904)
-	(pt 2496 1936)
-)
-(connector
 	(pt 2448 1960)
 	(pt 2464 1960)
 )
 (connector
 	(pt 2456 1976)
 	(pt 2464 1976)
-)
-(connector
-	(pt 2576 1936)
-	(pt 2576 1904)
 )
 (connector
 	(pt 2544 1960)
@@ -19205,20 +18950,12 @@ agreement for further details.
 	(pt 2536 1976)
 )
 (connector
-	(pt 2656 1904)
-	(pt 2656 1936)
-)
-(connector
 	(pt 2608 1960)
 	(pt 2624 1960)
 )
 (connector
 	(pt 2616 1976)
 	(pt 2624 1976)
-)
-(connector
-	(pt 2736 1936)
-	(pt 2736 1904)
 )
 (connector
 	(pt 2704 1960)
@@ -19229,20 +18966,12 @@ agreement for further details.
 	(pt 2696 1976)
 )
 (connector
-	(pt 2816 1904)
-	(pt 2816 1936)
-)
-(connector
 	(pt 2768 1960)
 	(pt 2784 1960)
 )
 (connector
 	(pt 2776 1976)
 	(pt 2784 1976)
-)
-(connector
-	(pt 2896 1936)
-	(pt 2896 1904)
 )
 (connector
 	(pt 2864 1960)
@@ -19253,20 +18982,12 @@ agreement for further details.
 	(pt 2856 1976)
 )
 (connector
-	(pt 2976 1904)
-	(pt 2976 1936)
-)
-(connector
 	(pt 2928 1960)
 	(pt 2944 1960)
 )
 (connector
 	(pt 2936 1976)
 	(pt 2944 1976)
-)
-(connector
-	(pt 3056 1936)
-	(pt 3056 1904)
 )
 (connector
 	(pt 3024 1960)
@@ -19277,20 +18998,12 @@ agreement for further details.
 	(pt 3016 1976)
 )
 (connector
-	(pt 3136 1904)
-	(pt 3136 1936)
-)
-(connector
 	(pt 3088 1960)
 	(pt 3104 1960)
 )
 (connector
 	(pt 3096 1976)
 	(pt 3104 1976)
-)
-(connector
-	(pt 3216 1936)
-	(pt 3216 1904)
 )
 (connector
 	(pt 3184 1960)
@@ -19301,20 +19014,12 @@ agreement for further details.
 	(pt 3176 1976)
 )
 (connector
-	(pt 3296 1904)
-	(pt 3296 1936)
-)
-(connector
 	(pt 3248 1960)
 	(pt 3264 1960)
 )
 (connector
 	(pt 3256 1976)
 	(pt 3264 1976)
-)
-(connector
-	(pt 3376 1936)
-	(pt 3376 1904)
 )
 (connector
 	(pt 3344 1960)
@@ -19325,20 +19030,12 @@ agreement for further details.
 	(pt 3336 1976)
 )
 (connector
-	(pt 3456 1904)
-	(pt 3456 1936)
-)
-(connector
 	(pt 3408 1960)
 	(pt 3424 1960)
 )
 (connector
 	(pt 3416 1976)
 	(pt 3424 1976)
-)
-(connector
-	(pt 3536 1936)
-	(pt 3536 1904)
 )
 (connector
 	(pt 3504 1960)
@@ -19349,10 +19046,6 @@ agreement for further details.
 	(pt 3496 1976)
 )
 (connector
-	(pt 3616 1904)
-	(pt 3616 1936)
-)
-(connector
 	(pt 3568 1960)
 	(pt 3584 1960)
 )
@@ -19361,20 +19054,12 @@ agreement for further details.
 	(pt 3584 1976)
 )
 (connector
-	(pt 3696 1936)
-	(pt 3696 1904)
-)
-(connector
 	(pt 3664 1960)
 	(pt 3648 1960)
 )
 (connector
 	(pt 3664 1976)
 	(pt 3656 1976)
-)
-(connector
-	(pt 3776 1904)
-	(pt 3776 1936)
 )
 (connector
 	(pt 3728 1960)
@@ -19525,10 +19210,6 @@ agreement for further details.
 	(pt 3736 2032)
 )
 (connector
-	(pt 3856 1936)
-	(pt 3856 1904)
-)
-(connector
 	(pt 3824 1960)
 	(pt 3808 1960)
 )
@@ -19539,10 +19220,6 @@ agreement for further details.
 (connector
 	(pt 3816 1976)
 	(pt 3816 2032)
-)
-(connector
-	(pt 3936 1904)
-	(pt 3936 1936)
 )
 (connector
 	(pt 3888 1960)
@@ -19557,10 +19234,6 @@ agreement for further details.
 	(pt 3896 1976)
 )
 (connector
-	(pt 4016 1936)
-	(pt 4016 1904)
-)
-(connector
 	(pt 3984 1960)
 	(pt 3968 1960)
 )
@@ -19571,10 +19244,6 @@ agreement for further details.
 (connector
 	(pt 3976 1976)
 	(pt 3976 2032)
-)
-(connector
-	(pt 4096 1904)
-	(pt 4096 1936)
 )
 (connector
 	(pt 4048 1960)
@@ -19589,10 +19258,6 @@ agreement for further details.
 	(pt 4056 1976)
 )
 (connector
-	(pt 4176 1936)
-	(pt 4176 1904)
-)
-(connector
 	(pt 4144 1960)
 	(pt 4128 1960)
 )
@@ -19603,10 +19268,6 @@ agreement for further details.
 (connector
 	(pt 4136 1976)
 	(pt 4136 2032)
-)
-(connector
-	(pt 4256 1904)
-	(pt 4256 1936)
 )
 (connector
 	(pt 4208 1960)
@@ -19621,10 +19282,6 @@ agreement for further details.
 	(pt 4216 1976)
 )
 (connector
-	(pt 4336 1936)
-	(pt 4336 1904)
-)
-(connector
 	(pt 4304 1960)
 	(pt 4288 1960)
 )
@@ -19635,10 +19292,6 @@ agreement for further details.
 (connector
 	(pt 4296 1976)
 	(pt 4296 2032)
-)
-(connector
-	(pt 4416 1904)
-	(pt 4416 1936)
 )
 (connector
 	(pt 4368 1960)
@@ -19653,10 +19306,6 @@ agreement for further details.
 	(pt 4376 1976)
 )
 (connector
-	(pt 4496 1936)
-	(pt 4496 1904)
-)
-(connector
 	(pt 4464 1960)
 	(pt 4448 1960)
 )
@@ -19667,10 +19316,6 @@ agreement for further details.
 (connector
 	(pt 4456 1976)
 	(pt 4456 2032)
-)
-(connector
-	(pt 4576 1904)
-	(pt 4576 1936)
 )
 (connector
 	(pt 4528 1960)
@@ -19685,10 +19330,6 @@ agreement for further details.
 	(pt 4536 1976)
 )
 (connector
-	(pt 4656 1936)
-	(pt 4656 1904)
-)
-(connector
 	(pt 4624 1960)
 	(pt 4608 1960)
 )
@@ -19699,10 +19340,6 @@ agreement for further details.
 (connector
 	(pt 4616 1976)
 	(pt 4616 2032)
-)
-(connector
-	(pt 4736 1904)
-	(pt 4736 1936)
 )
 (connector
 	(pt 4688 1960)
@@ -19717,10 +19354,6 @@ agreement for further details.
 	(pt 4696 1976)
 )
 (connector
-	(pt 4816 1936)
-	(pt 4816 1904)
-)
-(connector
 	(pt 4784 1960)
 	(pt 4768 1960)
 )
@@ -19731,10 +19364,6 @@ agreement for further details.
 (connector
 	(pt 4776 1976)
 	(pt 4776 2032)
-)
-(connector
-	(pt 4896 1904)
-	(pt 4896 1936)
 )
 (connector
 	(pt 4848 1960)
@@ -19749,10 +19378,6 @@ agreement for further details.
 	(pt 4856 1976)
 )
 (connector
-	(pt 4976 1936)
-	(pt 4976 1904)
-)
-(connector
 	(pt 4944 1960)
 	(pt 4928 1960)
 )
@@ -19763,10 +19388,6 @@ agreement for further details.
 (connector
 	(pt 4936 1976)
 	(pt 4936 2032)
-)
-(connector
-	(pt 5056 1904)
-	(pt 5056 1936)
 )
 (connector
 	(pt 5008 1960)
@@ -19781,10 +19402,6 @@ agreement for further details.
 	(pt 5016 1976)
 )
 (connector
-	(pt 5136 1936)
-	(pt 5136 1904)
-)
-(connector
 	(pt 5104 1960)
 	(pt 5088 1960)
 )
@@ -19795,10 +19412,6 @@ agreement for further details.
 (connector
 	(pt 5096 1976)
 	(pt 5096 2032)
-)
-(connector
-	(pt 5216 1904)
-	(pt 5216 1936)
 )
 (connector
 	(pt 5168 1960)
@@ -19813,10 +19426,6 @@ agreement for further details.
 	(pt 5176 1976)
 )
 (connector
-	(pt 5296 1936)
-	(pt 5296 1904)
-)
-(connector
 	(pt 5264 1960)
 	(pt 5248 1960)
 )
@@ -19827,10 +19436,6 @@ agreement for further details.
 (connector
 	(pt 5256 1976)
 	(pt 5256 2032)
-)
-(connector
-	(pt 5376 1904)
-	(pt 5376 1936)
 )
 (connector
 	(pt 5328 1960)
@@ -19845,10 +19450,6 @@ agreement for further details.
 	(pt 5336 1976)
 )
 (connector
-	(pt 5456 1936)
-	(pt 5456 1904)
-)
-(connector
 	(pt 5424 1960)
 	(pt 5408 1960)
 )
@@ -19859,10 +19460,6 @@ agreement for further details.
 (connector
 	(pt 5416 1976)
 	(pt 5416 2032)
-)
-(connector
-	(pt 5536 1904)
-	(pt 5536 1936)
 )
 (connector
 	(pt 5488 1960)
@@ -19877,10 +19474,6 @@ agreement for further details.
 	(pt 5496 1976)
 )
 (connector
-	(pt 5616 1936)
-	(pt 5616 1904)
-)
-(connector
 	(pt 5584 1960)
 	(pt 5568 1960)
 )
@@ -19891,10 +19484,6 @@ agreement for further details.
 (connector
 	(pt 5576 1976)
 	(pt 5576 2032)
-)
-(connector
-	(pt 5696 1904)
-	(pt 5696 1936)
 )
 (connector
 	(pt 5648 1960)
@@ -19909,10 +19498,6 @@ agreement for further details.
 	(pt 5656 1976)
 )
 (connector
-	(pt 5776 1936)
-	(pt 5776 1904)
-)
-(connector
 	(pt 5744 1960)
 	(pt 5728 1960)
 )
@@ -19923,10 +19508,6 @@ agreement for further details.
 (connector
 	(pt 5736 1976)
 	(pt 5736 2032)
-)
-(connector
-	(pt 5856 1904)
-	(pt 5856 1936)
 )
 (connector
 	(pt 5808 1960)
@@ -19941,10 +19522,6 @@ agreement for further details.
 	(pt 5816 1976)
 )
 (connector
-	(pt 5936 1936)
-	(pt 5936 1904)
-)
-(connector
 	(pt 5904 1960)
 	(pt 5888 1960)
 )
@@ -19955,10 +19532,6 @@ agreement for further details.
 (connector
 	(pt 5896 1976)
 	(pt 5896 2032)
-)
-(connector
-	(pt 6016 1904)
-	(pt 6016 1936)
 )
 (connector
 	(pt 5968 1960)
@@ -19973,10 +19546,6 @@ agreement for further details.
 	(pt 5976 1976)
 )
 (connector
-	(pt 6096 1936)
-	(pt 6096 1904)
-)
-(connector
 	(pt 6064 1960)
 	(pt 6048 1960)
 )
@@ -19987,10 +19556,6 @@ agreement for further details.
 (connector
 	(pt 6056 1976)
 	(pt 6056 2032)
-)
-(connector
-	(pt 6176 1904)
-	(pt 6176 1936)
 )
 (connector
 	(pt 6128 1960)
@@ -20005,10 +19570,6 @@ agreement for further details.
 	(pt 6136 1976)
 )
 (connector
-	(pt 6256 1936)
-	(pt 6256 1904)
-)
-(connector
 	(pt 6224 1960)
 	(pt 6208 1960)
 )
@@ -20019,10 +19580,6 @@ agreement for further details.
 (connector
 	(pt 6216 1976)
 	(pt 6216 2032)
-)
-(connector
-	(pt 6336 1904)
-	(pt 6336 1936)
 )
 (connector
 	(pt 6288 1960)
@@ -20037,10 +19594,6 @@ agreement for further details.
 	(pt 6296 1976)
 )
 (connector
-	(pt 6416 1936)
-	(pt 6416 1904)
-)
-(connector
 	(pt 6384 1960)
 	(pt 6368 1960)
 )
@@ -20053,10 +19606,6 @@ agreement for further details.
 	(pt 6376 2032)
 )
 (connector
-	(pt 6496 1904)
-	(pt 6496 1936)
-)
-(connector
 	(pt 6448 1960)
 	(pt 6464 1960)
 )
@@ -20065,16 +19614,8 @@ agreement for further details.
 	(pt 6464 1976)
 )
 (connector
-	(pt 6576 1936)
-	(pt 6576 1904)
-)
-(connector
 	(pt 6544 1976)
 	(pt 6536 1976)
-)
-(connector
-	(pt 6656 1904)
-	(pt 6656 1936)
 )
 (connector
 	(pt 6608 1960)
@@ -20085,20 +19626,12 @@ agreement for further details.
 	(pt 6624 1976)
 )
 (connector
-	(pt 6736 1936)
-	(pt 6736 1904)
-)
-(connector
 	(pt 6704 1960)
 	(pt 6688 1960)
 )
 (connector
 	(pt 6704 1976)
 	(pt 6696 1976)
-)
-(connector
-	(pt 6816 1904)
-	(pt 6816 1936)
 )
 (connector
 	(pt 6768 1960)
@@ -20109,20 +19642,12 @@ agreement for further details.
 	(pt 6784 1976)
 )
 (connector
-	(pt 6896 1936)
-	(pt 6896 1904)
-)
-(connector
 	(pt 6864 1960)
 	(pt 6848 1960)
 )
 (connector
 	(pt 6864 1976)
 	(pt 6856 1976)
-)
-(connector
-	(pt 6976 1904)
-	(pt 6976 1936)
 )
 (connector
 	(pt 6928 1960)
@@ -20133,20 +19658,12 @@ agreement for further details.
 	(pt 6944 1976)
 )
 (connector
-	(pt 7056 1936)
-	(pt 7056 1904)
-)
-(connector
 	(pt 7024 1960)
 	(pt 7008 1960)
 )
 (connector
 	(pt 7024 1976)
 	(pt 7016 1976)
-)
-(connector
-	(pt 7136 1904)
-	(pt 7136 1936)
 )
 (connector
 	(pt 7088 1960)
@@ -20157,10 +19674,6 @@ agreement for further details.
 	(pt 7104 1976)
 )
 (connector
-	(pt 7216 1936)
-	(pt 7216 1904)
-)
-(connector
 	(pt 7184 1960)
 	(pt 7168 1960)
 )
@@ -20169,16 +19682,8 @@ agreement for further details.
 	(pt 7176 1976)
 )
 (connector
-	(pt 7296 1904)
-	(pt 7296 1936)
-)
-(connector
 	(pt 7256 1976)
 	(pt 7264 1976)
-)
-(connector
-	(pt 7376 1936)
-	(pt 7376 1904)
 )
 (connector
 	(pt 7344 1960)
@@ -20189,16 +19694,8 @@ agreement for further details.
 	(pt 7336 1976)
 )
 (connector
-	(pt 7408 1960)
-	(pt 7424 1960)
-)
-(connector
 	(pt 7416 1976)
 	(pt 7424 1976)
-)
-(connector
-	(pt 7504 1960)
-	(pt 7488 1960)
 )
 (connector
 	(pt 7504 1976)
@@ -21401,10 +20898,6 @@ agreement for further details.
 	(pt 9600 2760)
 )
 (connector
-	(pt 9720 2688)
-	(pt 9720 2720)
-)
-(connector
 	(pt 9672 2744)
 	(pt 9688 2744)
 )
@@ -21413,16 +20906,8 @@ agreement for further details.
 	(pt 9688 2760)
 )
 (connector
-	(pt 9800 2720)
-	(pt 9800 2688)
-)
-(connector
 	(pt 9768 2744)
 	(pt 9752 2744)
-)
-(connector
-	(pt 9880 2688)
-	(pt 9880 2720)
 )
 (connector
 	(pt 7440 2760)
@@ -21539,14 +21024,6 @@ agreement for further details.
 (connector
 	(pt 7360 2760)
 	(pt 7360 2816)
-)
-(connector
-	(pt 6520 560)
-	(pt 6520 592)
-)
-(connector
-	(pt 6440 560)
-	(pt 6440 592)
 )
 (connector
 	(pt 6392 616)
@@ -21697,10 +21174,6 @@ agreement for further details.
 	(pt 7752 1672)
 )
 (connector
-	(pt 9832 2744)
-	(pt 9848 2744)
-)
-(connector
 	(pt 9824 2848)
 	(pt 9832 2848)
 )
@@ -21711,10 +21184,6 @@ agreement for further details.
 (connector
 	(pt 9832 2848)
 	(pt 9832 2744)
-)
-(connector
-	(pt 9848 2760)
-	(pt 9848 2816)
 )
 (connector
 	(pt 9768 2816)
@@ -21731,22 +21200,6 @@ agreement for further details.
 (connector
 	(pt 9752 2840)
 	(pt 9752 2744)
-)
-(connector
-	(pt 9984 2920)
-	(pt 9816 2920)
-)
-(connector
-	(pt 10000 2760)
-	(pt 9984 2760)
-)
-(connector
-	(pt 9984 2760)
-	(pt 9984 2920)
-)
-(connector
-	(pt 9912 2744)
-	(pt 10000 2744)
 )
 (connector
 	(pt 10000 2728)
@@ -22997,14 +22450,6 @@ agreement for further details.
 	(pt 9680 2816)
 )
 (connector
-	(pt 9680 2816)
-	(pt 9768 2816)
-)
-(connector
-	(pt 9768 2816)
-	(pt 9848 2816)
-)
-(connector
 	(pt 7248 1960)
 	(pt 7256 1960)
 )
@@ -23211,6 +22656,306 @@ agreement for further details.
 (connector
 	(pt 10488 1304)
 	(pt 10808 1304)
+)
+(connector
+	(pt 6600 560)
+	(pt 6600 568)
+)
+(connector
+	(pt 6680 560)
+	(pt 6680 568)
+)
+(connector
+	(pt 6760 560)
+	(pt 6760 568)
+)
+(connector
+	(pt 6840 560)
+	(pt 6840 568)
+)
+(connector
+	(pt 6920 560)
+	(pt 6920 568)
+)
+(connector
+	(pt 7000 560)
+	(pt 7000 568)
+)
+(connector
+	(pt 7080 560)
+	(pt 7080 568)
+)
+(connector
+	(pt 7160 560)
+	(pt 7160 568)
+)
+(connector
+	(pt 7240 560)
+	(pt 7240 568)
+)
+(connector
+	(pt 6520 560)
+	(pt 6520 568)
+)
+(connector
+	(pt 6280 560)
+	(pt 6280 568)
+)
+(connector
+	(pt 6360 560)
+	(pt 6360 568)
+)
+(connector
+	(pt 6440 560)
+	(pt 6440 568)
+)
+(connector
+	(pt 2576 1904)
+	(pt 2576 1912)
+)
+(connector
+	(pt 2656 1904)
+	(pt 2656 1912)
+)
+(connector
+	(pt 2736 1904)
+	(pt 2736 1912)
+)
+(connector
+	(pt 2816 1904)
+	(pt 2816 1912)
+)
+(connector
+	(pt 2896 1904)
+	(pt 2896 1912)
+)
+(connector
+	(pt 2976 1904)
+	(pt 2976 1912)
+)
+(connector
+	(pt 3056 1904)
+	(pt 3056 1912)
+)
+(connector
+	(pt 3136 1904)
+	(pt 3136 1912)
+)
+(connector
+	(pt 3216 1904)
+	(pt 3216 1912)
+)
+(connector
+	(pt 3296 1904)
+	(pt 3296 1912)
+)
+(connector
+	(pt 3376 1904)
+	(pt 3376 1912)
+)
+(connector
+	(pt 3456 1904)
+	(pt 3456 1912)
+)
+(connector
+	(pt 3536 1904)
+	(pt 3536 1912)
+)
+(connector
+	(pt 3616 1904)
+	(pt 3616 1912)
+)
+(connector
+	(pt 3696 1904)
+	(pt 3696 1912)
+)
+(connector
+	(pt 3776 1904)
+	(pt 3776 1912)
+)
+(connector
+	(pt 3856 1904)
+	(pt 3856 1912)
+)
+(connector
+	(pt 3936 1904)
+	(pt 3936 1912)
+)
+(connector
+	(pt 4016 1904)
+	(pt 4016 1912)
+)
+(connector
+	(pt 4096 1904)
+	(pt 4096 1912)
+)
+(connector
+	(pt 4176 1904)
+	(pt 4176 1912)
+)
+(connector
+	(pt 4256 1904)
+	(pt 4256 1912)
+)
+(connector
+	(pt 4336 1904)
+	(pt 4336 1912)
+)
+(connector
+	(pt 4416 1904)
+	(pt 4416 1912)
+)
+(connector
+	(pt 4496 1904)
+	(pt 4496 1912)
+)
+(connector
+	(pt 4576 1904)
+	(pt 4576 1912)
+)
+(connector
+	(pt 4656 1904)
+	(pt 4656 1912)
+)
+(connector
+	(pt 4736 1904)
+	(pt 4736 1912)
+)
+(connector
+	(pt 4816 1904)
+	(pt 4816 1912)
+)
+(connector
+	(pt 4896 1904)
+	(pt 4896 1912)
+)
+(connector
+	(pt 4976 1904)
+	(pt 4976 1912)
+)
+(connector
+	(pt 5056 1904)
+	(pt 5056 1912)
+)
+(connector
+	(pt 5136 1904)
+	(pt 5136 1912)
+)
+(connector
+	(pt 5216 1904)
+	(pt 5216 1912)
+)
+(connector
+	(pt 5296 1904)
+	(pt 5296 1912)
+)
+(connector
+	(pt 5376 1904)
+	(pt 5376 1912)
+)
+(connector
+	(pt 5456 1904)
+	(pt 5456 1912)
+)
+(connector
+	(pt 7416 1960)
+	(pt 7416 1904)
+)
+(connector
+	(pt 7408 1960)
+	(pt 7416 1960)
+)
+(connector
+	(pt 7416 1960)
+	(pt 7424 1960)
+)
+(connector
+	(pt 9800 2656)
+	(pt 9800 2664)
+)
+(connector
+	(pt 9800 2712)
+	(pt 9800 2720)
+)
+(connector
+	(pt 9832 2744)
+	(pt 9848 2744)
+)
+(connector
+	(pt 9848 2816)
+	(pt 9848 2760)
+)
+(connector
+	(pt 10000 2744)
+	(pt 9912 2744)
+)
+(connector
+	(pt 9680 2816)
+	(pt 9768 2816)
+)
+(connector
+	(pt 9768 2816)
+	(pt 9848 2816)
+)
+(connector
+	(pt 9720 2656)
+	(pt 9720 2664)
+)
+(connector
+	(pt 9720 2720)
+	(pt 9720 2712)
+)
+(connector
+	(pt 9880 2648)
+	(pt 9880 2664)
+)
+(connector
+	(pt 9880 2720)
+	(pt 9880 2712)
+)
+(connector
+	(pt 7488 1960)
+	(pt 7504 1960)
+)
+(connector
+	(pt 7360 616)
+	(pt 7360 568)
+)
+(connector
+	(pt 7352 616)
+	(pt 7360 616)
+)
+(connector
+	(pt 7360 616)
+	(pt 7368 616)
+)
+(connector
+	(pt 7440 592)
+	(pt 7440 616)
+)
+(connector
+	(pt 7432 616)
+	(pt 7440 616)
+)
+(connector
+	(pt 7440 616)
+	(pt 7448 616)
+)
+(connector
+	(pt 9816 2920)
+	(pt 9816 2960)
+)
+(connector
+	(pt 9816 2960)
+	(pt 9984 2960)
+)
+(connector
+	(pt 10000 2760)
+	(pt 9984 2760)
+)
+(connector
+	(pt 9984 2760)
+	(pt 9984 2960)
 )
 (junction (pt 1120 688))
 (junction (pt 1200 688))
@@ -23514,3 +23259,7 @@ agreement for further details.
 (junction (pt 1040 2816))
 (junction (pt 1120 2816))
 (junction (pt 8000 2744))
+(junction (pt 7416 1960))
+(junction (pt 7360 616))
+(junction (pt 7440 616))
+(junction (pt 9984 2960))
