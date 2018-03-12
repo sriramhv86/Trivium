@@ -455,13 +455,11 @@ output80 <= inst79.DB_MAX_OUTPUT_PORT_TYPE
 output81 <= inst80.DB_MAX_OUTPUT_PORT_TYPE
 andop <= inst301.DB_MAX_OUTPUT_PORT_TYPE
 keystream <= XOR3:inst298.OUT
-cipeherout1 <= inst465.DB_MAX_OUTPUT_PORT_TYPE
-cipherclk => inst465.CLK
-andip0 => inst465.DATAIN
-andip0 => inst464.IN1
-ivclk => inst466.IN0
 dffcipout <= inst464.DB_MAX_OUTPUT_PORT_TYPE
 message => inst463.IN1
+cipherclk => inst465.CLK
+andip0 => inst465.DATAIN
+ivclk => inst466.IN0
 
 
 |trivium1|XOR3:inst295

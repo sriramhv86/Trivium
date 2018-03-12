@@ -1,5 +1,5 @@
 Analysis & Synthesis report for trivium1
-Mon Mar 12 12:27:25 2018
+Mon Mar 12 14:06:58 2018
 Quartus II 64-Bit Version 15.0.0 Build 145 04/22/2015 SJ Web Edition
 
 
@@ -49,7 +49,7 @@ agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                    ;
 +------------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Mar 12 12:27:25 2018      ;
+; Analysis & Synthesis Status        ; Successful - Mon Mar 12 14:06:58 2018      ;
 ; Quartus II 64-Bit Version          ; 15.0.0 Build 145 04/22/2015 SJ Web Edition ;
 ; Revision Name                      ; trivium1                                   ;
 ; Top-level Entity Name              ; trivium1                                   ;
@@ -58,7 +58,7 @@ agreement for further details.
 ;     Total combinational functions  ; 20                                         ;
 ;     Dedicated logic registers      ; 229                                        ;
 ; Total registers                    ; 229                                        ;
-; Total pins                         ; 175                                        ;
+; Total pins                         ; 174                                        ;
 ; Total virtual pins                 ; 0                                          ;
 ; Total memory bits                  ; 64                                         ;
 ; Embedded Multiplier 9-bit elements ; 0                                          ;
@@ -209,14 +209,14 @@ agreement for further details.
 ;     -- Dedicated logic registers            ; 229         ;
 ;     -- I/O registers                        ; 0           ;
 ;                                             ;             ;
-; I/O pins                                    ; 175         ;
+; I/O pins                                    ; 174         ;
 ; Total memory bits                           ; 64          ;
 ;                                             ;             ;
 ; Embedded Multiplier 9-bit elements          ; 0           ;
 ;                                             ;             ;
 ; Maximum fan-out node                        ; clock~input ;
 ; Maximum fan-out                             ; 229         ;
-; Total fan-out                               ; 857         ;
+; Total fan-out                               ; 855         ;
 ; Average fan-out                             ; 1.43        ;
 +---------------------------------------------+-------------+
 
@@ -226,7 +226,7 @@ agreement for further details.
 +----------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node             ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                             ; Library Name ;
 +----------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------------------+--------------+
-; |trivium1                              ; 20 (10)           ; 229 (223)    ; 64          ; 0            ; 0       ; 0         ; 175  ; 0            ; |trivium1                                                                                       ; work         ;
+; |trivium1                              ; 20 (10)           ; 229 (223)    ; 64          ; 0            ; 0       ; 0         ; 174  ; 0            ; |trivium1                                                                                       ; work         ;
 ;    |altshift_taps:inst177_rtl_0|       ; 6 (0)             ; 6 (0)        ; 64          ; 0            ; 0       ; 0         ; 0    ; 0            ; |trivium1|altshift_taps:inst177_rtl_0                                                           ; work         ;
 ;       |shift_taps_f6m:auto_generated|  ; 6 (0)             ; 6 (0)        ; 64          ; 0            ; 0       ; 0         ; 0    ; 0            ; |trivium1|altshift_taps:inst177_rtl_0|shift_taps_f6m:auto_generated                             ; work         ;
 ;          |altsyncram_ce81:altsyncram2| ; 0 (0)             ; 0 (0)        ; 64          ; 0            ; 0       ; 0         ; 0    ; 0            ; |trivium1|altshift_taps:inst177_rtl_0|shift_taps_f6m:auto_generated|altsyncram_ce81:altsyncram2 ; work         ;
@@ -489,15 +489,15 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 175                         ;
+; boundary_port         ; 174                         ;
 ; cycloneiii_ff         ; 229                         ;
 ;     CLR               ; 164                         ;
 ;     plain             ; 65                          ;
-; cycloneiii_lcell_comb ; 23                          ;
+; cycloneiii_lcell_comb ; 22                          ;
 ;     arith             ; 5                           ;
 ;         2 data inputs ; 5                           ;
-;     normal            ; 18                          ;
-;         1 data inputs ; 8                           ;
+;     normal            ; 17                          ;
+;         1 data inputs ; 7                           ;
 ;         2 data inputs ; 4                           ;
 ;         3 data inputs ; 2                           ;
 ;         4 data inputs ; 4                           ;
@@ -523,7 +523,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 15.0.0 Build 145 04/22/2015 SJ Web Edition
-    Info: Processing started: Mon Mar 12 12:27:10 2018
+    Info: Processing started: Mon Mar 12 14:06:41 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off trivium1 -c trivium1
 Info (11104): Parallel Compilation has detected 4 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 2 of the 2 physical processors detected instead.
 Info (12021): Found 1 design units, including 1 entities, in source file trivium1.bdf
@@ -552,15 +552,15 @@ Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal 
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 413 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 412 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 168 input pins
-    Info (21059): Implemented 7 output pins
+    Info (21059): Implemented 6 output pins
     Info (21061): Implemented 237 logic cells
     Info (21064): Implemented 1 RAM segments
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 742 megabytes
-    Info: Processing ended: Mon Mar 12 12:27:26 2018
-    Info: Elapsed time: 00:00:16
-    Info: Total CPU time (on all processors): 00:00:31
+    Info: Processing ended: Mon Mar 12 14:06:58 2018
+    Info: Elapsed time: 00:00:17
+    Info: Total CPU time (on all processors): 00:00:37
 
 

@@ -2858,9 +2858,9 @@ agreement for further details.
 )
 (pin
 	(input)
-	(rect 10592 1536 10760 1552)
+	(rect 10496 1688 10664 1704)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "andip0" (rect 5 0 37 12)(font "Arial" ))
+	(text "andip0" (rect 5 0 36 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -2944,22 +2944,6 @@ agreement for further details.
 	(rect 10808 1296 10984 1312)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "keystream" (rect 90 0 143 12)(font "Arial" ))
-	(pt 0 8)
-	(drawing
-		(line (pt 0 8)(pt 52 8))
-		(line (pt 52 4)(pt 78 4))
-		(line (pt 52 12)(pt 78 12))
-		(line (pt 52 12)(pt 52 4))
-		(line (pt 78 4)(pt 82 8))
-		(line (pt 82 8)(pt 78 12))
-		(line (pt 78 12)(pt 82 8))
-	)
-)
-(pin
-	(output)
-	(rect 10968 1664 11144 1680)
-	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
-	(text "cipeherout1" (rect 90 0 146 12)(font "Arial" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8))
@@ -28457,14 +28441,6 @@ agreement for further details.
 	(pt 10880 1448)
 )
 (connector
-	(pt 10776 1392)
-	(pt 10720 1392)
-)
-(connector
-	(pt 10720 1392)
-	(pt 10720 1472)
-)
-(connector
 	(pt 10784 1616)
 	(pt 10784 1600)
 )
@@ -28481,52 +28457,40 @@ agreement for further details.
 	(pt 11120 1456)
 )
 (connector
-	(pt 10816 1704)
-	(pt 10864 1704)
-)
-(connector
-	(pt 10904 1464)
-	(pt 10760 1464)
-)
-(connector
-	(pt 10760 1464)
-	(pt 10760 1544)
-)
-(connector
 	(pt 10752 1720)
 	(pt 10720 1720)
-)
-(connector
-	(pt 10864 1672)
-	(pt 10968 1672)
 )
 (connector
 	(pt 10784 1680)
 	(pt 10784 1664)
 )
 (connector
-	(pt 10760 1544)
-	(pt 10744 1544)
-)
-(connector
-	(pt 10744 1704)
-	(pt 10744 1592)
-)
-(connector
 	(pt 10752 1704)
-	(pt 10744 1704)
+	(pt 10752 1696)
 )
 (connector
-	(pt 10864 1592)
-	(pt 10744 1592)
+	(pt 10664 1696)
+	(pt 10752 1696)
 )
 (connector
-	(pt 10864 1592)
-	(pt 10864 1672)
+	(pt 10904 1464)
+	(pt 10864 1464)
 )
 (connector
-	(pt 10864 1672)
+	(pt 10864 1464)
 	(pt 10864 1704)
+)
+(connector
+	(pt 10816 1704)
+	(pt 10864 1704)
+)
+(connector
+	(pt 10776 1392)
+	(pt 10720 1392)
+)
+(connector
+	(pt 10720 1392)
+	(pt 10720 1472)
 )
 (junction (pt 1176 2032))
 (junction (pt 1256 2032))
@@ -28834,5 +28798,3 @@ agreement for further details.
 (junction (pt 7360 944))
 (junction (pt 8688 1296))
 (junction (pt 10720 1304))
-(junction (pt 10760 1544))
-(junction (pt 10864 1672))
