@@ -1,5 +1,5 @@
 EDA Netlist Writer report for trivium1
-Mon Mar 12 14:22:27 2018
+Mon Mar 12 14:39:43 2018
 Quartus II 64-Bit Version 15.0.0 Build 145 04/22/2015 SJ Web Edition
 
 
@@ -37,7 +37,7 @@ agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Mon Mar 12 14:22:27 2018 ;
+; EDA Netlist Writer Status ; Successful - Mon Mar 12 14:39:43 2018 ;
 ; Revision Name             ; trivium1                              ;
 ; Top-level Entity Name     ; trivium1                              ;
 ; Family                    ; Cyclone IV E                          ;
@@ -95,12 +95,12 @@ Info: Running Quartus II 64-Bit EDA Netlist Writer
     Info: devices manufactured by Altera and sold by Altera or its 
     Info: authorized distributors.  Please refer to the applicable 
     Info: agreement for further details.
-    Info: Processing started: Mon Mar 12 14:22:26 2018
+    Info: Processing started: Mon Mar 12 14:39:42 2018
 Info: Command: quartus_eda --write_settings_files=off --functional=on --flatten_buses=off --simulation=on --tool=modelsim_oem --format=verilog --output_directory=C:/Users/sriram/Desktop/Git/Trivium1/simulation/qsim/ trivium1 -c trivium1
 Info (204019): Generated file trivium1.vo in folder "C:/Users/sriram/Desktop/Git/Trivium1/simulation/qsim//" for EDA simulation tool
 Info: Quartus II 64-Bit EDA Netlist Writer was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 641 megabytes
-    Info: Processing ended: Mon Mar 12 14:22:27 2018
+    Info: Peak virtual memory: 643 megabytes
+    Info: Processing ended: Mon Mar 12 14:39:43 2018
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 

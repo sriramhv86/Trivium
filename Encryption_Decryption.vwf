@@ -1713,7 +1713,17 @@ SIGNAL("keystream")
 	PARENT = "";
 }
 
-SIGNAL("dffcipout")
+SIGNAL("ivclk")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("cipherout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -1723,13 +1733,13 @@ SIGNAL("dffcipout")
 	PARENT = "";
 }
 
-SIGNAL("ivclk")
+SIGNAL("messageout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
-	DIRECTION = INPUT;
+	DIRECTION = OUTPUT;
 	PARENT = "";
 }
 
@@ -3266,7 +3276,17 @@ TRANSITION_LIST("keystream")
 	}
 }
 
-TRANSITION_LIST("dffcipout")
+TRANSITION_LIST("ivclk")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1153.5;
+		LEVEL 1 FOR 346.5;
+	}
+}
+
+TRANSITION_LIST("cipherout")
 {
 	NODE
 	{
@@ -3275,13 +3295,12 @@ TRANSITION_LIST("dffcipout")
 	}
 }
 
-TRANSITION_LIST("ivclk")
+TRANSITION_LIST("messageout")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1153.5;
-		LEVEL 1 FOR 346.5;
+		LEVEL X FOR 1500.0;
 	}
 }
 
@@ -4808,10 +4827,19 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "dffcipout";
+	CHANNEL = "cipherout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 169;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "messageout";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 170;
 	TREE_LEVEL = 0;
 }
 
