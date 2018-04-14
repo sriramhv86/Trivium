@@ -1,0 +1,2129 @@
+// Copyright (C) 1991-2015 Altera Corporation. All rights reserved.
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, the Altera Quartus II License Agreement,
+// the Altera MegaCore Function License Agreement, or other 
+// applicable license agreement, including, without limitation, 
+// that your use is for the sole purpose of programming logic 
+// devices manufactured by Altera and sold by Altera or its 
+// authorized distributors.  Please refer to the applicable 
+// agreement for further details.
+
+// *****************************************************************************
+// This file contains a Verilog test bench with test vectors .The test vectors  
+// are exported from a vector file in the Quartus Waveform Editor and apply to  
+// the top level entity of the current Quartus project .The user can use this   
+// testbench to simulate his design using a third-party simulation tool .       
+// *****************************************************************************
+// Generated on "04/09/2018 20:43:28"
+                                                                        
+// Verilog Self-Checking Test Bench (with test vectors) for design :    trivium1
+// 
+// Simulation tool : 3rd Party
+// 
+
+`timescale 1 ps/ 1 ps
+module trivium1_vlg_sample_tst(
+	andip0,
+	C_109,
+	C_110,
+	C_111,
+	cipherclk,
+	clkn,
+	clock,
+	IV_1,
+	IV_2,
+	IV_3,
+	IV_4,
+	IV_5,
+	IV_6,
+	IV_7,
+	IV_8,
+	IV_9,
+	IV_10,
+	IV_11,
+	IV_12,
+	IV_13,
+	IV_14,
+	IV_15,
+	IV_16,
+	IV_17,
+	IV_18,
+	IV_19,
+	IV_20,
+	IV_21,
+	IV_22,
+	IV_23,
+	IV_24,
+	IV_25,
+	IV_26,
+	IV_27,
+	IV_28,
+	IV_29,
+	IV_30,
+	IV_31,
+	IV_32,
+	IV_33,
+	IV_34,
+	IV_35,
+	IV_36,
+	IV_37,
+	IV_38,
+	IV_39,
+	IV_40,
+	IV_41,
+	IV_42,
+	IV_43,
+	IV_44,
+	IV_45,
+	IV_46,
+	IV_47,
+	IV_48,
+	IV_49,
+	IV_50,
+	IV_51,
+	IV_52,
+	IV_53,
+	IV_54,
+	IV_55,
+	IV_56,
+	IV_57,
+	IV_58,
+	IV_59,
+	IV_60,
+	IV_61,
+	IV_62,
+	IV_63,
+	IV_64,
+	IV_65,
+	IV_66,
+	IV_67,
+	IV_68,
+	IV_69,
+	IV_70,
+	IV_71,
+	IV_72,
+	IV_73,
+	IV_74,
+	IV_75,
+	IV_76,
+	IV_77,
+	IV_78,
+	IV_79,
+	IV_80,
+	ivclk,
+	Key_1,
+	Key_2,
+	Key_3,
+	Key_4,
+	Key_5,
+	Key_6,
+	Key_7,
+	Key_8,
+	Key_9,
+	Key_10,
+	Key_11,
+	Key_12,
+	Key_13,
+	Key_14,
+	Key_15,
+	Key_16,
+	Key_17,
+	Key_18,
+	Key_19,
+	Key_20,
+	Key_21,
+	Key_22,
+	Key_23,
+	Key_24,
+	Key_25,
+	Key_26,
+	Key_27,
+	Key_28,
+	Key_29,
+	Key_30,
+	Key_31,
+	Key_32,
+	Key_33,
+	Key_34,
+	Key_35,
+	Key_36,
+	Key_37,
+	Key_38,
+	Key_39,
+	Key_40,
+	Key_41,
+	Key_42,
+	Key_43,
+	Key_44,
+	Key_45,
+	Key_46,
+	Key_47,
+	Key_48,
+	Key_49,
+	Key_50,
+	Key_51,
+	Key_52,
+	Key_53,
+	Key_54,
+	Key_55,
+	Key_56,
+	Key_57,
+	Key_58,
+	Key_59,
+	Key_60,
+	Key_61,
+	Key_62,
+	Key_63,
+	Key_64,
+	Key_65,
+	Key_66,
+	Key_67,
+	Key_68,
+	Key_69,
+	Key_70,
+	Key_71,
+	Key_72,
+	Key_73,
+	Key_74,
+	Key_75,
+	Key_76,
+	Key_77,
+	Key_78,
+	Key_79,
+	Key_80,
+	PLAINTEXT_Original,
+	vc,
+	sampler_tx
+);
+input  andip0;
+input  C_109;
+input  C_110;
+input  C_111;
+input  cipherclk;
+input  clkn;
+input  clock;
+input  IV_1;
+input  IV_2;
+input  IV_3;
+input  IV_4;
+input  IV_5;
+input  IV_6;
+input  IV_7;
+input  IV_8;
+input  IV_9;
+input  IV_10;
+input  IV_11;
+input  IV_12;
+input  IV_13;
+input  IV_14;
+input  IV_15;
+input  IV_16;
+input  IV_17;
+input  IV_18;
+input  IV_19;
+input  IV_20;
+input  IV_21;
+input  IV_22;
+input  IV_23;
+input  IV_24;
+input  IV_25;
+input  IV_26;
+input  IV_27;
+input  IV_28;
+input  IV_29;
+input  IV_30;
+input  IV_31;
+input  IV_32;
+input  IV_33;
+input  IV_34;
+input  IV_35;
+input  IV_36;
+input  IV_37;
+input  IV_38;
+input  IV_39;
+input  IV_40;
+input  IV_41;
+input  IV_42;
+input  IV_43;
+input  IV_44;
+input  IV_45;
+input  IV_46;
+input  IV_47;
+input  IV_48;
+input  IV_49;
+input  IV_50;
+input  IV_51;
+input  IV_52;
+input  IV_53;
+input  IV_54;
+input  IV_55;
+input  IV_56;
+input  IV_57;
+input  IV_58;
+input  IV_59;
+input  IV_60;
+input  IV_61;
+input  IV_62;
+input  IV_63;
+input  IV_64;
+input  IV_65;
+input  IV_66;
+input  IV_67;
+input  IV_68;
+input  IV_69;
+input  IV_70;
+input  IV_71;
+input  IV_72;
+input  IV_73;
+input  IV_74;
+input  IV_75;
+input  IV_76;
+input  IV_77;
+input  IV_78;
+input  IV_79;
+input  IV_80;
+input  ivclk;
+input  Key_1;
+input  Key_2;
+input  Key_3;
+input  Key_4;
+input  Key_5;
+input  Key_6;
+input  Key_7;
+input  Key_8;
+input  Key_9;
+input  Key_10;
+input  Key_11;
+input  Key_12;
+input  Key_13;
+input  Key_14;
+input  Key_15;
+input  Key_16;
+input  Key_17;
+input  Key_18;
+input  Key_19;
+input  Key_20;
+input  Key_21;
+input  Key_22;
+input  Key_23;
+input  Key_24;
+input  Key_25;
+input  Key_26;
+input  Key_27;
+input  Key_28;
+input  Key_29;
+input  Key_30;
+input  Key_31;
+input  Key_32;
+input  Key_33;
+input  Key_34;
+input  Key_35;
+input  Key_36;
+input  Key_37;
+input  Key_38;
+input  Key_39;
+input  Key_40;
+input  Key_41;
+input  Key_42;
+input  Key_43;
+input  Key_44;
+input  Key_45;
+input  Key_46;
+input  Key_47;
+input  Key_48;
+input  Key_49;
+input  Key_50;
+input  Key_51;
+input  Key_52;
+input  Key_53;
+input  Key_54;
+input  Key_55;
+input  Key_56;
+input  Key_57;
+input  Key_58;
+input  Key_59;
+input  Key_60;
+input  Key_61;
+input  Key_62;
+input  Key_63;
+input  Key_64;
+input  Key_65;
+input  Key_66;
+input  Key_67;
+input  Key_68;
+input  Key_69;
+input  Key_70;
+input  Key_71;
+input  Key_72;
+input  Key_73;
+input  Key_74;
+input  Key_75;
+input  Key_76;
+input  Key_77;
+input  Key_78;
+input  Key_79;
+input  Key_80;
+input  PLAINTEXT_Original;
+input  vc;
+output sampler_tx;
+
+reg sample;
+time current_time;
+always @(andip0 or C_109 or C_110 or C_111 or cipherclk or clkn or clock or IV_1 or IV_2 or IV_3 or IV_4 or IV_5 or IV_6 or IV_7 or IV_8 or IV_9 or IV_10 or IV_11 or IV_12 or IV_13 or IV_14 or IV_15 or IV_16 or IV_17 or IV_18 or IV_19 or IV_20 or IV_21 or IV_22 or IV_23 or IV_24 or IV_25 or IV_26 or IV_27 or IV_28 or IV_29 or IV_30 or IV_31 or IV_32 or IV_33 or IV_34 or IV_35 or IV_36 or IV_37 or IV_38 or IV_39 or IV_40 or IV_41 or IV_42 or IV_43 or IV_44 or IV_45 or IV_46 or IV_47 or IV_48 or IV_49 or IV_50 or IV_51 or IV_52 or IV_53 or IV_54 or IV_55 or IV_56 or IV_57 or IV_58 or IV_59 or IV_60 or IV_61 or IV_62 or IV_63 or IV_64 or IV_65 or IV_66 or IV_67 or IV_68 or IV_69 or IV_70 or IV_71 or IV_72 or IV_73 or IV_74 or IV_75 or IV_76 or IV_77 or IV_78 or IV_79 or IV_80 or ivclk or Key_1 or Key_2 or Key_3 or Key_4 or Key_5 or Key_6 or Key_7 or Key_8 or Key_9 or Key_10 or Key_11 or Key_12 or Key_13 or Key_14 or Key_15 or Key_16 or Key_17 or Key_18 or Key_19 or Key_20 or Key_21 or Key_22 or Key_23 or Key_24 or Key_25 or Key_26 or Key_27 or Key_28 or Key_29 or Key_30 or Key_31 or Key_32 or Key_33 or Key_34 or Key_35 or Key_36 or Key_37 or Key_38 or Key_39 or Key_40 or Key_41 or Key_42 or Key_43 or Key_44 or Key_45 or Key_46 or Key_47 or Key_48 or Key_49 or Key_50 or Key_51 or Key_52 or Key_53 or Key_54 or Key_55 or Key_56 or Key_57 or Key_58 or Key_59 or Key_60 or Key_61 or Key_62 or Key_63 or Key_64 or Key_65 or Key_66 or Key_67 or Key_68 or Key_69 or Key_70 or Key_71 or Key_72 or Key_73 or Key_74 or Key_75 or Key_76 or Key_77 or Key_78 or Key_79 or Key_80 or PLAINTEXT_Original or vc)
+                                                                                
+begin                                                 
+ if ($realtime > 0)                                   
+ begin                                                
+    if ($realtime == 0 || $realtime != current_time)  
+    begin                                             
+        if (sample === 1'bx)                          
+            sample = 0;                               
+        else                                          
+            sample = ~sample;                         
+    end                                               
+    current_time = $realtime;                         
+ end                                                  
+end                                                   
+
+assign sampler_tx = sample;
+endmodule
+
+module trivium1_vlg_check_tst (
+	CIPHERTEXT,
+	KEYSTREAM,
+	pin_name1,
+	pin_name2,
+	pin_name3,
+	PLAINTEXT_Decrypted,
+	sampler_rx
+);
+input  CIPHERTEXT;
+input  KEYSTREAM;
+input  pin_name1;
+input  pin_name2;
+input  pin_name3;
+input  PLAINTEXT_Decrypted;
+input sampler_rx;
+
+reg  CIPHERTEXT_expected;
+reg  KEYSTREAM_expected;
+reg  pin_name1_expected;
+reg  pin_name2_expected;
+reg  pin_name3_expected;
+reg  PLAINTEXT_Decrypted_expected;
+
+reg  CIPHERTEXT_prev;
+reg  KEYSTREAM_prev;
+reg  pin_name1_prev;
+reg  pin_name2_prev;
+reg  pin_name3_prev;
+reg  PLAINTEXT_Decrypted_prev;
+
+reg  CIPHERTEXT_expected_prev;
+reg  KEYSTREAM_expected_prev;
+reg  PLAINTEXT_Decrypted_expected_prev;
+
+reg  last_CIPHERTEXT_exp;
+reg  last_KEYSTREAM_exp;
+reg  last_PLAINTEXT_Decrypted_exp;
+
+reg trigger;
+
+integer i;
+integer nummismatches;
+
+reg [1:6] on_first_change ;
+
+
+initial
+begin
+trigger = 0;
+i = 0;
+nummismatches = 0;
+on_first_change = 6'b1;
+end
+
+// update real /o prevs
+
+always @(trigger)
+begin
+	CIPHERTEXT_prev = CIPHERTEXT;
+	KEYSTREAM_prev = KEYSTREAM;
+	pin_name1_prev = pin_name1;
+	pin_name2_prev = pin_name2;
+	pin_name3_prev = pin_name3;
+	PLAINTEXT_Decrypted_prev = PLAINTEXT_Decrypted;
+end
+
+// update expected /o prevs
+
+always @(trigger)
+begin
+	CIPHERTEXT_expected_prev = CIPHERTEXT_expected;
+	KEYSTREAM_expected_prev = KEYSTREAM_expected;
+	PLAINTEXT_Decrypted_expected_prev = PLAINTEXT_Decrypted_expected;
+end
+
+
+
+// expected CIPHERTEXT
+initial
+begin
+	CIPHERTEXT_expected = 1'bX;
+end 
+
+// expected KEYSTREAM
+initial
+begin
+	KEYSTREAM_expected = 1'bX;
+end 
+
+// expected PLAINTEXT_Decrypted
+initial
+begin
+	PLAINTEXT_Decrypted_expected = 1'bX;
+end 
+// generate trigger
+always @(CIPHERTEXT_expected or CIPHERTEXT or KEYSTREAM_expected or KEYSTREAM or pin_name1_expected or pin_name1 or pin_name2_expected or pin_name2 or pin_name3_expected or pin_name3 or PLAINTEXT_Decrypted_expected or PLAINTEXT_Decrypted)
+begin
+	trigger <= ~trigger;
+end
+
+always @(posedge sampler_rx or negedge sampler_rx)
+begin
+`ifdef debug_tbench
+	$display("Scanning pattern %d @time = %t",i,$realtime );
+	i = i + 1;
+	$display("| expected CIPHERTEXT = %b | expected KEYSTREAM = %b | expected pin_name1 = %b | expected pin_name2 = %b | expected pin_name3 = %b | expected PLAINTEXT_Decrypted = %b | ",CIPHERTEXT_expected_prev,KEYSTREAM_expected_prev,pin_name1_expected_prev,pin_name2_expected_prev,pin_name3_expected_prev,PLAINTEXT_Decrypted_expected_prev);
+	$display("| real CIPHERTEXT = %b | real KEYSTREAM = %b | real pin_name1 = %b | real pin_name2 = %b | real pin_name3 = %b | real PLAINTEXT_Decrypted = %b | ",CIPHERTEXT_prev,KEYSTREAM_prev,pin_name1_prev,pin_name2_prev,pin_name3_prev,PLAINTEXT_Decrypted_prev);
+`endif
+	if (
+		( CIPHERTEXT_expected_prev !== 1'bx ) && ( CIPHERTEXT_prev !== CIPHERTEXT_expected_prev )
+		&& ((CIPHERTEXT_expected_prev !== last_CIPHERTEXT_exp) ||
+			on_first_change[1])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port CIPHERTEXT :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", CIPHERTEXT_expected_prev);
+		$display ("     Real value = %b", CIPHERTEXT_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[1] = 1'b0;
+		last_CIPHERTEXT_exp = CIPHERTEXT_expected_prev;
+	end
+	if (
+		( KEYSTREAM_expected_prev !== 1'bx ) && ( KEYSTREAM_prev !== KEYSTREAM_expected_prev )
+		&& ((KEYSTREAM_expected_prev !== last_KEYSTREAM_exp) ||
+			on_first_change[2])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port KEYSTREAM :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", KEYSTREAM_expected_prev);
+		$display ("     Real value = %b", KEYSTREAM_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[2] = 1'b0;
+		last_KEYSTREAM_exp = KEYSTREAM_expected_prev;
+	end
+	if (
+		( PLAINTEXT_Decrypted_expected_prev !== 1'bx ) && ( PLAINTEXT_Decrypted_prev !== PLAINTEXT_Decrypted_expected_prev )
+		&& ((PLAINTEXT_Decrypted_expected_prev !== last_PLAINTEXT_Decrypted_exp) ||
+			on_first_change[6])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port PLAINTEXT_Decrypted :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", PLAINTEXT_Decrypted_expected_prev);
+		$display ("     Real value = %b", PLAINTEXT_Decrypted_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[6] = 1'b0;
+		last_PLAINTEXT_Decrypted_exp = PLAINTEXT_Decrypted_expected_prev;
+	end
+
+	trigger <= ~trigger;
+end
+initial 
+
+begin 
+$timeformat(-12,3," ps",6);
+#1500000;
+if (nummismatches > 0)
+	$display ("%d mismatched vectors : Simulation failed !",nummismatches);
+else
+	$display ("Simulation passed !");
+$finish;
+end 
+endmodule
+
+module trivium1_vlg_vec_tst();
+// constants                                           
+// general purpose registers
+reg andip0;
+reg C_109;
+reg C_110;
+reg C_111;
+reg cipherclk;
+reg clkn;
+reg clock;
+reg IV_1;
+reg IV_2;
+reg IV_3;
+reg IV_4;
+reg IV_5;
+reg IV_6;
+reg IV_7;
+reg IV_8;
+reg IV_9;
+reg IV_10;
+reg IV_11;
+reg IV_12;
+reg IV_13;
+reg IV_14;
+reg IV_15;
+reg IV_16;
+reg IV_17;
+reg IV_18;
+reg IV_19;
+reg IV_20;
+reg IV_21;
+reg IV_22;
+reg IV_23;
+reg IV_24;
+reg IV_25;
+reg IV_26;
+reg IV_27;
+reg IV_28;
+reg IV_29;
+reg IV_30;
+reg IV_31;
+reg IV_32;
+reg IV_33;
+reg IV_34;
+reg IV_35;
+reg IV_36;
+reg IV_37;
+reg IV_38;
+reg IV_39;
+reg IV_40;
+reg IV_41;
+reg IV_42;
+reg IV_43;
+reg IV_44;
+reg IV_45;
+reg IV_46;
+reg IV_47;
+reg IV_48;
+reg IV_49;
+reg IV_50;
+reg IV_51;
+reg IV_52;
+reg IV_53;
+reg IV_54;
+reg IV_55;
+reg IV_56;
+reg IV_57;
+reg IV_58;
+reg IV_59;
+reg IV_60;
+reg IV_61;
+reg IV_62;
+reg IV_63;
+reg IV_64;
+reg IV_65;
+reg IV_66;
+reg IV_67;
+reg IV_68;
+reg IV_69;
+reg IV_70;
+reg IV_71;
+reg IV_72;
+reg IV_73;
+reg IV_74;
+reg IV_75;
+reg IV_76;
+reg IV_77;
+reg IV_78;
+reg IV_79;
+reg IV_80;
+reg ivclk;
+reg Key_1;
+reg Key_2;
+reg Key_3;
+reg Key_4;
+reg Key_5;
+reg Key_6;
+reg Key_7;
+reg Key_8;
+reg Key_9;
+reg Key_10;
+reg Key_11;
+reg Key_12;
+reg Key_13;
+reg Key_14;
+reg Key_15;
+reg Key_16;
+reg Key_17;
+reg Key_18;
+reg Key_19;
+reg Key_20;
+reg Key_21;
+reg Key_22;
+reg Key_23;
+reg Key_24;
+reg Key_25;
+reg Key_26;
+reg Key_27;
+reg Key_28;
+reg Key_29;
+reg Key_30;
+reg Key_31;
+reg Key_32;
+reg Key_33;
+reg Key_34;
+reg Key_35;
+reg Key_36;
+reg Key_37;
+reg Key_38;
+reg Key_39;
+reg Key_40;
+reg Key_41;
+reg Key_42;
+reg Key_43;
+reg Key_44;
+reg Key_45;
+reg Key_46;
+reg Key_47;
+reg Key_48;
+reg Key_49;
+reg Key_50;
+reg Key_51;
+reg Key_52;
+reg Key_53;
+reg Key_54;
+reg Key_55;
+reg Key_56;
+reg Key_57;
+reg Key_58;
+reg Key_59;
+reg Key_60;
+reg Key_61;
+reg Key_62;
+reg Key_63;
+reg Key_64;
+reg Key_65;
+reg Key_66;
+reg Key_67;
+reg Key_68;
+reg Key_69;
+reg Key_70;
+reg Key_71;
+reg Key_72;
+reg Key_73;
+reg Key_74;
+reg Key_75;
+reg Key_76;
+reg Key_77;
+reg Key_78;
+reg Key_79;
+reg Key_80;
+reg PLAINTEXT_Original;
+reg vc;
+// wires                                               
+wire CIPHERTEXT;
+wire KEYSTREAM;
+wire pin_name1;
+wire pin_name2;
+wire pin_name3;
+wire PLAINTEXT_Decrypted;
+
+wire sampler;                             
+
+// assign statements (if any)                          
+trivium1 i1 (
+// port map - connection between master ports and signals/registers   
+	.andip0(andip0),
+	.C_109(C_109),
+	.C_110(C_110),
+	.C_111(C_111),
+	.cipherclk(cipherclk),
+	.CIPHERTEXT(CIPHERTEXT),
+	.clkn(clkn),
+	.clock(clock),
+	.IV_1(IV_1),
+	.IV_2(IV_2),
+	.IV_3(IV_3),
+	.IV_4(IV_4),
+	.IV_5(IV_5),
+	.IV_6(IV_6),
+	.IV_7(IV_7),
+	.IV_8(IV_8),
+	.IV_9(IV_9),
+	.IV_10(IV_10),
+	.IV_11(IV_11),
+	.IV_12(IV_12),
+	.IV_13(IV_13),
+	.IV_14(IV_14),
+	.IV_15(IV_15),
+	.IV_16(IV_16),
+	.IV_17(IV_17),
+	.IV_18(IV_18),
+	.IV_19(IV_19),
+	.IV_20(IV_20),
+	.IV_21(IV_21),
+	.IV_22(IV_22),
+	.IV_23(IV_23),
+	.IV_24(IV_24),
+	.IV_25(IV_25),
+	.IV_26(IV_26),
+	.IV_27(IV_27),
+	.IV_28(IV_28),
+	.IV_29(IV_29),
+	.IV_30(IV_30),
+	.IV_31(IV_31),
+	.IV_32(IV_32),
+	.IV_33(IV_33),
+	.IV_34(IV_34),
+	.IV_35(IV_35),
+	.IV_36(IV_36),
+	.IV_37(IV_37),
+	.IV_38(IV_38),
+	.IV_39(IV_39),
+	.IV_40(IV_40),
+	.IV_41(IV_41),
+	.IV_42(IV_42),
+	.IV_43(IV_43),
+	.IV_44(IV_44),
+	.IV_45(IV_45),
+	.IV_46(IV_46),
+	.IV_47(IV_47),
+	.IV_48(IV_48),
+	.IV_49(IV_49),
+	.IV_50(IV_50),
+	.IV_51(IV_51),
+	.IV_52(IV_52),
+	.IV_53(IV_53),
+	.IV_54(IV_54),
+	.IV_55(IV_55),
+	.IV_56(IV_56),
+	.IV_57(IV_57),
+	.IV_58(IV_58),
+	.IV_59(IV_59),
+	.IV_60(IV_60),
+	.IV_61(IV_61),
+	.IV_62(IV_62),
+	.IV_63(IV_63),
+	.IV_64(IV_64),
+	.IV_65(IV_65),
+	.IV_66(IV_66),
+	.IV_67(IV_67),
+	.IV_68(IV_68),
+	.IV_69(IV_69),
+	.IV_70(IV_70),
+	.IV_71(IV_71),
+	.IV_72(IV_72),
+	.IV_73(IV_73),
+	.IV_74(IV_74),
+	.IV_75(IV_75),
+	.IV_76(IV_76),
+	.IV_77(IV_77),
+	.IV_78(IV_78),
+	.IV_79(IV_79),
+	.IV_80(IV_80),
+	.ivclk(ivclk),
+	.Key_1(Key_1),
+	.Key_2(Key_2),
+	.Key_3(Key_3),
+	.Key_4(Key_4),
+	.Key_5(Key_5),
+	.Key_6(Key_6),
+	.Key_7(Key_7),
+	.Key_8(Key_8),
+	.Key_9(Key_9),
+	.Key_10(Key_10),
+	.Key_11(Key_11),
+	.Key_12(Key_12),
+	.Key_13(Key_13),
+	.Key_14(Key_14),
+	.Key_15(Key_15),
+	.Key_16(Key_16),
+	.Key_17(Key_17),
+	.Key_18(Key_18),
+	.Key_19(Key_19),
+	.Key_20(Key_20),
+	.Key_21(Key_21),
+	.Key_22(Key_22),
+	.Key_23(Key_23),
+	.Key_24(Key_24),
+	.Key_25(Key_25),
+	.Key_26(Key_26),
+	.Key_27(Key_27),
+	.Key_28(Key_28),
+	.Key_29(Key_29),
+	.Key_30(Key_30),
+	.Key_31(Key_31),
+	.Key_32(Key_32),
+	.Key_33(Key_33),
+	.Key_34(Key_34),
+	.Key_35(Key_35),
+	.Key_36(Key_36),
+	.Key_37(Key_37),
+	.Key_38(Key_38),
+	.Key_39(Key_39),
+	.Key_40(Key_40),
+	.Key_41(Key_41),
+	.Key_42(Key_42),
+	.Key_43(Key_43),
+	.Key_44(Key_44),
+	.Key_45(Key_45),
+	.Key_46(Key_46),
+	.Key_47(Key_47),
+	.Key_48(Key_48),
+	.Key_49(Key_49),
+	.Key_50(Key_50),
+	.Key_51(Key_51),
+	.Key_52(Key_52),
+	.Key_53(Key_53),
+	.Key_54(Key_54),
+	.Key_55(Key_55),
+	.Key_56(Key_56),
+	.Key_57(Key_57),
+	.Key_58(Key_58),
+	.Key_59(Key_59),
+	.Key_60(Key_60),
+	.Key_61(Key_61),
+	.Key_62(Key_62),
+	.Key_63(Key_63),
+	.Key_64(Key_64),
+	.Key_65(Key_65),
+	.Key_66(Key_66),
+	.Key_67(Key_67),
+	.Key_68(Key_68),
+	.Key_69(Key_69),
+	.Key_70(Key_70),
+	.Key_71(Key_71),
+	.Key_72(Key_72),
+	.Key_73(Key_73),
+	.Key_74(Key_74),
+	.Key_75(Key_75),
+	.Key_76(Key_76),
+	.Key_77(Key_77),
+	.Key_78(Key_78),
+	.Key_79(Key_79),
+	.Key_80(Key_80),
+	.KEYSTREAM(KEYSTREAM),
+	.pin_name1(pin_name1),
+	.pin_name2(pin_name2),
+	.pin_name3(pin_name3),
+	.PLAINTEXT_Decrypted(PLAINTEXT_Decrypted),
+	.PLAINTEXT_Original(PLAINTEXT_Original),
+	.vc(vc)
+);
+
+// PLAINTEXT_Original
+always
+begin
+	PLAINTEXT_Original = 1'b0;
+	PLAINTEXT_Original = #5000 1'b1;
+	#5000;
+end 
+
+// andip0
+initial
+begin
+	andip0 = 1'b0;
+end 
+
+// ivclk
+initial
+begin
+	ivclk = 1'b0;
+	ivclk = #1153000 1'b1;
+end 
+
+// cipherclk
+always
+begin
+	cipherclk = 1'b0;
+	cipherclk = #500 1'b1;
+	#500;
+end 
+
+// clock
+always
+begin
+	clock = 1'b0;
+	clock = #500 1'b1;
+	#500;
+end 
+
+// C_109
+initial
+begin
+	C_109 = 1'b0;
+	C_109 = #500 1'b1;
+	C_109 = #500 1'b0;
+end 
+
+// C_110
+initial
+begin
+	C_110 = 1'b0;
+	C_110 = #500 1'b1;
+	C_110 = #500 1'b0;
+end 
+
+// C_111
+initial
+begin
+	C_111 = 1'b0;
+	C_111 = #500 1'b1;
+	C_111 = #500 1'b0;
+end 
+
+// IV_1
+initial
+begin
+	IV_1 = 1'b0;
+end 
+
+// IV_2
+initial
+begin
+	IV_2 = 1'b0;
+end 
+
+// IV_3
+initial
+begin
+	IV_3 = 1'b0;
+end 
+
+// IV_4
+initial
+begin
+	IV_4 = 1'b0;
+end 
+
+// IV_5
+initial
+begin
+	IV_5 = 1'b0;
+end 
+
+// IV_6
+initial
+begin
+	IV_6 = 1'b0;
+end 
+
+// IV_7
+initial
+begin
+	IV_7 = 1'b0;
+end 
+
+// IV_8
+initial
+begin
+	IV_8 = 1'b0;
+end 
+
+// IV_9
+initial
+begin
+	IV_9 = 1'b0;
+end 
+
+// IV_10
+initial
+begin
+	IV_10 = 1'b0;
+end 
+
+// IV_11
+initial
+begin
+	IV_11 = 1'b0;
+end 
+
+// IV_12
+initial
+begin
+	IV_12 = 1'b0;
+end 
+
+// IV_13
+initial
+begin
+	IV_13 = 1'b0;
+end 
+
+// IV_14
+initial
+begin
+	IV_14 = 1'b0;
+end 
+
+// IV_15
+initial
+begin
+	IV_15 = 1'b0;
+end 
+
+// IV_16
+initial
+begin
+	IV_16 = 1'b0;
+end 
+
+// IV_17
+initial
+begin
+	IV_17 = 1'b0;
+end 
+
+// IV_18
+initial
+begin
+	IV_18 = 1'b0;
+end 
+
+// IV_19
+initial
+begin
+	IV_19 = 1'b0;
+end 
+
+// IV_20
+initial
+begin
+	IV_20 = 1'b0;
+end 
+
+// IV_21
+initial
+begin
+	IV_21 = 1'b0;
+end 
+
+// IV_22
+initial
+begin
+	IV_22 = 1'b0;
+end 
+
+// IV_23
+initial
+begin
+	IV_23 = 1'b0;
+end 
+
+// IV_24
+initial
+begin
+	IV_24 = 1'b0;
+end 
+
+// IV_25
+initial
+begin
+	IV_25 = 1'b0;
+end 
+
+// IV_26
+initial
+begin
+	IV_26 = 1'b0;
+end 
+
+// IV_27
+initial
+begin
+	IV_27 = 1'b0;
+end 
+
+// IV_28
+initial
+begin
+	IV_28 = 1'b0;
+end 
+
+// IV_29
+initial
+begin
+	IV_29 = 1'b0;
+end 
+
+// IV_30
+initial
+begin
+	IV_30 = 1'b0;
+end 
+
+// IV_31
+initial
+begin
+	IV_31 = 1'b0;
+end 
+
+// IV_32
+initial
+begin
+	IV_32 = 1'b0;
+end 
+
+// IV_33
+initial
+begin
+	IV_33 = 1'b0;
+end 
+
+// IV_34
+initial
+begin
+	IV_34 = 1'b0;
+end 
+
+// IV_35
+initial
+begin
+	IV_35 = 1'b0;
+end 
+
+// IV_36
+initial
+begin
+	IV_36 = 1'b0;
+end 
+
+// IV_37
+initial
+begin
+	IV_37 = 1'b0;
+end 
+
+// IV_38
+initial
+begin
+	IV_38 = 1'b0;
+end 
+
+// IV_39
+initial
+begin
+	IV_39 = 1'b0;
+end 
+
+// IV_40
+initial
+begin
+	IV_40 = 1'b0;
+end 
+
+// IV_41
+initial
+begin
+	IV_41 = 1'b0;
+end 
+
+// IV_42
+initial
+begin
+	IV_42 = 1'b0;
+end 
+
+// IV_43
+initial
+begin
+	IV_43 = 1'b0;
+end 
+
+// IV_44
+initial
+begin
+	IV_44 = 1'b0;
+end 
+
+// IV_45
+initial
+begin
+	IV_45 = 1'b0;
+end 
+
+// IV_46
+initial
+begin
+	IV_46 = 1'b0;
+end 
+
+// IV_47
+initial
+begin
+	IV_47 = 1'b0;
+end 
+
+// IV_48
+initial
+begin
+	IV_48 = 1'b0;
+end 
+
+// IV_49
+initial
+begin
+	IV_49 = 1'b0;
+end 
+
+// IV_50
+initial
+begin
+	IV_50 = 1'b0;
+end 
+
+// IV_51
+initial
+begin
+	IV_51 = 1'b0;
+end 
+
+// IV_52
+initial
+begin
+	IV_52 = 1'b0;
+end 
+
+// IV_53
+initial
+begin
+	IV_53 = 1'b0;
+end 
+
+// IV_54
+initial
+begin
+	IV_54 = 1'b0;
+end 
+
+// IV_55
+initial
+begin
+	IV_55 = 1'b0;
+end 
+
+// IV_56
+initial
+begin
+	IV_56 = 1'b0;
+end 
+
+// IV_57
+initial
+begin
+	IV_57 = 1'b0;
+end 
+
+// IV_58
+initial
+begin
+	IV_58 = 1'b0;
+end 
+
+// IV_59
+initial
+begin
+	IV_59 = 1'b0;
+end 
+
+// IV_60
+initial
+begin
+	IV_60 = 1'b0;
+end 
+
+// IV_61
+initial
+begin
+	IV_61 = 1'b0;
+end 
+
+// IV_62
+initial
+begin
+	IV_62 = 1'b0;
+end 
+
+// IV_63
+initial
+begin
+	IV_63 = 1'b0;
+end 
+
+// IV_64
+initial
+begin
+	IV_64 = 1'b0;
+end 
+
+// IV_65
+initial
+begin
+	IV_65 = 1'b0;
+end 
+
+// IV_66
+initial
+begin
+	IV_66 = 1'b0;
+end 
+
+// IV_67
+initial
+begin
+	IV_67 = 1'b0;
+end 
+
+// IV_68
+initial
+begin
+	IV_68 = 1'b0;
+end 
+
+// IV_69
+initial
+begin
+	IV_69 = 1'b0;
+end 
+
+// IV_70
+initial
+begin
+	IV_70 = 1'b0;
+end 
+
+// IV_71
+initial
+begin
+	IV_71 = 1'b0;
+end 
+
+// IV_72
+initial
+begin
+	IV_72 = 1'b0;
+end 
+
+// IV_73
+initial
+begin
+	IV_73 = 1'b0;
+end 
+
+// IV_74
+initial
+begin
+	IV_74 = 1'b0;
+end 
+
+// IV_75
+initial
+begin
+	IV_75 = 1'b0;
+end 
+
+// IV_76
+initial
+begin
+	IV_76 = 1'b0;
+end 
+
+// IV_77
+initial
+begin
+	IV_77 = 1'b0;
+end 
+
+// IV_78
+initial
+begin
+	IV_78 = 1'b0;
+end 
+
+// IV_79
+initial
+begin
+	IV_79 = 1'b0;
+end 
+
+// IV_80
+initial
+begin
+	IV_80 = 1'b0;
+end 
+
+// Key_1
+initial
+begin
+	Key_1 = 1'b0;
+end 
+
+// Key_2
+initial
+begin
+	Key_2 = 1'b0;
+end 
+
+// Key_3
+initial
+begin
+	Key_3 = 1'b0;
+end 
+
+// Key_4
+initial
+begin
+	Key_4 = 1'b0;
+end 
+
+// Key_5
+initial
+begin
+	Key_5 = 1'b0;
+end 
+
+// Key_6
+initial
+begin
+	Key_6 = 1'b0;
+end 
+
+// Key_7
+initial
+begin
+	Key_7 = 1'b0;
+end 
+
+// Key_8
+initial
+begin
+	Key_8 = 1'b0;
+end 
+
+// Key_9
+initial
+begin
+	Key_9 = 1'b0;
+end 
+
+// Key_10
+initial
+begin
+	Key_10 = 1'b0;
+end 
+
+// Key_11
+initial
+begin
+	Key_11 = 1'b0;
+end 
+
+// Key_12
+initial
+begin
+	Key_12 = 1'b0;
+end 
+
+// Key_13
+initial
+begin
+	Key_13 = 1'b0;
+end 
+
+// Key_14
+initial
+begin
+	Key_14 = 1'b0;
+end 
+
+// Key_15
+initial
+begin
+	Key_15 = 1'b0;
+end 
+
+// Key_16
+initial
+begin
+	Key_16 = 1'b0;
+end 
+
+// Key_17
+initial
+begin
+	Key_17 = 1'b0;
+end 
+
+// Key_18
+initial
+begin
+	Key_18 = 1'b0;
+end 
+
+// Key_19
+initial
+begin
+	Key_19 = 1'b0;
+end 
+
+// Key_20
+initial
+begin
+	Key_20 = 1'b0;
+end 
+
+// Key_21
+initial
+begin
+	Key_21 = 1'b0;
+end 
+
+// Key_22
+initial
+begin
+	Key_22 = 1'b0;
+end 
+
+// Key_23
+initial
+begin
+	Key_23 = 1'b0;
+end 
+
+// Key_24
+initial
+begin
+	Key_24 = 1'b0;
+end 
+
+// Key_25
+initial
+begin
+	Key_25 = 1'b0;
+end 
+
+// Key_26
+initial
+begin
+	Key_26 = 1'b0;
+end 
+
+// Key_27
+initial
+begin
+	Key_27 = 1'b0;
+end 
+
+// Key_28
+initial
+begin
+	Key_28 = 1'b0;
+end 
+
+// Key_29
+initial
+begin
+	Key_29 = 1'b0;
+end 
+
+// Key_30
+initial
+begin
+	Key_30 = 1'b0;
+end 
+
+// Key_31
+initial
+begin
+	Key_31 = 1'b0;
+end 
+
+// Key_32
+initial
+begin
+	Key_32 = 1'b0;
+end 
+
+// Key_33
+initial
+begin
+	Key_33 = 1'b0;
+end 
+
+// Key_34
+initial
+begin
+	Key_34 = 1'b0;
+end 
+
+// Key_35
+initial
+begin
+	Key_35 = 1'b0;
+end 
+
+// Key_36
+initial
+begin
+	Key_36 = 1'b0;
+end 
+
+// Key_37
+initial
+begin
+	Key_37 = 1'b0;
+end 
+
+// Key_38
+initial
+begin
+	Key_38 = 1'b0;
+end 
+
+// Key_39
+initial
+begin
+	Key_39 = 1'b0;
+end 
+
+// Key_40
+initial
+begin
+	Key_40 = 1'b0;
+end 
+
+// Key_41
+initial
+begin
+	Key_41 = 1'b0;
+end 
+
+// Key_42
+initial
+begin
+	Key_42 = 1'b0;
+end 
+
+// Key_43
+initial
+begin
+	Key_43 = 1'b0;
+end 
+
+// Key_44
+initial
+begin
+	Key_44 = 1'b0;
+end 
+
+// Key_45
+initial
+begin
+	Key_45 = 1'b0;
+end 
+
+// Key_46
+initial
+begin
+	Key_46 = 1'b0;
+end 
+
+// Key_47
+initial
+begin
+	Key_47 = 1'b0;
+end 
+
+// Key_48
+initial
+begin
+	Key_48 = 1'b0;
+end 
+
+// Key_49
+initial
+begin
+	Key_49 = 1'b0;
+end 
+
+// Key_50
+initial
+begin
+	Key_50 = 1'b0;
+end 
+
+// Key_51
+initial
+begin
+	Key_51 = 1'b0;
+end 
+
+// Key_52
+initial
+begin
+	Key_52 = 1'b0;
+end 
+
+// Key_53
+initial
+begin
+	Key_53 = 1'b0;
+end 
+
+// Key_54
+initial
+begin
+	Key_54 = 1'b0;
+end 
+
+// Key_55
+initial
+begin
+	Key_55 = 1'b0;
+end 
+
+// Key_56
+initial
+begin
+	Key_56 = 1'b0;
+end 
+
+// Key_57
+initial
+begin
+	Key_57 = 1'b0;
+end 
+
+// Key_58
+initial
+begin
+	Key_58 = 1'b0;
+end 
+
+// Key_59
+initial
+begin
+	Key_59 = 1'b0;
+end 
+
+// Key_60
+initial
+begin
+	Key_60 = 1'b0;
+end 
+
+// Key_61
+initial
+begin
+	Key_61 = 1'b0;
+end 
+
+// Key_62
+initial
+begin
+	Key_62 = 1'b0;
+end 
+
+// Key_63
+initial
+begin
+	Key_63 = 1'b0;
+end 
+
+// Key_64
+initial
+begin
+	Key_64 = 1'b0;
+end 
+
+// Key_65
+initial
+begin
+	Key_65 = 1'b0;
+end 
+
+// Key_66
+initial
+begin
+	Key_66 = 1'b0;
+end 
+
+// Key_67
+initial
+begin
+	Key_67 = 1'b0;
+end 
+
+// Key_68
+initial
+begin
+	Key_68 = 1'b0;
+end 
+
+// Key_69
+initial
+begin
+	Key_69 = 1'b0;
+end 
+
+// Key_70
+initial
+begin
+	Key_70 = 1'b0;
+end 
+
+// Key_71
+initial
+begin
+	Key_71 = 1'b0;
+end 
+
+// Key_72
+initial
+begin
+	Key_72 = 1'b0;
+end 
+
+// Key_73
+initial
+begin
+	Key_73 = 1'b0;
+end 
+
+// Key_74
+initial
+begin
+	Key_74 = 1'b0;
+end 
+
+// Key_75
+initial
+begin
+	Key_75 = 1'b0;
+end 
+
+// Key_76
+initial
+begin
+	Key_76 = 1'b0;
+end 
+
+// Key_77
+initial
+begin
+	Key_77 = 1'b0;
+end 
+
+// Key_78
+initial
+begin
+	Key_78 = 1'b0;
+end 
+
+// Key_79
+initial
+begin
+	Key_79 = 1'b0;
+end 
+
+// Key_80
+initial
+begin
+	Key_80 = 1'b0;
+end 
+
+trivium1_vlg_sample_tst tb_sample (
+	.andip0(andip0),
+	.C_109(C_109),
+	.C_110(C_110),
+	.C_111(C_111),
+	.cipherclk(cipherclk),
+	.clkn(clkn),
+	.clock(clock),
+	.IV_1(IV_1),
+	.IV_2(IV_2),
+	.IV_3(IV_3),
+	.IV_4(IV_4),
+	.IV_5(IV_5),
+	.IV_6(IV_6),
+	.IV_7(IV_7),
+	.IV_8(IV_8),
+	.IV_9(IV_9),
+	.IV_10(IV_10),
+	.IV_11(IV_11),
+	.IV_12(IV_12),
+	.IV_13(IV_13),
+	.IV_14(IV_14),
+	.IV_15(IV_15),
+	.IV_16(IV_16),
+	.IV_17(IV_17),
+	.IV_18(IV_18),
+	.IV_19(IV_19),
+	.IV_20(IV_20),
+	.IV_21(IV_21),
+	.IV_22(IV_22),
+	.IV_23(IV_23),
+	.IV_24(IV_24),
+	.IV_25(IV_25),
+	.IV_26(IV_26),
+	.IV_27(IV_27),
+	.IV_28(IV_28),
+	.IV_29(IV_29),
+	.IV_30(IV_30),
+	.IV_31(IV_31),
+	.IV_32(IV_32),
+	.IV_33(IV_33),
+	.IV_34(IV_34),
+	.IV_35(IV_35),
+	.IV_36(IV_36),
+	.IV_37(IV_37),
+	.IV_38(IV_38),
+	.IV_39(IV_39),
+	.IV_40(IV_40),
+	.IV_41(IV_41),
+	.IV_42(IV_42),
+	.IV_43(IV_43),
+	.IV_44(IV_44),
+	.IV_45(IV_45),
+	.IV_46(IV_46),
+	.IV_47(IV_47),
+	.IV_48(IV_48),
+	.IV_49(IV_49),
+	.IV_50(IV_50),
+	.IV_51(IV_51),
+	.IV_52(IV_52),
+	.IV_53(IV_53),
+	.IV_54(IV_54),
+	.IV_55(IV_55),
+	.IV_56(IV_56),
+	.IV_57(IV_57),
+	.IV_58(IV_58),
+	.IV_59(IV_59),
+	.IV_60(IV_60),
+	.IV_61(IV_61),
+	.IV_62(IV_62),
+	.IV_63(IV_63),
+	.IV_64(IV_64),
+	.IV_65(IV_65),
+	.IV_66(IV_66),
+	.IV_67(IV_67),
+	.IV_68(IV_68),
+	.IV_69(IV_69),
+	.IV_70(IV_70),
+	.IV_71(IV_71),
+	.IV_72(IV_72),
+	.IV_73(IV_73),
+	.IV_74(IV_74),
+	.IV_75(IV_75),
+	.IV_76(IV_76),
+	.IV_77(IV_77),
+	.IV_78(IV_78),
+	.IV_79(IV_79),
+	.IV_80(IV_80),
+	.ivclk(ivclk),
+	.Key_1(Key_1),
+	.Key_2(Key_2),
+	.Key_3(Key_3),
+	.Key_4(Key_4),
+	.Key_5(Key_5),
+	.Key_6(Key_6),
+	.Key_7(Key_7),
+	.Key_8(Key_8),
+	.Key_9(Key_9),
+	.Key_10(Key_10),
+	.Key_11(Key_11),
+	.Key_12(Key_12),
+	.Key_13(Key_13),
+	.Key_14(Key_14),
+	.Key_15(Key_15),
+	.Key_16(Key_16),
+	.Key_17(Key_17),
+	.Key_18(Key_18),
+	.Key_19(Key_19),
+	.Key_20(Key_20),
+	.Key_21(Key_21),
+	.Key_22(Key_22),
+	.Key_23(Key_23),
+	.Key_24(Key_24),
+	.Key_25(Key_25),
+	.Key_26(Key_26),
+	.Key_27(Key_27),
+	.Key_28(Key_28),
+	.Key_29(Key_29),
+	.Key_30(Key_30),
+	.Key_31(Key_31),
+	.Key_32(Key_32),
+	.Key_33(Key_33),
+	.Key_34(Key_34),
+	.Key_35(Key_35),
+	.Key_36(Key_36),
+	.Key_37(Key_37),
+	.Key_38(Key_38),
+	.Key_39(Key_39),
+	.Key_40(Key_40),
+	.Key_41(Key_41),
+	.Key_42(Key_42),
+	.Key_43(Key_43),
+	.Key_44(Key_44),
+	.Key_45(Key_45),
+	.Key_46(Key_46),
+	.Key_47(Key_47),
+	.Key_48(Key_48),
+	.Key_49(Key_49),
+	.Key_50(Key_50),
+	.Key_51(Key_51),
+	.Key_52(Key_52),
+	.Key_53(Key_53),
+	.Key_54(Key_54),
+	.Key_55(Key_55),
+	.Key_56(Key_56),
+	.Key_57(Key_57),
+	.Key_58(Key_58),
+	.Key_59(Key_59),
+	.Key_60(Key_60),
+	.Key_61(Key_61),
+	.Key_62(Key_62),
+	.Key_63(Key_63),
+	.Key_64(Key_64),
+	.Key_65(Key_65),
+	.Key_66(Key_66),
+	.Key_67(Key_67),
+	.Key_68(Key_68),
+	.Key_69(Key_69),
+	.Key_70(Key_70),
+	.Key_71(Key_71),
+	.Key_72(Key_72),
+	.Key_73(Key_73),
+	.Key_74(Key_74),
+	.Key_75(Key_75),
+	.Key_76(Key_76),
+	.Key_77(Key_77),
+	.Key_78(Key_78),
+	.Key_79(Key_79),
+	.Key_80(Key_80),
+	.PLAINTEXT_Original(PLAINTEXT_Original),
+	.vc(vc),
+	.sampler_tx(sampler)
+);
+
+trivium1_vlg_check_tst tb_out(
+	.CIPHERTEXT(CIPHERTEXT),
+	.KEYSTREAM(KEYSTREAM),
+	.pin_name1(pin_name1),
+	.pin_name2(pin_name2),
+	.pin_name3(pin_name3),
+	.PLAINTEXT_Decrypted(PLAINTEXT_Decrypted),
+	.sampler_rx(sampler)
+);
+endmodule
+

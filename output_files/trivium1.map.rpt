@@ -1,5 +1,5 @@
 Analysis & Synthesis report for trivium1
-Mon Mar 12 14:36:45 2018
+Sat Apr 14 14:43:24 2018
 Quartus II 64-Bit Version 15.0.0 Build 145 04/22/2015 SJ Web Edition
 
 
@@ -17,8 +17,8 @@ Quartus II 64-Bit Version 15.0.0 Build 145 04/22/2015 SJ Web Edition
   9. General Register Statistics
  10. Inverted Register Statistics
  11. Registers Packed Into Inferred Megafunctions
- 12. Source assignments for altshift_taps:inst177_rtl_0|shift_taps_f6m:auto_generated|altsyncram_ce81:altsyncram2
- 13. Parameter Settings for Inferred Entity Instance: altshift_taps:inst177_rtl_0
+ 12. Source assignments for altshift_taps:Register_C_1_rtl_0|shift_taps_f6m:auto_generated|altsyncram_ce81:altsyncram2
+ 13. Parameter Settings for Inferred Entity Instance: altshift_taps:Register_C_1_rtl_0
  14. altshift_taps Parameter Settings by Entity Instance
  15. Post-Synthesis Netlist Statistics for Top Partition
  16. Elapsed Time Per Partition
@@ -49,16 +49,16 @@ agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                    ;
 +------------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Mar 12 14:36:45 2018      ;
+; Analysis & Synthesis Status        ; Successful - Sat Apr 14 14:43:24 2018      ;
 ; Quartus II 64-Bit Version          ; 15.0.0 Build 145 04/22/2015 SJ Web Edition ;
 ; Revision Name                      ; trivium1                                   ;
 ; Top-level Entity Name              ; trivium1                                   ;
 ; Family                             ; Cyclone IV E                               ;
-; Total logic elements               ; 238                                        ;
-;     Total combinational functions  ; 21                                         ;
-;     Dedicated logic registers      ; 229                                        ;
-; Total registers                    ; 229                                        ;
-; Total pins                         ; 175                                        ;
+; Total logic elements               ; 262                                        ;
+;     Total combinational functions  ; 45                                         ;
+;     Dedicated logic registers      ; 248                                        ;
+; Total registers                    ; 248                                        ;
+; Total pins                         ; 170                                        ;
 ; Total virtual pins                 ; 0                                          ;
 ; Total memory bits                  ; 64                                         ;
 ; Embedded Multiplier 9-bit elements ; 0                                          ;
@@ -162,11 +162,12 @@ agreement for further details.
 ; Maximum allowed            ; 2           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 1           ;
+; Maximum used               ; 2           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-4         ;   0.0%      ;
+;     Processor 2            ; < 0.1%      ;
+;     Processors 3-4         ;   0.0%      ;
 +----------------------------+-------------+
 
 
@@ -188,64 +189,64 @@ agreement for further details.
 +----------------------------------+-----------------+------------------------------------+------------------------------------------------------------------+---------+
 
 
-+-----------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary               ;
-+---------------------------------------------+-------------+
-; Resource                                    ; Usage       ;
-+---------------------------------------------+-------------+
-; Estimated Total logic elements              ; 238         ;
-;                                             ;             ;
-; Total combinational functions               ; 21          ;
-; Logic element usage by number of LUT inputs ;             ;
-;     -- 4 input functions                    ; 4           ;
-;     -- 3 input functions                    ; 2           ;
-;     -- <=2 input functions                  ; 15          ;
-;                                             ;             ;
-; Logic elements by mode                      ;             ;
-;     -- normal mode                          ; 16          ;
-;     -- arithmetic mode                      ; 5           ;
-;                                             ;             ;
-; Total registers                             ; 229         ;
-;     -- Dedicated logic registers            ; 229         ;
-;     -- I/O registers                        ; 0           ;
-;                                             ;             ;
-; I/O pins                                    ; 175         ;
-; Total memory bits                           ; 64          ;
-;                                             ;             ;
-; Embedded Multiplier 9-bit elements          ; 0           ;
-;                                             ;             ;
-; Maximum fan-out node                        ; clock~input ;
-; Maximum fan-out                             ; 229         ;
-; Total fan-out                               ; 859         ;
-; Average fan-out                             ; 1.43        ;
-+---------------------------------------------+-------------+
++-------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary           ;
++---------------------------------------------+---------+
+; Resource                                    ; Usage   ;
++---------------------------------------------+---------+
+; Estimated Total logic elements              ; 262     ;
+;                                             ;         ;
+; Total combinational functions               ; 45      ;
+; Logic element usage by number of LUT inputs ;         ;
+;     -- 4 input functions                    ; 8       ;
+;     -- 3 input functions                    ; 2       ;
+;     -- <=2 input functions                  ; 35      ;
+;                                             ;         ;
+; Logic elements by mode                      ;         ;
+;     -- normal mode                          ; 40      ;
+;     -- arithmetic mode                      ; 5       ;
+;                                             ;         ;
+; Total registers                             ; 248     ;
+;     -- Dedicated logic registers            ; 248     ;
+;     -- I/O registers                        ; 0       ;
+;                                             ;         ;
+; I/O pins                                    ; 170     ;
+; Total memory bits                           ; 64      ;
+;                                             ;         ;
+; Embedded Multiplier 9-bit elements          ; 0       ;
+;                                             ;         ;
+; Maximum fan-out node                        ; inst185 ;
+; Maximum fan-out                             ; 231     ;
+; Total fan-out                               ; 930     ;
+; Average fan-out                             ; 1.47    ;
++---------------------------------------------+---------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                 ;
-+----------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------------------+--------------+
-; Compilation Hierarchy Node             ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                             ; Library Name ;
-+----------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------------------+--------------+
-; |trivium1                              ; 21 (11)           ; 229 (223)    ; 64          ; 0            ; 0       ; 0         ; 175  ; 0            ; |trivium1                                                                                       ; work         ;
-;    |altshift_taps:inst177_rtl_0|       ; 6 (0)             ; 6 (0)        ; 64          ; 0            ; 0       ; 0         ; 0    ; 0            ; |trivium1|altshift_taps:inst177_rtl_0                                                           ; work         ;
-;       |shift_taps_f6m:auto_generated|  ; 6 (0)             ; 6 (0)        ; 64          ; 0            ; 0       ; 0         ; 0    ; 0            ; |trivium1|altshift_taps:inst177_rtl_0|shift_taps_f6m:auto_generated                             ; work         ;
-;          |altsyncram_ce81:altsyncram2| ; 0 (0)             ; 0 (0)        ; 64          ; 0            ; 0       ; 0         ; 0    ; 0            ; |trivium1|altshift_taps:inst177_rtl_0|shift_taps_f6m:auto_generated|altsyncram_ce81:altsyncram2 ; work         ;
-;          |cntr_1rf:cntr1|              ; 6 (6)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |trivium1|altshift_taps:inst177_rtl_0|shift_taps_f6m:auto_generated|cntr_1rf:cntr1              ; work         ;
-;    |xor3:inst295|                      ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |trivium1|xor3:inst295                                                                          ; work         ;
-;    |xor3:inst296|                      ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |trivium1|xor3:inst296                                                                          ; work         ;
-;    |xor3:inst297|                      ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |trivium1|xor3:inst297                                                                          ; work         ;
-;    |xor3:inst298|                      ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |trivium1|xor3:inst298                                                                          ; work         ;
-+----------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------------------+--------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                      ;
++----------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node             ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                  ; Library Name ;
++----------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------------------+--------------+
+; |trivium1                              ; 45 (35)           ; 248 (242)    ; 64          ; 0            ; 0       ; 0         ; 170  ; 0            ; |trivium1                                                                                            ; work         ;
+;    |altshift_taps:Register_C_1_rtl_0|  ; 6 (0)             ; 6 (0)        ; 64          ; 0            ; 0       ; 0         ; 0    ; 0            ; |trivium1|altshift_taps:Register_C_1_rtl_0                                                           ; work         ;
+;       |shift_taps_f6m:auto_generated|  ; 6 (0)             ; 6 (0)        ; 64          ; 0            ; 0       ; 0         ; 0    ; 0            ; |trivium1|altshift_taps:Register_C_1_rtl_0|shift_taps_f6m:auto_generated                             ; work         ;
+;          |altsyncram_ce81:altsyncram2| ; 0 (0)             ; 0 (0)        ; 64          ; 0            ; 0       ; 0         ; 0    ; 0            ; |trivium1|altshift_taps:Register_C_1_rtl_0|shift_taps_f6m:auto_generated|altsyncram_ce81:altsyncram2 ; work         ;
+;          |cntr_1rf:cntr1|              ; 6 (6)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |trivium1|altshift_taps:Register_C_1_rtl_0|shift_taps_f6m:auto_generated|cntr_1rf:cntr1              ; work         ;
+;    |xor3:inst295|                      ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |trivium1|xor3:inst295                                                                               ; work         ;
+;    |xor3:inst296|                      ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |trivium1|xor3:inst296                                                                               ; work         ;
+;    |xor3:inst297|                      ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |trivium1|xor3:inst297                                                                               ; work         ;
+;    |xor3:inst298|                      ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |trivium1|xor3:inst298                                                                               ; work         ;
++----------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis RAM Summary                                                                                                                                                                     ;
-+--------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+------+------+
-; Name                                                                                             ; Type ; Mode             ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size ; MIF  ;
-+--------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+------+------+
-; altshift_taps:inst177_rtl_0|shift_taps_f6m:auto_generated|altsyncram_ce81:altsyncram2|ALTSYNCRAM ; AUTO ; Simple Dual Port ; 64           ; 1            ; 64           ; 1            ; 64   ; None ;
-+--------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+------+------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis RAM Summary                                                                                                                                                                          ;
++-------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+------+------+
+; Name                                                                                                  ; Type ; Mode             ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size ; MIF  ;
++-------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+------+------+
+; altshift_taps:Register_C_1_rtl_0|shift_taps_f6m:auto_generated|altsyncram_ce81:altsyncram2|ALTSYNCRAM ; AUTO ; Simple Dual Port ; 64           ; 1            ; 64           ; 1            ; 64   ; None ;
++-------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+------+------+
 
 
 +------------------------------------------------------+
@@ -253,10 +254,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 229   ;
+; Total registers                              ; 248   ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 164   ;
+; Number of registers using Asynchronous Clear ; 165   ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 0     ;
 ; Number of registers using Preset             ; 0     ;
@@ -268,220 +269,220 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-------------------------------------------+---------+
 ; Inverted Register                         ; Fan out ;
 +-------------------------------------------+---------+
-; inst172                                   ; 2       ;
-; inst79                                    ; 2       ;
-; inst286                                   ; 4       ;
-; inst285                                   ; 4       ;
-; inst65                                    ; 2       ;
-; inst287                                   ; 2       ;
+; Register_C_111                            ; 2       ;
+; Register_C_110                            ; 3       ;
+; Register_C_109                            ; 3       ;
 ; inst161                                   ; 2       ;
-; inst465                                   ; 2       ;
-; inst171                                   ; 1       ;
-; inst78                                    ; 1       ;
-; inst64                                    ; 1       ;
+; inst65                                    ; 2       ;
+; inst216                                   ; 2       ;
+; inst217                                   ; 2       ;
 ; inst160                                   ; 1       ;
-; inst170                                   ; 2       ;
-; inst77                                    ; 1       ;
-; inst63                                    ; 1       ;
+; inst64                                    ; 1       ;
 ; inst159                                   ; 1       ;
-; inst169                                   ; 1       ;
-; inst76                                    ; 1       ;
-; inst62                                    ; 1       ;
+; inst172                                   ; 1       ;
+; inst63                                    ; 1       ;
 ; inst158                                   ; 1       ;
-; inst168                                   ; 1       ;
-; inst75                                    ; 1       ;
-; inst61                                    ; 1       ;
+; inst171                                   ; 1       ;
+; inst62                                    ; 1       ;
 ; inst157                                   ; 1       ;
-; inst167                                   ; 1       ;
-; inst74                                    ; 1       ;
-; inst60                                    ; 1       ;
+; inst170                                   ; 2       ;
+; inst61                                    ; 1       ;
 ; inst156                                   ; 1       ;
-; inst166                                   ; 1       ;
-; inst73                                    ; 1       ;
-; inst59                                    ; 1       ;
+; inst169                                   ; 1       ;
+; inst60                                    ; 1       ;
 ; inst155                                   ; 1       ;
-; inst165                                   ; 1       ;
-; inst72                                    ; 1       ;
-; inst58                                    ; 1       ;
+; inst168                                   ; 1       ;
+; inst59                                    ; 1       ;
 ; inst154                                   ; 1       ;
-; inst164                                   ; 1       ;
-; inst71                                    ; 1       ;
-; inst57                                    ; 1       ;
+; inst167                                   ; 1       ;
+; inst58                                    ; 1       ;
 ; inst153                                   ; 1       ;
-; inst163                                   ; 1       ;
-; inst70                                    ; 1       ;
-; inst56                                    ; 1       ;
+; inst166                                   ; 1       ;
+; inst57                                    ; 1       ;
 ; inst152                                   ; 1       ;
-; inst162                                   ; 1       ;
-; inst69                                    ; 1       ;
-; inst55                                    ; 1       ;
+; inst165                                   ; 1       ;
+; inst56                                    ; 1       ;
 ; inst151                                   ; 1       ;
-; inst68                                    ; 2       ;
-; inst54                                    ; 1       ;
+; inst164                                   ; 1       ;
+; inst55                                    ; 1       ;
 ; inst150                                   ; 1       ;
-; inst67                                    ; 1       ;
-; inst53                                    ; 1       ;
+; inst163                                   ; 1       ;
+; inst54                                    ; 1       ;
+; inst79                                    ; 1       ;
 ; inst149                                   ; 1       ;
-; inst66                                    ; 1       ;
-; inst52                                    ; 1       ;
+; inst162                                   ; 1       ;
+; inst53                                    ; 1       ;
+; inst78                                    ; 1       ;
 ; inst148                                   ; 1       ;
-; inst51                                    ; 1       ;
+; inst52                                    ; 1       ;
+; inst77                                    ; 1       ;
 ; inst147                                   ; 1       ;
-; inst50                                    ; 1       ;
+; inst51                                    ; 1       ;
+; inst76                                    ; 1       ;
 ; inst146                                   ; 1       ;
-; inst49                                    ; 1       ;
+; inst50                                    ; 1       ;
+; inst75                                    ; 1       ;
 ; inst145                                   ; 1       ;
-; inst48                                    ; 1       ;
+; inst49                                    ; 1       ;
+; inst74                                    ; 1       ;
 ; inst144                                   ; 1       ;
-; inst47                                    ; 1       ;
+; inst48                                    ; 1       ;
+; inst73                                    ; 1       ;
 ; inst143                                   ; 1       ;
-; inst46                                    ; 1       ;
+; inst47                                    ; 1       ;
+; inst72                                    ; 1       ;
 ; inst142                                   ; 1       ;
-; inst45                                    ; 1       ;
+; inst46                                    ; 1       ;
+; inst71                                    ; 1       ;
 ; inst141                                   ; 1       ;
-; inst44                                    ; 1       ;
+; inst45                                    ; 1       ;
+; inst70                                    ; 1       ;
 ; inst140                                   ; 1       ;
-; inst43                                    ; 1       ;
+; inst44                                    ; 1       ;
+; inst69                                    ; 1       ;
 ; inst139                                   ; 1       ;
-; inst42                                    ; 1       ;
+; inst43                                    ; 1       ;
+; inst68                                    ; 2       ;
 ; inst138                                   ; 1       ;
-; inst41                                    ; 1       ;
+; inst42                                    ; 1       ;
+; inst67                                    ; 1       ;
 ; inst137                                   ; 1       ;
-; inst40                                    ; 1       ;
+; inst41                                    ; 1       ;
+; inst66                                    ; 1       ;
 ; inst136                                   ; 1       ;
-; inst39                                    ; 1       ;
+; inst40                                    ; 1       ;
 ; inst135                                   ; 1       ;
-; inst38                                    ; 1       ;
+; inst39                                    ; 1       ;
 ; inst134                                   ; 1       ;
-; inst37                                    ; 1       ;
+; inst38                                    ; 1       ;
 ; inst133                                   ; 1       ;
-; inst36                                    ; 1       ;
+; inst37                                    ; 1       ;
 ; inst132                                   ; 1       ;
-; inst35                                    ; 1       ;
+; inst36                                    ; 1       ;
 ; inst131                                   ; 1       ;
-; inst34                                    ; 1       ;
+; inst35                                    ; 1       ;
 ; inst130                                   ; 1       ;
-; inst33                                    ; 1       ;
+; inst34                                    ; 1       ;
 ; inst129                                   ; 1       ;
-; inst32                                    ; 1       ;
+; inst33                                    ; 1       ;
 ; inst128                                   ; 1       ;
-; inst31                                    ; 1       ;
+; inst32                                    ; 1       ;
 ; inst127                                   ; 1       ;
-; inst30                                    ; 1       ;
-; Total number of inverted registers = 164* ;         ;
+; inst31                                    ; 1       ;
+; Total number of inverted registers = 165* ;         ;
 +-------------------------------------------+---------+
 * Table truncated at 100 items. To change the number of inverted registers reported, set the "Number of Inverted Registers Reported" option under Assignments->Settings->Analysis and Synthesis Settings->More Settings
 
 
-+----------------------------------------------+
-; Registers Packed Into Inferred Megafunctions ;
-+---------------+---------------+--------------+
-; Register Name ; Megafunction  ; Type         ;
-+---------------+---------------+--------------+
-; inst242       ; inst177_rtl_0 ; SHIFT_TAPS   ;
-; inst241       ; inst177_rtl_0 ; SHIFT_TAPS   ;
-; inst240       ; inst177_rtl_0 ; SHIFT_TAPS   ;
-; inst239       ; inst177_rtl_0 ; SHIFT_TAPS   ;
-; inst238       ; inst177_rtl_0 ; SHIFT_TAPS   ;
-; inst237       ; inst177_rtl_0 ; SHIFT_TAPS   ;
-; inst236       ; inst177_rtl_0 ; SHIFT_TAPS   ;
-; inst235       ; inst177_rtl_0 ; SHIFT_TAPS   ;
-; inst234       ; inst177_rtl_0 ; SHIFT_TAPS   ;
-; inst233       ; inst177_rtl_0 ; SHIFT_TAPS   ;
-; inst232       ; inst177_rtl_0 ; SHIFT_TAPS   ;
-; inst231       ; inst177_rtl_0 ; SHIFT_TAPS   ;
-; inst230       ; inst177_rtl_0 ; SHIFT_TAPS   ;
-; inst229       ; inst177_rtl_0 ; SHIFT_TAPS   ;
-; inst228       ; inst177_rtl_0 ; SHIFT_TAPS   ;
-; inst227       ; inst177_rtl_0 ; SHIFT_TAPS   ;
-; inst226       ; inst177_rtl_0 ; SHIFT_TAPS   ;
-; inst225       ; inst177_rtl_0 ; SHIFT_TAPS   ;
-; inst224       ; inst177_rtl_0 ; SHIFT_TAPS   ;
-; inst223       ; inst177_rtl_0 ; SHIFT_TAPS   ;
-; inst222       ; inst177_rtl_0 ; SHIFT_TAPS   ;
-; inst221       ; inst177_rtl_0 ; SHIFT_TAPS   ;
-; inst220       ; inst177_rtl_0 ; SHIFT_TAPS   ;
-; inst219       ; inst177_rtl_0 ; SHIFT_TAPS   ;
-; inst218       ; inst177_rtl_0 ; SHIFT_TAPS   ;
-; inst217       ; inst177_rtl_0 ; SHIFT_TAPS   ;
-; inst216       ; inst177_rtl_0 ; SHIFT_TAPS   ;
-; inst215       ; inst177_rtl_0 ; SHIFT_TAPS   ;
-; inst214       ; inst177_rtl_0 ; SHIFT_TAPS   ;
-; inst213       ; inst177_rtl_0 ; SHIFT_TAPS   ;
-; inst212       ; inst177_rtl_0 ; SHIFT_TAPS   ;
-; inst211       ; inst177_rtl_0 ; SHIFT_TAPS   ;
-; inst210       ; inst177_rtl_0 ; SHIFT_TAPS   ;
-; inst209       ; inst177_rtl_0 ; SHIFT_TAPS   ;
-; inst208       ; inst177_rtl_0 ; SHIFT_TAPS   ;
-; inst207       ; inst177_rtl_0 ; SHIFT_TAPS   ;
-; inst206       ; inst177_rtl_0 ; SHIFT_TAPS   ;
-; inst205       ; inst177_rtl_0 ; SHIFT_TAPS   ;
-; inst204       ; inst177_rtl_0 ; SHIFT_TAPS   ;
-; inst203       ; inst177_rtl_0 ; SHIFT_TAPS   ;
-; inst202       ; inst177_rtl_0 ; SHIFT_TAPS   ;
-; inst201       ; inst177_rtl_0 ; SHIFT_TAPS   ;
-; inst200       ; inst177_rtl_0 ; SHIFT_TAPS   ;
-; inst199       ; inst177_rtl_0 ; SHIFT_TAPS   ;
-; inst198       ; inst177_rtl_0 ; SHIFT_TAPS   ;
-; inst197       ; inst177_rtl_0 ; SHIFT_TAPS   ;
-; inst196       ; inst177_rtl_0 ; SHIFT_TAPS   ;
-; inst195       ; inst177_rtl_0 ; SHIFT_TAPS   ;
-; inst194       ; inst177_rtl_0 ; SHIFT_TAPS   ;
-; inst193       ; inst177_rtl_0 ; SHIFT_TAPS   ;
-; inst192       ; inst177_rtl_0 ; SHIFT_TAPS   ;
-; inst191       ; inst177_rtl_0 ; SHIFT_TAPS   ;
-; inst190       ; inst177_rtl_0 ; SHIFT_TAPS   ;
-; inst189       ; inst177_rtl_0 ; SHIFT_TAPS   ;
-; inst188       ; inst177_rtl_0 ; SHIFT_TAPS   ;
-; inst187       ; inst177_rtl_0 ; SHIFT_TAPS   ;
-; inst186       ; inst177_rtl_0 ; SHIFT_TAPS   ;
-; inst185       ; inst177_rtl_0 ; SHIFT_TAPS   ;
-; inst184       ; inst177_rtl_0 ; SHIFT_TAPS   ;
-; inst183       ; inst177_rtl_0 ; SHIFT_TAPS   ;
-; inst182       ; inst177_rtl_0 ; SHIFT_TAPS   ;
-; inst181       ; inst177_rtl_0 ; SHIFT_TAPS   ;
-; inst180       ; inst177_rtl_0 ; SHIFT_TAPS   ;
-; inst179       ; inst177_rtl_0 ; SHIFT_TAPS   ;
-; inst178       ; inst177_rtl_0 ; SHIFT_TAPS   ;
-; inst177       ; inst177_rtl_0 ; SHIFT_TAPS   ;
-+---------------+---------------+--------------+
++-------------------------------------------------+
+; Registers Packed Into Inferred Megafunctions    ;
++---------------+--------------------+------------+
+; Register Name ; Megafunction       ; Type       ;
++---------------+--------------------+------------+
+; Register_C_66 ; Register_C_1_rtl_0 ; SHIFT_TAPS ;
+; Register_C_65 ; Register_C_1_rtl_0 ; SHIFT_TAPS ;
+; Register_C_64 ; Register_C_1_rtl_0 ; SHIFT_TAPS ;
+; Register_C_63 ; Register_C_1_rtl_0 ; SHIFT_TAPS ;
+; Register_C_62 ; Register_C_1_rtl_0 ; SHIFT_TAPS ;
+; Register_C_61 ; Register_C_1_rtl_0 ; SHIFT_TAPS ;
+; Register_C_60 ; Register_C_1_rtl_0 ; SHIFT_TAPS ;
+; Register_C_59 ; Register_C_1_rtl_0 ; SHIFT_TAPS ;
+; Register_C_58 ; Register_C_1_rtl_0 ; SHIFT_TAPS ;
+; Register_C_57 ; Register_C_1_rtl_0 ; SHIFT_TAPS ;
+; Register_C_56 ; Register_C_1_rtl_0 ; SHIFT_TAPS ;
+; Register_C_55 ; Register_C_1_rtl_0 ; SHIFT_TAPS ;
+; Register_C_54 ; Register_C_1_rtl_0 ; SHIFT_TAPS ;
+; Register_C_53 ; Register_C_1_rtl_0 ; SHIFT_TAPS ;
+; Register_C_52 ; Register_C_1_rtl_0 ; SHIFT_TAPS ;
+; Register_C_51 ; Register_C_1_rtl_0 ; SHIFT_TAPS ;
+; Register_C_50 ; Register_C_1_rtl_0 ; SHIFT_TAPS ;
+; Register_C_49 ; Register_C_1_rtl_0 ; SHIFT_TAPS ;
+; Register_C_48 ; Register_C_1_rtl_0 ; SHIFT_TAPS ;
+; Register_C_47 ; Register_C_1_rtl_0 ; SHIFT_TAPS ;
+; Register_C_46 ; Register_C_1_rtl_0 ; SHIFT_TAPS ;
+; Register_C_45 ; Register_C_1_rtl_0 ; SHIFT_TAPS ;
+; Register_C_44 ; Register_C_1_rtl_0 ; SHIFT_TAPS ;
+; Register_C_43 ; Register_C_1_rtl_0 ; SHIFT_TAPS ;
+; Register_C_42 ; Register_C_1_rtl_0 ; SHIFT_TAPS ;
+; Register_C_41 ; Register_C_1_rtl_0 ; SHIFT_TAPS ;
+; Register_C_40 ; Register_C_1_rtl_0 ; SHIFT_TAPS ;
+; Register_C_39 ; Register_C_1_rtl_0 ; SHIFT_TAPS ;
+; Register_C_38 ; Register_C_1_rtl_0 ; SHIFT_TAPS ;
+; Register_C_37 ; Register_C_1_rtl_0 ; SHIFT_TAPS ;
+; Register_C_36 ; Register_C_1_rtl_0 ; SHIFT_TAPS ;
+; Register_C_35 ; Register_C_1_rtl_0 ; SHIFT_TAPS ;
+; Register_C_34 ; Register_C_1_rtl_0 ; SHIFT_TAPS ;
+; Register_C_33 ; Register_C_1_rtl_0 ; SHIFT_TAPS ;
+; Register_C_32 ; Register_C_1_rtl_0 ; SHIFT_TAPS ;
+; Register_C_31 ; Register_C_1_rtl_0 ; SHIFT_TAPS ;
+; Register_C_30 ; Register_C_1_rtl_0 ; SHIFT_TAPS ;
+; Register_C_29 ; Register_C_1_rtl_0 ; SHIFT_TAPS ;
+; Register_C_28 ; Register_C_1_rtl_0 ; SHIFT_TAPS ;
+; Register_C_27 ; Register_C_1_rtl_0 ; SHIFT_TAPS ;
+; Register_C_26 ; Register_C_1_rtl_0 ; SHIFT_TAPS ;
+; Register_C_25 ; Register_C_1_rtl_0 ; SHIFT_TAPS ;
+; Register_C_24 ; Register_C_1_rtl_0 ; SHIFT_TAPS ;
+; Register_C_23 ; Register_C_1_rtl_0 ; SHIFT_TAPS ;
+; Register_C_22 ; Register_C_1_rtl_0 ; SHIFT_TAPS ;
+; Register_C_21 ; Register_C_1_rtl_0 ; SHIFT_TAPS ;
+; Register_C_20 ; Register_C_1_rtl_0 ; SHIFT_TAPS ;
+; Register_C_19 ; Register_C_1_rtl_0 ; SHIFT_TAPS ;
+; Register_C_18 ; Register_C_1_rtl_0 ; SHIFT_TAPS ;
+; Register_C_17 ; Register_C_1_rtl_0 ; SHIFT_TAPS ;
+; Register_C_16 ; Register_C_1_rtl_0 ; SHIFT_TAPS ;
+; Register_C_15 ; Register_C_1_rtl_0 ; SHIFT_TAPS ;
+; Register_C_14 ; Register_C_1_rtl_0 ; SHIFT_TAPS ;
+; Register_C_13 ; Register_C_1_rtl_0 ; SHIFT_TAPS ;
+; Register_C_12 ; Register_C_1_rtl_0 ; SHIFT_TAPS ;
+; Register_C_11 ; Register_C_1_rtl_0 ; SHIFT_TAPS ;
+; Register_C_10 ; Register_C_1_rtl_0 ; SHIFT_TAPS ;
+; Register_C_9  ; Register_C_1_rtl_0 ; SHIFT_TAPS ;
+; Register_C_8  ; Register_C_1_rtl_0 ; SHIFT_TAPS ;
+; Register_C_7  ; Register_C_1_rtl_0 ; SHIFT_TAPS ;
+; Register_C_6  ; Register_C_1_rtl_0 ; SHIFT_TAPS ;
+; Register_C_5  ; Register_C_1_rtl_0 ; SHIFT_TAPS ;
+; Register_C_4  ; Register_C_1_rtl_0 ; SHIFT_TAPS ;
+; Register_C_3  ; Register_C_1_rtl_0 ; SHIFT_TAPS ;
+; Register_C_2  ; Register_C_1_rtl_0 ; SHIFT_TAPS ;
+; Register_C_1  ; Register_C_1_rtl_0 ; SHIFT_TAPS ;
++---------------+--------------------+------------+
 
 
-+--------------------------------------------------------------------------------------------------------------+
-; Source assignments for altshift_taps:inst177_rtl_0|shift_taps_f6m:auto_generated|altsyncram_ce81:altsyncram2 ;
-+---------------------------------+--------------------+------+------------------------------------------------+
-; Assignment                      ; Value              ; From ; To                                             ;
-+---------------------------------+--------------------+------+------------------------------------------------+
-; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                              ;
-+---------------------------------+--------------------+------+------------------------------------------------+
++-------------------------------------------------------------------------------------------------------------------+
+; Source assignments for altshift_taps:Register_C_1_rtl_0|shift_taps_f6m:auto_generated|altsyncram_ce81:altsyncram2 ;
++---------------------------------+--------------------+------+-----------------------------------------------------+
+; Assignment                      ; Value              ; From ; To                                                  ;
++---------------------------------+--------------------+------+-----------------------------------------------------+
+; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                                   ;
++---------------------------------+--------------------+------+-----------------------------------------------------+
 
 
-+------------------------------------------------------------------------------+
-; Parameter Settings for Inferred Entity Instance: altshift_taps:inst177_rtl_0 ;
-+----------------+----------------+--------------------------------------------+
-; Parameter Name ; Value          ; Type                                       ;
-+----------------+----------------+--------------------------------------------+
-; WIDTH_BYTEENA  ; 1              ; Untyped                                    ;
-; NUMBER_OF_TAPS ; 1              ; Untyped                                    ;
-; TAP_DISTANCE   ; 66             ; Untyped                                    ;
-; WIDTH          ; 1              ; Untyped                                    ;
-; POWER_UP_STATE ; CLEARED        ; Untyped                                    ;
-; CBXI_PARAMETER ; shift_taps_f6m ; Untyped                                    ;
-+----------------+----------------+--------------------------------------------+
++-----------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: altshift_taps:Register_C_1_rtl_0 ;
++----------------+----------------+-------------------------------------------------+
+; Parameter Name ; Value          ; Type                                            ;
++----------------+----------------+-------------------------------------------------+
+; WIDTH_BYTEENA  ; 1              ; Untyped                                         ;
+; NUMBER_OF_TAPS ; 1              ; Untyped                                         ;
+; TAP_DISTANCE   ; 66             ; Untyped                                         ;
+; WIDTH          ; 1              ; Untyped                                         ;
+; POWER_UP_STATE ; CLEARED        ; Untyped                                         ;
+; CBXI_PARAMETER ; shift_taps_f6m ; Untyped                                         ;
++----------------+----------------+-------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+----------------------------------------------------------+
-; altshift_taps Parameter Settings by Entity Instance      ;
-+----------------------------+-----------------------------+
-; Name                       ; Value                       ;
-+----------------------------+-----------------------------+
-; Number of entity instances ; 1                           ;
-; Entity Instance            ; altshift_taps:inst177_rtl_0 ;
-;     -- NUMBER_OF_TAPS      ; 1                           ;
-;     -- TAP_DISTANCE        ; 66                          ;
-;     -- WIDTH               ; 1                           ;
-+----------------------------+-----------------------------+
++---------------------------------------------------------------+
+; altshift_taps Parameter Settings by Entity Instance           ;
++----------------------------+----------------------------------+
+; Name                       ; Value                            ;
++----------------------------+----------------------------------+
+; Number of entity instances ; 1                                ;
+; Entity Instance            ; altshift_taps:Register_C_1_rtl_0 ;
+;     -- NUMBER_OF_TAPS      ; 1                                ;
+;     -- TAP_DISTANCE        ; 66                               ;
+;     -- WIDTH               ; 1                                ;
++----------------------------+----------------------------------+
 
 
 +-----------------------------------------------------+
@@ -489,22 +490,22 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 175                         ;
-; cycloneiii_ff         ; 229                         ;
-;     CLR               ; 164                         ;
-;     plain             ; 65                          ;
-; cycloneiii_lcell_comb ; 23                          ;
+; boundary_port         ; 170                         ;
+; cycloneiii_ff         ; 248                         ;
+;     CLR               ; 165                         ;
+;     plain             ; 83                          ;
+; cycloneiii_lcell_comb ; 45                          ;
 ;     arith             ; 5                           ;
 ;         2 data inputs ; 5                           ;
-;     normal            ; 18                          ;
-;         1 data inputs ; 7                           ;
-;         2 data inputs ; 5                           ;
+;     normal            ; 40                          ;
+;         1 data inputs ; 23                          ;
+;         2 data inputs ; 7                           ;
 ;         3 data inputs ; 2                           ;
-;         4 data inputs ; 4                           ;
+;         4 data inputs ; 8                           ;
 ; cycloneiii_ram_block  ; 1                           ;
 ;                       ;                             ;
-; Max LUT depth         ; 3.00                        ;
-; Average LUT depth     ; 0.23                        ;
+; Max LUT depth         ; 4.00                        ;
+; Average LUT depth     ; 0.38                        ;
 +-----------------------+-----------------------------+
 
 
@@ -523,21 +524,22 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 15.0.0 Build 145 04/22/2015 SJ Web Edition
-    Info: Processing started: Mon Mar 12 14:36:26 2018
+    Info: Processing started: Sat Apr 14 14:43:06 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off trivium1 -c trivium1
 Info (11104): Parallel Compilation has detected 4 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 2 of the 2 physical processors detected instead.
 Info (12021): Found 1 design units, including 1 entities, in source file trivium1.bdf
     Info (12023): Found entity 1: trivium1
 Info (12127): Elaborating entity "trivium1" for the top level hierarchy
-Info (12128): Elaborating entity "XOR3" for hierarchy "XOR3:inst295"
-Info (12130): Elaborated megafunction instantiation "XOR3:inst295"
+Warning (275011): Block or symbol "TFF" of instance "inst186" overlaps another block or symbol
+Info (12128): Elaborating entity "XOR3" for hierarchy "XOR3:inst298"
+Info (12130): Elaborated megafunction instantiation "XOR3:inst298"
 Info (19000): Inferred 1 megafunctions from design logic
-    Info (276034): Inferred altshift_taps megafunction from the following design logic: "inst177_rtl_0"
+    Info (276034): Inferred altshift_taps megafunction from the following design logic: "Register_C_1_rtl_0"
         Info (286033): Parameter NUMBER_OF_TAPS set to 1
         Info (286033): Parameter TAP_DISTANCE set to 66
         Info (286033): Parameter WIDTH set to 1
-Info (12130): Elaborated megafunction instantiation "altshift_taps:inst177_rtl_0"
-Info (12133): Instantiated megafunction "altshift_taps:inst177_rtl_0" with the following parameter:
+Info (12130): Elaborated megafunction instantiation "altshift_taps:Register_C_1_rtl_0"
+Info (12133): Instantiated megafunction "altshift_taps:Register_C_1_rtl_0" with the following parameter:
     Info (12134): Parameter "NUMBER_OF_TAPS" = "1"
     Info (12134): Parameter "TAP_DISTANCE" = "66"
     Info (12134): Parameter "WIDTH" = "1"
@@ -552,15 +554,15 @@ Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal 
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 414 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 168 input pins
-    Info (21059): Implemented 7 output pins
-    Info (21061): Implemented 238 logic cells
+Info (21057): Implemented 433 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 164 input pins
+    Info (21059): Implemented 6 output pins
+    Info (21061): Implemented 262 logic cells
     Info (21064): Implemented 1 RAM segments
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 744 megabytes
-    Info: Processing ended: Mon Mar 12 14:36:45 2018
-    Info: Elapsed time: 00:00:19
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 755 megabytes
+    Info: Processing ended: Sat Apr 14 14:43:24 2018
+    Info: Elapsed time: 00:00:18
     Info: Total CPU time (on all processors): 00:00:36
 
 

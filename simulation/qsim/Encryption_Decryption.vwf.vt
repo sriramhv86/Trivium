@@ -1,0 +1,419 @@
+// Copyright (C) 1991-2015 Altera Corporation. All rights reserved.
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, the Altera Quartus II License Agreement,
+// the Altera MegaCore Function License Agreement, or other 
+// applicable license agreement, including, without limitation, 
+// that your use is for the sole purpose of programming logic 
+// devices manufactured by Altera and sold by Altera or its 
+// authorized distributors.  Please refer to the applicable 
+// agreement for further details.
+
+// *****************************************************************************
+// This file contains a Verilog test bench with test vectors .The test vectors  
+// are exported from a vector file in the Quartus Waveform Editor and apply to  
+// the top level entity of the current Quartus project .The user can use this   
+// testbench to simulate his design using a third-party simulation tool .       
+// *****************************************************************************
+// Generated on "04/08/2018 20:55:44"
+                                                                        
+// Verilog Self-Checking Test Bench (with test vectors) for design :    trivium1
+// 
+// Simulation tool : 3rd Party
+// 
+
+`timescale 1 ps/ 1 ps
+module trivium1_vlg_vec_tst();
+// constants                                           
+// general purpose registers
+reg andip0;
+reg C_109;
+reg C_110;
+reg C_111;
+reg cipherclk;
+reg clock;
+reg IV_1;
+reg IV_2;
+reg IV_3;
+reg IV_4;
+reg IV_5;
+reg IV_6;
+reg IV_7;
+reg IV_8;
+reg IV_9;
+reg IV_10;
+reg IV_11;
+reg IV_12;
+reg IV_13;
+reg IV_14;
+reg IV_15;
+reg IV_16;
+reg IV_17;
+reg IV_18;
+reg IV_19;
+reg IV_20;
+reg IV_21;
+reg IV_22;
+reg IV_23;
+reg IV_24;
+reg IV_25;
+reg IV_26;
+reg IV_27;
+reg IV_28;
+reg IV_29;
+reg IV_30;
+reg IV_31;
+reg IV_32;
+reg IV_33;
+reg IV_34;
+reg IV_35;
+reg IV_36;
+reg IV_37;
+reg IV_38;
+reg IV_39;
+reg IV_40;
+reg IV_41;
+reg IV_42;
+reg IV_43;
+reg IV_44;
+reg IV_45;
+reg IV_46;
+reg IV_47;
+reg IV_48;
+reg IV_49;
+reg IV_50;
+reg IV_51;
+reg IV_52;
+reg IV_53;
+reg IV_54;
+reg IV_55;
+reg IV_56;
+reg IV_57;
+reg IV_58;
+reg IV_59;
+reg IV_60;
+reg IV_61;
+reg IV_62;
+reg IV_63;
+reg IV_64;
+reg IV_65;
+reg IV_66;
+reg IV_67;
+reg IV_68;
+reg IV_69;
+reg IV_70;
+reg IV_71;
+reg IV_72;
+reg IV_73;
+reg IV_74;
+reg IV_75;
+reg IV_76;
+reg IV_77;
+reg IV_78;
+reg IV_79;
+reg IV_80;
+reg ivclk;
+reg Key_1;
+reg Key_2;
+reg Key_3;
+reg Key_4;
+reg Key_5;
+reg Key_6;
+reg Key_7;
+reg Key_8;
+reg Key_9;
+reg Key_10;
+reg Key_11;
+reg Key_12;
+reg Key_13;
+reg Key_14;
+reg Key_15;
+reg Key_16;
+reg Key_17;
+reg Key_18;
+reg Key_19;
+reg Key_20;
+reg Key_21;
+reg Key_22;
+reg Key_23;
+reg Key_24;
+reg Key_25;
+reg Key_26;
+reg Key_27;
+reg Key_28;
+reg Key_29;
+reg Key_30;
+reg Key_31;
+reg Key_32;
+reg Key_33;
+reg Key_34;
+reg Key_35;
+reg Key_36;
+reg Key_37;
+reg Key_38;
+reg Key_39;
+reg Key_40;
+reg Key_41;
+reg Key_42;
+reg Key_43;
+reg Key_44;
+reg Key_45;
+reg Key_46;
+reg Key_47;
+reg Key_48;
+reg Key_49;
+reg Key_50;
+reg Key_51;
+reg Key_52;
+reg Key_53;
+reg Key_54;
+reg Key_55;
+reg Key_56;
+reg Key_57;
+reg Key_58;
+reg Key_59;
+reg Key_60;
+reg Key_61;
+reg Key_62;
+reg Key_63;
+reg Key_64;
+reg Key_65;
+reg Key_66;
+reg Key_67;
+reg Key_68;
+reg Key_69;
+reg Key_70;
+reg Key_71;
+reg Key_72;
+reg Key_73;
+reg Key_74;
+reg Key_75;
+reg Key_76;
+reg Key_77;
+reg Key_78;
+reg Key_79;
+reg Key_80;
+reg PLAINTEXT_Original;
+// wires                                               
+wire CIPHERTEXT;
+wire KEYSTREAM;
+wire PLAINTEXT_Decrypted;
+
+// assign statements (if any)                          
+trivium1 i1 (
+// port map - connection between master ports and signals/registers   
+	.andip0(andip0),
+	.C_109(C_109),
+	.C_110(C_110),
+	.C_111(C_111),
+	.cipherclk(cipherclk),
+	.CIPHERTEXT(CIPHERTEXT),
+	.clock(clock),
+	.IV_1(IV_1),
+	.IV_2(IV_2),
+	.IV_3(IV_3),
+	.IV_4(IV_4),
+	.IV_5(IV_5),
+	.IV_6(IV_6),
+	.IV_7(IV_7),
+	.IV_8(IV_8),
+	.IV_9(IV_9),
+	.IV_10(IV_10),
+	.IV_11(IV_11),
+	.IV_12(IV_12),
+	.IV_13(IV_13),
+	.IV_14(IV_14),
+	.IV_15(IV_15),
+	.IV_16(IV_16),
+	.IV_17(IV_17),
+	.IV_18(IV_18),
+	.IV_19(IV_19),
+	.IV_20(IV_20),
+	.IV_21(IV_21),
+	.IV_22(IV_22),
+	.IV_23(IV_23),
+	.IV_24(IV_24),
+	.IV_25(IV_25),
+	.IV_26(IV_26),
+	.IV_27(IV_27),
+	.IV_28(IV_28),
+	.IV_29(IV_29),
+	.IV_30(IV_30),
+	.IV_31(IV_31),
+	.IV_32(IV_32),
+	.IV_33(IV_33),
+	.IV_34(IV_34),
+	.IV_35(IV_35),
+	.IV_36(IV_36),
+	.IV_37(IV_37),
+	.IV_38(IV_38),
+	.IV_39(IV_39),
+	.IV_40(IV_40),
+	.IV_41(IV_41),
+	.IV_42(IV_42),
+	.IV_43(IV_43),
+	.IV_44(IV_44),
+	.IV_45(IV_45),
+	.IV_46(IV_46),
+	.IV_47(IV_47),
+	.IV_48(IV_48),
+	.IV_49(IV_49),
+	.IV_50(IV_50),
+	.IV_51(IV_51),
+	.IV_52(IV_52),
+	.IV_53(IV_53),
+	.IV_54(IV_54),
+	.IV_55(IV_55),
+	.IV_56(IV_56),
+	.IV_57(IV_57),
+	.IV_58(IV_58),
+	.IV_59(IV_59),
+	.IV_60(IV_60),
+	.IV_61(IV_61),
+	.IV_62(IV_62),
+	.IV_63(IV_63),
+	.IV_64(IV_64),
+	.IV_65(IV_65),
+	.IV_66(IV_66),
+	.IV_67(IV_67),
+	.IV_68(IV_68),
+	.IV_69(IV_69),
+	.IV_70(IV_70),
+	.IV_71(IV_71),
+	.IV_72(IV_72),
+	.IV_73(IV_73),
+	.IV_74(IV_74),
+	.IV_75(IV_75),
+	.IV_76(IV_76),
+	.IV_77(IV_77),
+	.IV_78(IV_78),
+	.IV_79(IV_79),
+	.IV_80(IV_80),
+	.ivclk(ivclk),
+	.Key_1(Key_1),
+	.Key_2(Key_2),
+	.Key_3(Key_3),
+	.Key_4(Key_4),
+	.Key_5(Key_5),
+	.Key_6(Key_6),
+	.Key_7(Key_7),
+	.Key_8(Key_8),
+	.Key_9(Key_9),
+	.Key_10(Key_10),
+	.Key_11(Key_11),
+	.Key_12(Key_12),
+	.Key_13(Key_13),
+	.Key_14(Key_14),
+	.Key_15(Key_15),
+	.Key_16(Key_16),
+	.Key_17(Key_17),
+	.Key_18(Key_18),
+	.Key_19(Key_19),
+	.Key_20(Key_20),
+	.Key_21(Key_21),
+	.Key_22(Key_22),
+	.Key_23(Key_23),
+	.Key_24(Key_24),
+	.Key_25(Key_25),
+	.Key_26(Key_26),
+	.Key_27(Key_27),
+	.Key_28(Key_28),
+	.Key_29(Key_29),
+	.Key_30(Key_30),
+	.Key_31(Key_31),
+	.Key_32(Key_32),
+	.Key_33(Key_33),
+	.Key_34(Key_34),
+	.Key_35(Key_35),
+	.Key_36(Key_36),
+	.Key_37(Key_37),
+	.Key_38(Key_38),
+	.Key_39(Key_39),
+	.Key_40(Key_40),
+	.Key_41(Key_41),
+	.Key_42(Key_42),
+	.Key_43(Key_43),
+	.Key_44(Key_44),
+	.Key_45(Key_45),
+	.Key_46(Key_46),
+	.Key_47(Key_47),
+	.Key_48(Key_48),
+	.Key_49(Key_49),
+	.Key_50(Key_50),
+	.Key_51(Key_51),
+	.Key_52(Key_52),
+	.Key_53(Key_53),
+	.Key_54(Key_54),
+	.Key_55(Key_55),
+	.Key_56(Key_56),
+	.Key_57(Key_57),
+	.Key_58(Key_58),
+	.Key_59(Key_59),
+	.Key_60(Key_60),
+	.Key_61(Key_61),
+	.Key_62(Key_62),
+	.Key_63(Key_63),
+	.Key_64(Key_64),
+	.Key_65(Key_65),
+	.Key_66(Key_66),
+	.Key_67(Key_67),
+	.Key_68(Key_68),
+	.Key_69(Key_69),
+	.Key_70(Key_70),
+	.Key_71(Key_71),
+	.Key_72(Key_72),
+	.Key_73(Key_73),
+	.Key_74(Key_74),
+	.Key_75(Key_75),
+	.Key_76(Key_76),
+	.Key_77(Key_77),
+	.Key_78(Key_78),
+	.Key_79(Key_79),
+	.Key_80(Key_80),
+	.KEYSTREAM(KEYSTREAM),
+	.PLAINTEXT_Decrypted(PLAINTEXT_Decrypted),
+	.PLAINTEXT_Original(PLAINTEXT_Original)
+);
+initial 
+begin 
+#1500000 $finish;
+end 
+
+// clock
+always
+begin
+	clock = 1'b0;
+	clock = #500 1'b1;
+	#500;
+end 
+
+// cipherclk
+always
+begin
+	cipherclk = 1'b0;
+	cipherclk = #500 1'b1;
+	#500;
+end 
+
+// andip0
+initial
+begin
+	andip0 = 1'b0;
+end 
+
+// ivclk
+initial
+begin
+	ivclk = 1'b0;
+	ivclk = #1153500 1'b1;
+end 
+initial 
+begin 
+#1500000 $finish;
+end 
+endmodule
+
