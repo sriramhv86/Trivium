@@ -2,35 +2,35 @@
 # ** Warning: (vlib-34) Library already exists at "work".
 # 
 # Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
-# Start time: 14:52:11 on Apr 14,2018
+# Start time: 12:27:43 on Apr 15,2018
 # vlog -work work trivium1.vo 
 # -- Compiling module trivium1
 # 
 # Top level modules:
 # 	trivium1
-# End time: 14:52:11 on Apr 14,2018, Elapsed time: 0:00:00
+# End time: 12:27:43 on Apr 15,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
-# Start time: 14:52:11 on Apr 14,2018
-# vlog -work work cntr.vwf.vt 
+# Start time: 12:27:43 on Apr 15,2018
+# vlog -work work Encryption_Decryption.vwf.vt 
 # -- Compiling module trivium1_vlg_sample_tst
 # -- Compiling module trivium1_vlg_check_tst
 # -- Compiling module trivium1_vlg_vec_tst
 # 
 # Top level modules:
 # 	trivium1_vlg_vec_tst
-# End time: 14:52:11 on Apr 14,2018, Elapsed time: 0:00:00
+# End time: 12:27:43 on Apr 15,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vsim -c -do "trivium1.do" 
-# Start time: 14:52:11 on Apr 14,2018
+# Start time: 12:27:43 on Apr 15,2018
 # Loading work.trivium1_vlg_vec_tst
 # Loading work.trivium1
 # Loading cycloneive_ver.cycloneive_io_obuf
 # Loading cycloneive_ver.cycloneive_io_ibuf
+# Loading cycloneive_ver.cycloneive_lcell_comb
 # Loading cycloneive_ver.cycloneive_clkctrl
 # Loading cycloneive_ver.cycloneive_mux41
 # Loading cycloneive_ver.cycloneive_ena_reg
-# Loading cycloneive_ver.cycloneive_lcell_comb
 # Loading altera_ver.dffeas
 # Loading cycloneive_ver.cycloneive_ram_block
 # Loading cycloneive_ver.cycloneive_ram_register
@@ -38,8 +38,17 @@
 # Loading work.trivium1_vlg_sample_tst
 # Loading work.trivium1_vlg_check_tst
 # Loading altera_ver.PRIM_GDFF_LOW
-# Simulation passed !
-# ** Note: $finish    : cntr.vwf.vt(544)
-#    Time: 3 us  Iteration: 0  Instance: /trivium1_vlg_vec_tst/tb_out
-# End time: 14:52:13 on Apr 14,2018, Elapsed time: 0:00:02
+# ERROR! Vector Mismatch for output port filter_out :: @time = 1157000.000 ps
+#      Expected value = 0
+#      Real value = 1
+# ERROR! Vector Mismatch for output port KEYSTREAM :: @time = 1157000.000 ps
+#      Expected value = 0
+#      Real value = 1
+# ERROR! Vector Mismatch for output port Message_Decrypted :: @time = 1157000.000 ps
+#      Expected value = 0
+#      Real value = 1
+#           3 mismatched vectors : Simulation failed !
+# ** Note: $finish    : Encryption_Decryption.vwf.vt(569)
+#    Time: 5 us  Iteration: 0  Instance: /trivium1_vlg_vec_tst/tb_out
+# End time: 12:27:48 on Apr 15,2018, Elapsed time: 0:00:05
 # Errors: 0, Warnings: 0

@@ -1,5 +1,5 @@
 Analysis & Synthesis report for trivium1
-Sat Apr 14 14:43:24 2018
+Sun Apr 15 12:21:52 2018
 Quartus II 64-Bit Version 15.0.0 Build 145 04/22/2015 SJ Web Edition
 
 
@@ -17,12 +17,16 @@ Quartus II 64-Bit Version 15.0.0 Build 145 04/22/2015 SJ Web Edition
   9. General Register Statistics
  10. Inverted Register Statistics
  11. Registers Packed Into Inferred Megafunctions
- 12. Source assignments for altshift_taps:Register_C_1_rtl_0|shift_taps_f6m:auto_generated|altsyncram_ce81:altsyncram2
- 13. Parameter Settings for Inferred Entity Instance: altshift_taps:Register_C_1_rtl_0
- 14. altshift_taps Parameter Settings by Entity Instance
- 15. Post-Synthesis Netlist Statistics for Top Partition
- 16. Elapsed Time Per Partition
- 17. Analysis & Synthesis Messages
+ 12. Source assignments for altshift_taps:inst93_rtl_0|shift_taps_i6m:auto_generated|altsyncram_ke81:altsyncram2
+ 13. Source assignments for altshift_taps:Register_C_1_rtl_0|shift_taps_f6m:auto_generated|altsyncram_ce81:altsyncram2
+ 14. Source assignments for altshift_taps:inst1_rtl_0|shift_taps_e6m:auto_generated|altsyncram_ae81:altsyncram2
+ 15. Parameter Settings for Inferred Entity Instance: altshift_taps:inst93_rtl_0
+ 16. Parameter Settings for Inferred Entity Instance: altshift_taps:Register_C_1_rtl_0
+ 17. Parameter Settings for Inferred Entity Instance: altshift_taps:inst1_rtl_0
+ 18. altshift_taps Parameter Settings by Entity Instance
+ 19. Post-Synthesis Netlist Statistics for Top Partition
+ 20. Elapsed Time Per Partition
+ 21. Analysis & Synthesis Messages
 
 
 
@@ -49,18 +53,18 @@ agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                    ;
 +------------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sat Apr 14 14:43:24 2018      ;
+; Analysis & Synthesis Status        ; Successful - Sun Apr 15 12:21:52 2018      ;
 ; Quartus II 64-Bit Version          ; 15.0.0 Build 145 04/22/2015 SJ Web Edition ;
 ; Revision Name                      ; trivium1                                   ;
 ; Top-level Entity Name              ; trivium1                                   ;
 ; Family                             ; Cyclone IV E                               ;
-; Total logic elements               ; 262                                        ;
-;     Total combinational functions  ; 45                                         ;
-;     Dedicated logic registers      ; 248                                        ;
-; Total registers                    ; 248                                        ;
+; Total logic elements               ; 162                                        ;
+;     Total combinational functions  ; 76                                         ;
+;     Dedicated logic registers      ; 127                                        ;
+; Total registers                    ; 127                                        ;
 ; Total pins                         ; 170                                        ;
 ; Total virtual pins                 ; 0                                          ;
-; Total memory bits                  ; 64                                         ;
+; Total memory bits                  ; 194                                        ;
 ; Embedded Multiplier 9-bit elements ; 0                                          ;
 ; Total PLLs                         ; 0                                          ;
 +------------------------------------+--------------------------------------------+
@@ -183,9 +187,17 @@ agreement for further details.
 ; lpm_counter.inc                  ; yes             ; Megafunction                       ; c:/altera/15.0/quartus/libraries/megafunctions/lpm_counter.inc   ;         ;
 ; lpm_compare.inc                  ; yes             ; Megafunction                       ; c:/altera/15.0/quartus/libraries/megafunctions/lpm_compare.inc   ;         ;
 ; lpm_constant.inc                 ; yes             ; Megafunction                       ; c:/altera/15.0/quartus/libraries/megafunctions/lpm_constant.inc  ;         ;
+; db/shift_taps_i6m.tdf            ; yes             ; Auto-Generated Megafunction        ; C:/Users/sriram/Desktop/Git/Trivium1/db/shift_taps_i6m.tdf       ;         ;
+; db/altsyncram_ke81.tdf           ; yes             ; Auto-Generated Megafunction        ; C:/Users/sriram/Desktop/Git/Trivium1/db/altsyncram_ke81.tdf      ;         ;
+; db/cntr_5rf.tdf                  ; yes             ; Auto-Generated Megafunction        ; C:/Users/sriram/Desktop/Git/Trivium1/db/cntr_5rf.tdf             ;         ;
+; db/cmpr_tgc.tdf                  ; yes             ; Auto-Generated Megafunction        ; C:/Users/sriram/Desktop/Git/Trivium1/db/cmpr_tgc.tdf             ;         ;
 ; db/shift_taps_f6m.tdf            ; yes             ; Auto-Generated Megafunction        ; C:/Users/sriram/Desktop/Git/Trivium1/db/shift_taps_f6m.tdf       ;         ;
 ; db/altsyncram_ce81.tdf           ; yes             ; Auto-Generated Megafunction        ; C:/Users/sriram/Desktop/Git/Trivium1/db/altsyncram_ce81.tdf      ;         ;
 ; db/cntr_1rf.tdf                  ; yes             ; Auto-Generated Megafunction        ; C:/Users/sriram/Desktop/Git/Trivium1/db/cntr_1rf.tdf             ;         ;
+; db/shift_taps_e6m.tdf            ; yes             ; Auto-Generated Megafunction        ; C:/Users/sriram/Desktop/Git/Trivium1/db/shift_taps_e6m.tdf       ;         ;
+; db/altsyncram_ae81.tdf           ; yes             ; Auto-Generated Megafunction        ; C:/Users/sriram/Desktop/Git/Trivium1/db/altsyncram_ae81.tdf      ;         ;
+; db/cntr_0rf.tdf                  ; yes             ; Auto-Generated Megafunction        ; C:/Users/sriram/Desktop/Git/Trivium1/db/cntr_0rf.tdf             ;         ;
+; db/cmpr_sgc.tdf                  ; yes             ; Auto-Generated Megafunction        ; C:/Users/sriram/Desktop/Git/Trivium1/db/cmpr_sgc.tdf             ;         ;
 +----------------------------------+-----------------+------------------------------------+------------------------------------------------------------------+---------+
 
 
@@ -194,31 +206,31 @@ agreement for further details.
 +---------------------------------------------+---------+
 ; Resource                                    ; Usage   ;
 +---------------------------------------------+---------+
-; Estimated Total logic elements              ; 262     ;
+; Estimated Total logic elements              ; 162     ;
 ;                                             ;         ;
-; Total combinational functions               ; 45      ;
+; Total combinational functions               ; 76      ;
 ; Logic element usage by number of LUT inputs ;         ;
-;     -- 4 input functions                    ; 8       ;
-;     -- 3 input functions                    ; 2       ;
-;     -- <=2 input functions                  ; 35      ;
+;     -- 4 input functions                    ; 24      ;
+;     -- 3 input functions                    ; 4       ;
+;     -- <=2 input functions                  ; 48      ;
 ;                                             ;         ;
 ; Logic elements by mode                      ;         ;
-;     -- normal mode                          ; 40      ;
-;     -- arithmetic mode                      ; 5       ;
+;     -- normal mode                          ; 58      ;
+;     -- arithmetic mode                      ; 18      ;
 ;                                             ;         ;
-; Total registers                             ; 248     ;
-;     -- Dedicated logic registers            ; 248     ;
+; Total registers                             ; 127     ;
+;     -- Dedicated logic registers            ; 127     ;
 ;     -- I/O registers                        ; 0       ;
 ;                                             ;         ;
 ; I/O pins                                    ; 170     ;
-; Total memory bits                           ; 64      ;
+; Total memory bits                           ; 194     ;
 ;                                             ;         ;
 ; Embedded Multiplier 9-bit elements          ; 0       ;
 ;                                             ;         ;
 ; Maximum fan-out node                        ; inst185 ;
-; Maximum fan-out                             ; 231     ;
-; Total fan-out                               ; 930     ;
-; Average fan-out                             ; 1.47    ;
+; Maximum fan-out                             ; 111     ;
+; Total fan-out                               ; 640     ;
+; Average fan-out                             ; 1.17    ;
 +---------------------------------------------+---------+
 
 
@@ -227,15 +239,24 @@ agreement for further details.
 +----------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node             ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                  ; Library Name ;
 +----------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------------------+--------------+
-; |trivium1                              ; 45 (35)           ; 248 (242)    ; 64          ; 0            ; 0       ; 0         ; 170  ; 0            ; |trivium1                                                                                            ; work         ;
+; |trivium1                              ; 76 (35)           ; 127 (108)    ; 194         ; 0            ; 0       ; 0         ; 170  ; 0            ; |trivium1                                                                                            ; work         ;
 ;    |altshift_taps:Register_C_1_rtl_0|  ; 6 (0)             ; 6 (0)        ; 64          ; 0            ; 0       ; 0         ; 0    ; 0            ; |trivium1|altshift_taps:Register_C_1_rtl_0                                                           ; work         ;
 ;       |shift_taps_f6m:auto_generated|  ; 6 (0)             ; 6 (0)        ; 64          ; 0            ; 0       ; 0         ; 0    ; 0            ; |trivium1|altshift_taps:Register_C_1_rtl_0|shift_taps_f6m:auto_generated                             ; work         ;
 ;          |altsyncram_ce81:altsyncram2| ; 0 (0)             ; 0 (0)        ; 64          ; 0            ; 0       ; 0         ; 0    ; 0            ; |trivium1|altshift_taps:Register_C_1_rtl_0|shift_taps_f6m:auto_generated|altsyncram_ce81:altsyncram2 ; work         ;
 ;          |cntr_1rf:cntr1|              ; 6 (6)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |trivium1|altshift_taps:Register_C_1_rtl_0|shift_taps_f6m:auto_generated|cntr_1rf:cntr1              ; work         ;
+;    |altshift_taps:inst1_rtl_0|         ; 15 (0)            ; 6 (0)        ; 63          ; 0            ; 0       ; 0         ; 0    ; 0            ; |trivium1|altshift_taps:inst1_rtl_0                                                                  ; work         ;
+;       |shift_taps_e6m:auto_generated|  ; 15 (0)            ; 6 (0)        ; 63          ; 0            ; 0       ; 0         ; 0    ; 0            ; |trivium1|altshift_taps:inst1_rtl_0|shift_taps_e6m:auto_generated                                    ; work         ;
+;          |altsyncram_ae81:altsyncram2| ; 0 (0)             ; 0 (0)        ; 63          ; 0            ; 0       ; 0         ; 0    ; 0            ; |trivium1|altshift_taps:inst1_rtl_0|shift_taps_e6m:auto_generated|altsyncram_ae81:altsyncram2        ; work         ;
+;          |cntr_0rf:cntr1|              ; 15 (13)           ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |trivium1|altshift_taps:inst1_rtl_0|shift_taps_e6m:auto_generated|cntr_0rf:cntr1                     ; work         ;
+;             |cmpr_sgc:cmpr4|           ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |trivium1|altshift_taps:inst1_rtl_0|shift_taps_e6m:auto_generated|cntr_0rf:cntr1|cmpr_sgc:cmpr4      ; work         ;
+;    |altshift_taps:inst93_rtl_0|        ; 17 (0)            ; 7 (0)        ; 67          ; 0            ; 0       ; 0         ; 0    ; 0            ; |trivium1|altshift_taps:inst93_rtl_0                                                                 ; work         ;
+;       |shift_taps_i6m:auto_generated|  ; 17 (0)            ; 7 (0)        ; 67          ; 0            ; 0       ; 0         ; 0    ; 0            ; |trivium1|altshift_taps:inst93_rtl_0|shift_taps_i6m:auto_generated                                   ; work         ;
+;          |altsyncram_ke81:altsyncram2| ; 0 (0)             ; 0 (0)        ; 67          ; 0            ; 0       ; 0         ; 0    ; 0            ; |trivium1|altshift_taps:inst93_rtl_0|shift_taps_i6m:auto_generated|altsyncram_ke81:altsyncram2       ; work         ;
+;          |cntr_5rf:cntr1|              ; 17 (15)           ; 7 (7)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |trivium1|altshift_taps:inst93_rtl_0|shift_taps_i6m:auto_generated|cntr_5rf:cntr1                    ; work         ;
+;             |cmpr_tgc:cmpr4|           ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |trivium1|altshift_taps:inst93_rtl_0|shift_taps_i6m:auto_generated|cntr_5rf:cntr1|cmpr_tgc:cmpr4     ; work         ;
 ;    |xor3:inst295|                      ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |trivium1|xor3:inst295                                                                               ; work         ;
 ;    |xor3:inst296|                      ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |trivium1|xor3:inst296                                                                               ; work         ;
 ;    |xor3:inst297|                      ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |trivium1|xor3:inst297                                                                               ; work         ;
-;    |xor3:inst298|                      ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |trivium1|xor3:inst298                                                                               ; work         ;
 +----------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -246,6 +267,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Name                                                                                                  ; Type ; Mode             ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size ; MIF  ;
 +-------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+------+------+
 ; altshift_taps:Register_C_1_rtl_0|shift_taps_f6m:auto_generated|altsyncram_ce81:altsyncram2|ALTSYNCRAM ; AUTO ; Simple Dual Port ; 64           ; 1            ; 64           ; 1            ; 64   ; None ;
+; altshift_taps:inst1_rtl_0|shift_taps_e6m:auto_generated|altsyncram_ae81:altsyncram2|ALTSYNCRAM        ; AUTO ; Simple Dual Port ; 63           ; 1            ; 63           ; 1            ; 63   ; None ;
+; altshift_taps:inst93_rtl_0|shift_taps_i6m:auto_generated|altsyncram_ke81:altsyncram2|ALTSYNCRAM       ; AUTO ; Simple Dual Port ; 67           ; 1            ; 67           ; 1            ; 67   ; None ;
 +-------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+------+------+
 
 
@@ -254,124 +277,28 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 248   ;
+; Total registers                              ; 127   ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 165   ;
+; Number of registers using Asynchronous Clear ; 5     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 0     ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
 
-+-----------------------------------------------------+
-; Inverted Register Statistics                        ;
-+-------------------------------------------+---------+
-; Inverted Register                         ; Fan out ;
-+-------------------------------------------+---------+
-; Register_C_111                            ; 2       ;
-; Register_C_110                            ; 3       ;
-; Register_C_109                            ; 3       ;
-; inst161                                   ; 2       ;
-; inst65                                    ; 2       ;
-; inst216                                   ; 2       ;
-; inst217                                   ; 2       ;
-; inst160                                   ; 1       ;
-; inst64                                    ; 1       ;
-; inst159                                   ; 1       ;
-; inst172                                   ; 1       ;
-; inst63                                    ; 1       ;
-; inst158                                   ; 1       ;
-; inst171                                   ; 1       ;
-; inst62                                    ; 1       ;
-; inst157                                   ; 1       ;
-; inst170                                   ; 2       ;
-; inst61                                    ; 1       ;
-; inst156                                   ; 1       ;
-; inst169                                   ; 1       ;
-; inst60                                    ; 1       ;
-; inst155                                   ; 1       ;
-; inst168                                   ; 1       ;
-; inst59                                    ; 1       ;
-; inst154                                   ; 1       ;
-; inst167                                   ; 1       ;
-; inst58                                    ; 1       ;
-; inst153                                   ; 1       ;
-; inst166                                   ; 1       ;
-; inst57                                    ; 1       ;
-; inst152                                   ; 1       ;
-; inst165                                   ; 1       ;
-; inst56                                    ; 1       ;
-; inst151                                   ; 1       ;
-; inst164                                   ; 1       ;
-; inst55                                    ; 1       ;
-; inst150                                   ; 1       ;
-; inst163                                   ; 1       ;
-; inst54                                    ; 1       ;
-; inst79                                    ; 1       ;
-; inst149                                   ; 1       ;
-; inst162                                   ; 1       ;
-; inst53                                    ; 1       ;
-; inst78                                    ; 1       ;
-; inst148                                   ; 1       ;
-; inst52                                    ; 1       ;
-; inst77                                    ; 1       ;
-; inst147                                   ; 1       ;
-; inst51                                    ; 1       ;
-; inst76                                    ; 1       ;
-; inst146                                   ; 1       ;
-; inst50                                    ; 1       ;
-; inst75                                    ; 1       ;
-; inst145                                   ; 1       ;
-; inst49                                    ; 1       ;
-; inst74                                    ; 1       ;
-; inst144                                   ; 1       ;
-; inst48                                    ; 1       ;
-; inst73                                    ; 1       ;
-; inst143                                   ; 1       ;
-; inst47                                    ; 1       ;
-; inst72                                    ; 1       ;
-; inst142                                   ; 1       ;
-; inst46                                    ; 1       ;
-; inst71                                    ; 1       ;
-; inst141                                   ; 1       ;
-; inst45                                    ; 1       ;
-; inst70                                    ; 1       ;
-; inst140                                   ; 1       ;
-; inst44                                    ; 1       ;
-; inst69                                    ; 1       ;
-; inst139                                   ; 1       ;
-; inst43                                    ; 1       ;
-; inst68                                    ; 2       ;
-; inst138                                   ; 1       ;
-; inst42                                    ; 1       ;
-; inst67                                    ; 1       ;
-; inst137                                   ; 1       ;
-; inst41                                    ; 1       ;
-; inst66                                    ; 1       ;
-; inst136                                   ; 1       ;
-; inst40                                    ; 1       ;
-; inst135                                   ; 1       ;
-; inst39                                    ; 1       ;
-; inst134                                   ; 1       ;
-; inst38                                    ; 1       ;
-; inst133                                   ; 1       ;
-; inst37                                    ; 1       ;
-; inst132                                   ; 1       ;
-; inst36                                    ; 1       ;
-; inst131                                   ; 1       ;
-; inst35                                    ; 1       ;
-; inst130                                   ; 1       ;
-; inst34                                    ; 1       ;
-; inst129                                   ; 1       ;
-; inst33                                    ; 1       ;
-; inst128                                   ; 1       ;
-; inst32                                    ; 1       ;
-; inst127                                   ; 1       ;
-; inst31                                    ; 1       ;
-; Total number of inverted registers = 165* ;         ;
-+-------------------------------------------+---------+
-* Table truncated at 100 items. To change the number of inverted registers reported, set the "Number of Inverted Registers Reported" option under Assignments->Settings->Analysis and Synthesis Settings->More Settings
++--------------------------------------------------+
+; Inverted Register Statistics                     ;
++----------------------------------------+---------+
+; Inverted Register                      ; Fan out ;
++----------------------------------------+---------+
+; Register_C_111                         ; 2       ;
+; Register_C_110                         ; 3       ;
+; Register_C_109                         ; 3       ;
+; inst217                                ; 4       ;
+; inst216                                ; 3       ;
+; Total number of inverted registers = 5 ;         ;
++----------------------------------------+---------+
 
 
 +-------------------------------------------------+
@@ -379,6 +306,75 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------+--------------------+------------+
 ; Register Name ; Megafunction       ; Type       ;
 +---------------+--------------------+------------+
+; inst161       ; inst93_rtl_0       ; SHIFT_TAPS ;
+; inst160       ; inst93_rtl_0       ; SHIFT_TAPS ;
+; inst159       ; inst93_rtl_0       ; SHIFT_TAPS ;
+; inst158       ; inst93_rtl_0       ; SHIFT_TAPS ;
+; inst157       ; inst93_rtl_0       ; SHIFT_TAPS ;
+; inst156       ; inst93_rtl_0       ; SHIFT_TAPS ;
+; inst155       ; inst93_rtl_0       ; SHIFT_TAPS ;
+; inst154       ; inst93_rtl_0       ; SHIFT_TAPS ;
+; inst153       ; inst93_rtl_0       ; SHIFT_TAPS ;
+; inst152       ; inst93_rtl_0       ; SHIFT_TAPS ;
+; inst151       ; inst93_rtl_0       ; SHIFT_TAPS ;
+; inst150       ; inst93_rtl_0       ; SHIFT_TAPS ;
+; inst149       ; inst93_rtl_0       ; SHIFT_TAPS ;
+; inst148       ; inst93_rtl_0       ; SHIFT_TAPS ;
+; inst147       ; inst93_rtl_0       ; SHIFT_TAPS ;
+; inst146       ; inst93_rtl_0       ; SHIFT_TAPS ;
+; inst145       ; inst93_rtl_0       ; SHIFT_TAPS ;
+; inst144       ; inst93_rtl_0       ; SHIFT_TAPS ;
+; inst143       ; inst93_rtl_0       ; SHIFT_TAPS ;
+; inst142       ; inst93_rtl_0       ; SHIFT_TAPS ;
+; inst141       ; inst93_rtl_0       ; SHIFT_TAPS ;
+; inst140       ; inst93_rtl_0       ; SHIFT_TAPS ;
+; inst139       ; inst93_rtl_0       ; SHIFT_TAPS ;
+; inst138       ; inst93_rtl_0       ; SHIFT_TAPS ;
+; inst137       ; inst93_rtl_0       ; SHIFT_TAPS ;
+; inst136       ; inst93_rtl_0       ; SHIFT_TAPS ;
+; inst135       ; inst93_rtl_0       ; SHIFT_TAPS ;
+; inst134       ; inst93_rtl_0       ; SHIFT_TAPS ;
+; inst133       ; inst93_rtl_0       ; SHIFT_TAPS ;
+; inst132       ; inst93_rtl_0       ; SHIFT_TAPS ;
+; inst131       ; inst93_rtl_0       ; SHIFT_TAPS ;
+; inst130       ; inst93_rtl_0       ; SHIFT_TAPS ;
+; inst129       ; inst93_rtl_0       ; SHIFT_TAPS ;
+; inst128       ; inst93_rtl_0       ; SHIFT_TAPS ;
+; inst127       ; inst93_rtl_0       ; SHIFT_TAPS ;
+; inst126       ; inst93_rtl_0       ; SHIFT_TAPS ;
+; inst125       ; inst93_rtl_0       ; SHIFT_TAPS ;
+; inst124       ; inst93_rtl_0       ; SHIFT_TAPS ;
+; inst123       ; inst93_rtl_0       ; SHIFT_TAPS ;
+; inst122       ; inst93_rtl_0       ; SHIFT_TAPS ;
+; inst121       ; inst93_rtl_0       ; SHIFT_TAPS ;
+; inst120       ; inst93_rtl_0       ; SHIFT_TAPS ;
+; inst119       ; inst93_rtl_0       ; SHIFT_TAPS ;
+; inst118       ; inst93_rtl_0       ; SHIFT_TAPS ;
+; inst117       ; inst93_rtl_0       ; SHIFT_TAPS ;
+; inst116       ; inst93_rtl_0       ; SHIFT_TAPS ;
+; inst115       ; inst93_rtl_0       ; SHIFT_TAPS ;
+; inst114       ; inst93_rtl_0       ; SHIFT_TAPS ;
+; inst113       ; inst93_rtl_0       ; SHIFT_TAPS ;
+; inst112       ; inst93_rtl_0       ; SHIFT_TAPS ;
+; inst111       ; inst93_rtl_0       ; SHIFT_TAPS ;
+; inst110       ; inst93_rtl_0       ; SHIFT_TAPS ;
+; inst109       ; inst93_rtl_0       ; SHIFT_TAPS ;
+; inst108       ; inst93_rtl_0       ; SHIFT_TAPS ;
+; inst107       ; inst93_rtl_0       ; SHIFT_TAPS ;
+; inst106       ; inst93_rtl_0       ; SHIFT_TAPS ;
+; inst105       ; inst93_rtl_0       ; SHIFT_TAPS ;
+; inst104       ; inst93_rtl_0       ; SHIFT_TAPS ;
+; inst103       ; inst93_rtl_0       ; SHIFT_TAPS ;
+; inst102       ; inst93_rtl_0       ; SHIFT_TAPS ;
+; inst101       ; inst93_rtl_0       ; SHIFT_TAPS ;
+; inst100       ; inst93_rtl_0       ; SHIFT_TAPS ;
+; inst99        ; inst93_rtl_0       ; SHIFT_TAPS ;
+; inst98        ; inst93_rtl_0       ; SHIFT_TAPS ;
+; inst97        ; inst93_rtl_0       ; SHIFT_TAPS ;
+; inst96        ; inst93_rtl_0       ; SHIFT_TAPS ;
+; inst95        ; inst93_rtl_0       ; SHIFT_TAPS ;
+; inst94        ; inst93_rtl_0       ; SHIFT_TAPS ;
+; inst93        ; inst93_rtl_0       ; SHIFT_TAPS ;
 ; Register_C_66 ; Register_C_1_rtl_0 ; SHIFT_TAPS ;
 ; Register_C_65 ; Register_C_1_rtl_0 ; SHIFT_TAPS ;
 ; Register_C_64 ; Register_C_1_rtl_0 ; SHIFT_TAPS ;
@@ -445,7 +441,81 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Register_C_3  ; Register_C_1_rtl_0 ; SHIFT_TAPS ;
 ; Register_C_2  ; Register_C_1_rtl_0 ; SHIFT_TAPS ;
 ; Register_C_1  ; Register_C_1_rtl_0 ; SHIFT_TAPS ;
+; inst65        ; inst1_rtl_0        ; SHIFT_TAPS ;
+; inst64        ; inst1_rtl_0        ; SHIFT_TAPS ;
+; inst63        ; inst1_rtl_0        ; SHIFT_TAPS ;
+; inst62        ; inst1_rtl_0        ; SHIFT_TAPS ;
+; inst61        ; inst1_rtl_0        ; SHIFT_TAPS ;
+; inst60        ; inst1_rtl_0        ; SHIFT_TAPS ;
+; inst59        ; inst1_rtl_0        ; SHIFT_TAPS ;
+; inst58        ; inst1_rtl_0        ; SHIFT_TAPS ;
+; inst57        ; inst1_rtl_0        ; SHIFT_TAPS ;
+; inst56        ; inst1_rtl_0        ; SHIFT_TAPS ;
+; inst55        ; inst1_rtl_0        ; SHIFT_TAPS ;
+; inst54        ; inst1_rtl_0        ; SHIFT_TAPS ;
+; inst53        ; inst1_rtl_0        ; SHIFT_TAPS ;
+; inst52        ; inst1_rtl_0        ; SHIFT_TAPS ;
+; inst51        ; inst1_rtl_0        ; SHIFT_TAPS ;
+; inst50        ; inst1_rtl_0        ; SHIFT_TAPS ;
+; inst49        ; inst1_rtl_0        ; SHIFT_TAPS ;
+; inst48        ; inst1_rtl_0        ; SHIFT_TAPS ;
+; inst47        ; inst1_rtl_0        ; SHIFT_TAPS ;
+; inst46        ; inst1_rtl_0        ; SHIFT_TAPS ;
+; inst45        ; inst1_rtl_0        ; SHIFT_TAPS ;
+; inst44        ; inst1_rtl_0        ; SHIFT_TAPS ;
+; inst43        ; inst1_rtl_0        ; SHIFT_TAPS ;
+; inst42        ; inst1_rtl_0        ; SHIFT_TAPS ;
+; inst41        ; inst1_rtl_0        ; SHIFT_TAPS ;
+; inst40        ; inst1_rtl_0        ; SHIFT_TAPS ;
+; inst39        ; inst1_rtl_0        ; SHIFT_TAPS ;
+; inst38        ; inst1_rtl_0        ; SHIFT_TAPS ;
+; inst37        ; inst1_rtl_0        ; SHIFT_TAPS ;
+; inst36        ; inst1_rtl_0        ; SHIFT_TAPS ;
+; inst35        ; inst1_rtl_0        ; SHIFT_TAPS ;
+; inst34        ; inst1_rtl_0        ; SHIFT_TAPS ;
+; inst33        ; inst1_rtl_0        ; SHIFT_TAPS ;
+; inst32        ; inst1_rtl_0        ; SHIFT_TAPS ;
+; inst31        ; inst1_rtl_0        ; SHIFT_TAPS ;
+; inst30        ; inst1_rtl_0        ; SHIFT_TAPS ;
+; inst29        ; inst1_rtl_0        ; SHIFT_TAPS ;
+; inst28        ; inst1_rtl_0        ; SHIFT_TAPS ;
+; inst27        ; inst1_rtl_0        ; SHIFT_TAPS ;
+; inst26        ; inst1_rtl_0        ; SHIFT_TAPS ;
+; inst25        ; inst1_rtl_0        ; SHIFT_TAPS ;
+; inst24        ; inst1_rtl_0        ; SHIFT_TAPS ;
+; inst23        ; inst1_rtl_0        ; SHIFT_TAPS ;
+; inst22        ; inst1_rtl_0        ; SHIFT_TAPS ;
+; inst21        ; inst1_rtl_0        ; SHIFT_TAPS ;
+; inst20        ; inst1_rtl_0        ; SHIFT_TAPS ;
+; inst19        ; inst1_rtl_0        ; SHIFT_TAPS ;
+; inst18        ; inst1_rtl_0        ; SHIFT_TAPS ;
+; inst17        ; inst1_rtl_0        ; SHIFT_TAPS ;
+; inst16        ; inst1_rtl_0        ; SHIFT_TAPS ;
+; inst15        ; inst1_rtl_0        ; SHIFT_TAPS ;
+; inst14        ; inst1_rtl_0        ; SHIFT_TAPS ;
+; inst13        ; inst1_rtl_0        ; SHIFT_TAPS ;
+; inst12        ; inst1_rtl_0        ; SHIFT_TAPS ;
+; inst11        ; inst1_rtl_0        ; SHIFT_TAPS ;
+; inst10        ; inst1_rtl_0        ; SHIFT_TAPS ;
+; inst9         ; inst1_rtl_0        ; SHIFT_TAPS ;
+; inst8         ; inst1_rtl_0        ; SHIFT_TAPS ;
+; inst7         ; inst1_rtl_0        ; SHIFT_TAPS ;
+; inst6         ; inst1_rtl_0        ; SHIFT_TAPS ;
+; inst4         ; inst1_rtl_0        ; SHIFT_TAPS ;
+; inst5         ; inst1_rtl_0        ; SHIFT_TAPS ;
+; inst3         ; inst1_rtl_0        ; SHIFT_TAPS ;
+; inst2         ; inst1_rtl_0        ; SHIFT_TAPS ;
+; inst1         ; inst1_rtl_0        ; SHIFT_TAPS ;
 +---------------+--------------------+------------+
+
+
++-------------------------------------------------------------------------------------------------------------+
+; Source assignments for altshift_taps:inst93_rtl_0|shift_taps_i6m:auto_generated|altsyncram_ke81:altsyncram2 ;
++---------------------------------+--------------------+------+-----------------------------------------------+
+; Assignment                      ; Value              ; From ; To                                            ;
++---------------------------------+--------------------+------+-----------------------------------------------+
+; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                             ;
++---------------------------------+--------------------+------+-----------------------------------------------+
 
 
 +-------------------------------------------------------------------------------------------------------------------+
@@ -455,6 +525,30 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------------------+--------------------+------+-----------------------------------------------------+
 ; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                                   ;
 +---------------------------------+--------------------+------+-----------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------+
+; Source assignments for altshift_taps:inst1_rtl_0|shift_taps_e6m:auto_generated|altsyncram_ae81:altsyncram2 ;
++---------------------------------+--------------------+------+----------------------------------------------+
+; Assignment                      ; Value              ; From ; To                                           ;
++---------------------------------+--------------------+------+----------------------------------------------+
+; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                            ;
++---------------------------------+--------------------+------+----------------------------------------------+
+
+
++-----------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: altshift_taps:inst93_rtl_0 ;
++----------------+----------------+-------------------------------------------+
+; Parameter Name ; Value          ; Type                                      ;
++----------------+----------------+-------------------------------------------+
+; WIDTH_BYTEENA  ; 1              ; Untyped                                   ;
+; NUMBER_OF_TAPS ; 1              ; Untyped                                   ;
+; TAP_DISTANCE   ; 69             ; Untyped                                   ;
+; WIDTH          ; 1              ; Untyped                                   ;
+; POWER_UP_STATE ; CLEARED        ; Untyped                                   ;
+; CBXI_PARAMETER ; shift_taps_i6m ; Untyped                                   ;
++----------------+----------------+-------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
 +-----------------------------------------------------------------------------------+
@@ -472,15 +566,38 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
++----------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: altshift_taps:inst1_rtl_0 ;
++----------------+----------------+------------------------------------------+
+; Parameter Name ; Value          ; Type                                     ;
++----------------+----------------+------------------------------------------+
+; WIDTH_BYTEENA  ; 1              ; Untyped                                  ;
+; NUMBER_OF_TAPS ; 1              ; Untyped                                  ;
+; TAP_DISTANCE   ; 65             ; Untyped                                  ;
+; WIDTH          ; 1              ; Untyped                                  ;
+; POWER_UP_STATE ; CLEARED        ; Untyped                                  ;
+; CBXI_PARAMETER ; shift_taps_e6m ; Untyped                                  ;
++----------------+----------------+------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
 +---------------------------------------------------------------+
 ; altshift_taps Parameter Settings by Entity Instance           ;
 +----------------------------+----------------------------------+
 ; Name                       ; Value                            ;
 +----------------------------+----------------------------------+
-; Number of entity instances ; 1                                ;
+; Number of entity instances ; 3                                ;
+; Entity Instance            ; altshift_taps:inst93_rtl_0       ;
+;     -- NUMBER_OF_TAPS      ; 1                                ;
+;     -- TAP_DISTANCE        ; 69                               ;
+;     -- WIDTH               ; 1                                ;
 ; Entity Instance            ; altshift_taps:Register_C_1_rtl_0 ;
 ;     -- NUMBER_OF_TAPS      ; 1                                ;
 ;     -- TAP_DISTANCE        ; 66                               ;
+;     -- WIDTH               ; 1                                ;
+; Entity Instance            ; altshift_taps:inst1_rtl_0        ;
+;     -- NUMBER_OF_TAPS      ; 1                                ;
+;     -- TAP_DISTANCE        ; 65                               ;
 ;     -- WIDTH               ; 1                                ;
 +----------------------------+----------------------------------+
 
@@ -491,21 +608,22 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 170                         ;
-; cycloneiii_ff         ; 248                         ;
-;     CLR               ; 165                         ;
-;     plain             ; 83                          ;
-; cycloneiii_lcell_comb ; 45                          ;
-;     arith             ; 5                           ;
-;         2 data inputs ; 5                           ;
-;     normal            ; 40                          ;
-;         1 data inputs ; 23                          ;
-;         2 data inputs ; 7                           ;
-;         3 data inputs ; 2                           ;
-;         4 data inputs ; 8                           ;
-; cycloneiii_ram_block  ; 1                           ;
+; cycloneiii_ff         ; 127                         ;
+;     CLR               ; 5                           ;
+;     plain             ; 122                         ;
+; cycloneiii_lcell_comb ; 78                          ;
+;     arith             ; 18                          ;
+;         2 data inputs ; 18                          ;
+;     normal            ; 60                          ;
+;         0 data inputs ; 2                           ;
+;         1 data inputs ; 22                          ;
+;         2 data inputs ; 8                           ;
+;         3 data inputs ; 4                           ;
+;         4 data inputs ; 24                          ;
+; cycloneiii_ram_block  ; 3                           ;
 ;                       ;                             ;
-; Max LUT depth         ; 4.00                        ;
-; Average LUT depth     ; 0.38                        ;
+; Max LUT depth         ; 3.00                        ;
+; Average LUT depth     ; 1.31                        ;
 +-----------------------+-----------------------------+
 
 
@@ -524,20 +642,361 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 15.0.0 Build 145 04/22/2015 SJ Web Edition
-    Info: Processing started: Sat Apr 14 14:43:06 2018
+    Info: Processing started: Sun Apr 15 12:21:38 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off trivium1 -c trivium1
 Info (11104): Parallel Compilation has detected 4 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 2 of the 2 physical processors detected instead.
 Info (12021): Found 1 design units, including 1 entities, in source file trivium1.bdf
     Info (12023): Found entity 1: trivium1
 Info (12127): Elaborating entity "trivium1" for the top level hierarchy
 Warning (275011): Block or symbol "TFF" of instance "inst186" overlaps another block or symbol
+Warning (275009): Pin "Key_1" not connected
+Warning (275009): Pin "Key_2" not connected
+Warning (275009): Pin "Key_3" not connected
+Warning (275009): Pin "Key_4" not connected
+Warning (275009): Pin "Key_5" not connected
+Warning (275009): Pin "Key_6" not connected
+Warning (275009): Pin "Key_7" not connected
+Warning (275009): Pin "Key_8" not connected
+Warning (275009): Pin "Key_9" not connected
+Warning (275009): Pin "Key_10" not connected
+Warning (275009): Pin "Key_11" not connected
+Warning (275009): Pin "Key_12" not connected
+Warning (275009): Pin "Key_13" not connected
+Warning (275009): Pin "Key_14" not connected
+Warning (275009): Pin "Key_15" not connected
+Warning (275009): Pin "Key_16" not connected
+Warning (275009): Pin "Key_17" not connected
+Warning (275009): Pin "Key_18" not connected
+Warning (275009): Pin "Key_19" not connected
+Warning (275009): Pin "Key_20" not connected
+Warning (275009): Pin "Key_21" not connected
+Warning (275009): Pin "Key_22" not connected
+Warning (275009): Pin "Key_23" not connected
+Warning (275009): Pin "Key_24" not connected
+Warning (275009): Pin "Key_25" not connected
+Warning (275009): Pin "Key_26" not connected
+Warning (275009): Pin "Key_27" not connected
+Warning (275009): Pin "Key_28" not connected
+Warning (275009): Pin "Key_29" not connected
+Warning (275009): Pin "Key_30" not connected
+Warning (275009): Pin "Key_31" not connected
+Warning (275009): Pin "Key_32" not connected
+Warning (275009): Pin "Key_33" not connected
+Warning (275009): Pin "Key_34" not connected
+Warning (275009): Pin "Key_35" not connected
+Warning (275009): Pin "Key_36" not connected
+Warning (275009): Pin "Key_37" not connected
+Warning (275009): Pin "Key_38" not connected
+Warning (275009): Pin "Key_39" not connected
+Warning (275009): Pin "Key_40" not connected
+Warning (275009): Pin "Key_41" not connected
+Warning (275009): Pin "Key_43" not connected
+Warning (275009): Pin "Key_42" not connected
+Warning (275009): Pin "Key_44" not connected
+Warning (275009): Pin "Key_45" not connected
+Warning (275009): Pin "Key_46" not connected
+Warning (275009): Pin "Key_47" not connected
+Warning (275009): Pin "Key_48" not connected
+Warning (275009): Pin "Key_49" not connected
+Warning (275009): Pin "Key_50" not connected
+Warning (275009): Pin "Key_51" not connected
+Warning (275009): Pin "Key_52" not connected
+Warning (275009): Pin "Key_53" not connected
+Warning (275009): Pin "Key_54" not connected
+Warning (275009): Pin "Key_55" not connected
+Warning (275009): Pin "Key_56" not connected
+Warning (275009): Pin "Key_57" not connected
+Warning (275009): Pin "Key_58" not connected
+Warning (275009): Pin "Key_59" not connected
+Warning (275009): Pin "Key_60" not connected
+Warning (275009): Pin "Key_61" not connected
+Warning (275009): Pin "Key_62" not connected
+Warning (275009): Pin "Key_63" not connected
+Warning (275009): Pin "Key_64" not connected
+Warning (275009): Pin "Key_65" not connected
+Warning (275009): Pin "Key_66" not connected
+Warning (275009): Pin "Key_67" not connected
+Warning (275009): Pin "Key_68" not connected
+Warning (275009): Pin "Key_69" not connected
+Warning (275009): Pin "Key_70" not connected
+Warning (275009): Pin "Key_71" not connected
+Warning (275009): Pin "Key_72" not connected
+Warning (275009): Pin "Key_73" not connected
+Warning (275009): Pin "Key_74" not connected
+Warning (275009): Pin "Key_75" not connected
+Warning (275009): Pin "Key_76" not connected
+Warning (275009): Pin "Key_77" not connected
+Warning (275009): Pin "Key_78" not connected
+Warning (275009): Pin "Key_79" not connected
+Warning (275009): Pin "Key_80" not connected
+Warning (275009): Pin "IV_1" not connected
+Warning (275009): Pin "IV_2" not connected
+Warning (275009): Pin "IV_3" not connected
+Warning (275009): Pin "IV_4" not connected
+Warning (275009): Pin "IV_5" not connected
+Warning (275009): Pin "IV_6" not connected
+Warning (275009): Pin "IV_7" not connected
+Warning (275009): Pin "IV_8" not connected
+Warning (275009): Pin "IV_9" not connected
+Warning (275009): Pin "IV_10" not connected
+Warning (275009): Pin "IV_11" not connected
+Warning (275009): Pin "IV_12" not connected
+Warning (275009): Pin "IV_13" not connected
+Warning (275009): Pin "IV_14" not connected
+Warning (275009): Pin "IV_15" not connected
+Warning (275009): Pin "IV_16" not connected
+Warning (275009): Pin "IV_17" not connected
+Warning (275009): Pin "IV_18" not connected
+Warning (275009): Pin "IV_19" not connected
+Warning (275009): Pin "IV_20" not connected
+Warning (275009): Pin "IV_21" not connected
+Warning (275009): Pin "IV_22" not connected
+Warning (275009): Pin "IV_23" not connected
+Warning (275009): Pin "IV_24" not connected
+Warning (275009): Pin "IV_25" not connected
+Warning (275009): Pin "IV_26" not connected
+Warning (275009): Pin "IV_27" not connected
+Warning (275009): Pin "IV_28" not connected
+Warning (275009): Pin "IV_29" not connected
+Warning (275009): Pin "IV_30" not connected
+Warning (275009): Pin "IV_31" not connected
+Warning (275009): Pin "IV_32" not connected
+Warning (275009): Pin "IV_33" not connected
+Warning (275009): Pin "IV_34" not connected
+Warning (275009): Pin "IV_35" not connected
+Warning (275009): Pin "IV_36" not connected
+Warning (275009): Pin "IV_37" not connected
+Warning (275009): Pin "IV_38" not connected
+Warning (275009): Pin "IV_39" not connected
+Warning (275009): Pin "IV_40" not connected
+Warning (275009): Pin "IV_41" not connected
+Warning (275009): Pin "IV_42" not connected
+Warning (275009): Pin "IV_43" not connected
+Warning (275009): Pin "IV_44" not connected
+Warning (275009): Pin "IV_45" not connected
+Warning (275009): Pin "IV_46" not connected
+Warning (275009): Pin "IV_47" not connected
+Warning (275009): Pin "IV_48" not connected
+Warning (275009): Pin "IV_49" not connected
+Warning (275009): Pin "IV_50" not connected
+Warning (275009): Pin "IV_51" not connected
+Warning (275009): Pin "IV_52" not connected
+Warning (275009): Pin "IV_53" not connected
+Warning (275009): Pin "IV_54" not connected
+Warning (275009): Pin "IV_55" not connected
+Warning (275009): Pin "IV_56" not connected
+Warning (275009): Pin "IV_57" not connected
+Warning (275009): Pin "IV_58" not connected
+Warning (275009): Pin "IV_59" not connected
+Warning (275009): Pin "IV_60" not connected
+Warning (275009): Pin "IV_61" not connected
+Warning (275009): Pin "IV_62" not connected
+Warning (275009): Pin "IV_63" not connected
+Warning (275009): Pin "IV_64" not connected
+Warning (275009): Pin "IV_65" not connected
+Warning (275009): Pin "IV_66" not connected
+Warning (275009): Pin "IV_75" not connected
+Warning (275009): Pin "IV_76" not connected
+Warning (275009): Pin "IV_77" not connected
+Warning (275009): Pin "IV_78" not connected
+Warning (275009): Pin "IV_79" not connected
+Warning (275009): Pin "IV_80" not connected
+Warning (275009): Pin "IV_67" not connected
+Warning (275009): Pin "IV_68" not connected
+Warning (275009): Pin "IV_69" not connected
+Warning (275009): Pin "IV_70" not connected
+Warning (275009): Pin "IV_71" not connected
+Warning (275009): Pin "IV_72" not connected
+Warning (275009): Pin "IV_73" not connected
+Warning (275009): Pin "IV_74" not connected
+Warning (275008): Primitive "NOT" of instance "inst294" not used
+Warning (275008): Primitive "NOT" of instance "inst302" not used
+Warning (275008): Primitive "NOT" of instance "inst303" not used
+Warning (275008): Primitive "NOT" of instance "inst304" not used
+Warning (275008): Primitive "NOT" of instance "inst305" not used
+Warning (275008): Primitive "NOT" of instance "inst306" not used
+Warning (275008): Primitive "NOT" of instance "inst307" not used
+Warning (275008): Primitive "NOT" of instance "inst308" not used
+Warning (275008): Primitive "NOT" of instance "inst309" not used
+Warning (275008): Primitive "NOT" of instance "inst310" not used
+Warning (275008): Primitive "NOT" of instance "inst311" not used
+Warning (275008): Primitive "NOT" of instance "inst312" not used
+Warning (275008): Primitive "NOT" of instance "inst313" not used
+Warning (275008): Primitive "NOT" of instance "inst314" not used
+Warning (275008): Primitive "NOT" of instance "inst315" not used
+Warning (275008): Primitive "NOT" of instance "inst316" not used
+Warning (275008): Primitive "NOT" of instance "inst317" not used
+Warning (275008): Primitive "NOT" of instance "inst318" not used
+Warning (275008): Primitive "NOT" of instance "inst319" not used
+Warning (275008): Primitive "NOT" of instance "inst320" not used
+Warning (275008): Primitive "NOT" of instance "inst321" not used
+Warning (275008): Primitive "NOT" of instance "inst322" not used
+Warning (275008): Primitive "NOT" of instance "inst323" not used
+Warning (275008): Primitive "NOT" of instance "inst324" not used
+Warning (275008): Primitive "NOT" of instance "inst325" not used
+Warning (275008): Primitive "NOT" of instance "inst326" not used
+Warning (275008): Primitive "NOT" of instance "inst327" not used
+Warning (275008): Primitive "NOT" of instance "inst328" not used
+Warning (275008): Primitive "NOT" of instance "inst329" not used
+Warning (275008): Primitive "NOT" of instance "inst330" not used
+Warning (275008): Primitive "NOT" of instance "inst331" not used
+Warning (275008): Primitive "NOT" of instance "inst332" not used
+Warning (275008): Primitive "NOT" of instance "inst333" not used
+Warning (275008): Primitive "NOT" of instance "inst334" not used
+Warning (275008): Primitive "NOT" of instance "inst335" not used
+Warning (275008): Primitive "NOT" of instance "inst336" not used
+Warning (275008): Primitive "NOT" of instance "inst337" not used
+Warning (275008): Primitive "NOT" of instance "inst338" not used
+Warning (275008): Primitive "NOT" of instance "inst339" not used
+Warning (275008): Primitive "NOT" of instance "inst340" not used
+Warning (275008): Primitive "NOT" of instance "inst341" not used
+Warning (275008): Primitive "NOT" of instance "inst342" not used
+Warning (275008): Primitive "NOT" of instance "inst343" not used
+Warning (275008): Primitive "NOT" of instance "inst344" not used
+Warning (275008): Primitive "NOT" of instance "inst345" not used
+Warning (275008): Primitive "NOT" of instance "inst346" not used
+Warning (275008): Primitive "NOT" of instance "inst347" not used
+Warning (275008): Primitive "NOT" of instance "inst348" not used
+Warning (275008): Primitive "NOT" of instance "inst349" not used
+Warning (275008): Primitive "NOT" of instance "inst350" not used
+Warning (275008): Primitive "NOT" of instance "inst351" not used
+Warning (275008): Primitive "NOT" of instance "inst352" not used
+Warning (275008): Primitive "NOT" of instance "inst353" not used
+Warning (275008): Primitive "NOT" of instance "inst354" not used
+Warning (275008): Primitive "NOT" of instance "inst355" not used
+Warning (275008): Primitive "NOT" of instance "inst356" not used
+Warning (275008): Primitive "NOT" of instance "inst357" not used
+Warning (275008): Primitive "NOT" of instance "inst358" not used
+Warning (275008): Primitive "NOT" of instance "inst359" not used
+Warning (275008): Primitive "NOT" of instance "inst360" not used
+Warning (275008): Primitive "NOT" of instance "inst361" not used
+Warning (275008): Primitive "NOT" of instance "inst362" not used
+Warning (275008): Primitive "NOT" of instance "inst363" not used
+Warning (275008): Primitive "NOT" of instance "inst364" not used
+Warning (275008): Primitive "NOT" of instance "inst365" not used
+Warning (275008): Primitive "NOT" of instance "inst366" not used
+Warning (275008): Primitive "NOT" of instance "inst367" not used
+Warning (275008): Primitive "NOT" of instance "inst368" not used
+Warning (275008): Primitive "NOT" of instance "inst369" not used
+Warning (275008): Primitive "NOT" of instance "inst370" not used
+Warning (275008): Primitive "NOT" of instance "inst371" not used
+Warning (275008): Primitive "NOT" of instance "inst372" not used
+Warning (275008): Primitive "NOT" of instance "inst373" not used
+Warning (275008): Primitive "NOT" of instance "inst374" not used
+Warning (275008): Primitive "NOT" of instance "inst375" not used
+Warning (275008): Primitive "NOT" of instance "inst376" not used
+Warning (275008): Primitive "NOT" of instance "inst377" not used
+Warning (275008): Primitive "NOT" of instance "inst378" not used
+Warning (275008): Primitive "NOT" of instance "inst379" not used
+Warning (275008): Primitive "NOT" of instance "inst380" not used
+Warning (275008): Primitive "NOT" of instance "inst381" not used
+Warning (275008): Primitive "NOT" of instance "inst382" not used
+Warning (275008): Primitive "NOT" of instance "inst383" not used
+Warning (275008): Primitive "NOT" of instance "inst384" not used
+Warning (275008): Primitive "NOT" of instance "inst385" not used
+Warning (275008): Primitive "NOT" of instance "inst386" not used
+Warning (275008): Primitive "NOT" of instance "inst387" not used
+Warning (275008): Primitive "NOT" of instance "inst388" not used
+Warning (275008): Primitive "NOT" of instance "inst389" not used
+Warning (275008): Primitive "NOT" of instance "inst390" not used
+Warning (275008): Primitive "NOT" of instance "inst391" not used
+Warning (275008): Primitive "NOT" of instance "inst392" not used
+Warning (275008): Primitive "NOT" of instance "inst393" not used
+Warning (275008): Primitive "NOT" of instance "inst394" not used
+Warning (275008): Primitive "NOT" of instance "inst395" not used
+Warning (275008): Primitive "NOT" of instance "inst396" not used
+Warning (275008): Primitive "NOT" of instance "inst397" not used
+Warning (275008): Primitive "NOT" of instance "inst398" not used
+Warning (275008): Primitive "NOT" of instance "inst399" not used
+Warning (275008): Primitive "NOT" of instance "inst400" not used
+Warning (275008): Primitive "NOT" of instance "inst401" not used
+Warning (275008): Primitive "NOT" of instance "inst402" not used
+Warning (275008): Primitive "NOT" of instance "inst403" not used
+Warning (275008): Primitive "NOT" of instance "inst404" not used
+Warning (275008): Primitive "NOT" of instance "inst405" not used
+Warning (275008): Primitive "NOT" of instance "inst406" not used
+Warning (275008): Primitive "NOT" of instance "inst407" not used
+Warning (275008): Primitive "NOT" of instance "inst408" not used
+Warning (275008): Primitive "NOT" of instance "inst409" not used
+Warning (275008): Primitive "NOT" of instance "inst410" not used
+Warning (275008): Primitive "NOT" of instance "inst411" not used
+Warning (275008): Primitive "NOT" of instance "inst412" not used
+Warning (275008): Primitive "NOT" of instance "inst413" not used
+Warning (275008): Primitive "NOT" of instance "inst414" not used
+Warning (275008): Primitive "NOT" of instance "inst415" not used
+Warning (275008): Primitive "NOT" of instance "inst416" not used
+Warning (275008): Primitive "NOT" of instance "inst417" not used
+Warning (275008): Primitive "NOT" of instance "inst418" not used
+Warning (275008): Primitive "NOT" of instance "inst419" not used
+Warning (275008): Primitive "NOT" of instance "inst420" not used
+Warning (275008): Primitive "NOT" of instance "inst421" not used
+Warning (275008): Primitive "NOT" of instance "inst422" not used
+Warning (275008): Primitive "NOT" of instance "inst423" not used
+Warning (275008): Primitive "NOT" of instance "inst424" not used
+Warning (275008): Primitive "NOT" of instance "inst425" not used
+Warning (275008): Primitive "NOT" of instance "inst426" not used
+Warning (275008): Primitive "NOT" of instance "inst427" not used
+Warning (275008): Primitive "NOT" of instance "inst428" not used
+Warning (275008): Primitive "NOT" of instance "inst429" not used
+Warning (275008): Primitive "NOT" of instance "inst430" not used
+Warning (275008): Primitive "NOT" of instance "inst431" not used
+Warning (275008): Primitive "NOT" of instance "inst432" not used
+Warning (275008): Primitive "NOT" of instance "inst433" not used
+Warning (275008): Primitive "NOT" of instance "inst434" not used
+Warning (275008): Primitive "NOT" of instance "inst435" not used
+Warning (275008): Primitive "NOT" of instance "inst436" not used
+Warning (275008): Primitive "NOT" of instance "inst437" not used
+Warning (275008): Primitive "NOT" of instance "inst438" not used
+Warning (275008): Primitive "NOT" of instance "inst439" not used
+Warning (275008): Primitive "NOT" of instance "inst440" not used
+Warning (275008): Primitive "NOT" of instance "inst441" not used
+Warning (275008): Primitive "NOT" of instance "inst442" not used
+Warning (275008): Primitive "NOT" of instance "inst443" not used
+Warning (275008): Primitive "NOT" of instance "inst444" not used
+Warning (275008): Primitive "NOT" of instance "inst445" not used
+Warning (275008): Primitive "NOT" of instance "inst446" not used
+Warning (275008): Primitive "NOT" of instance "inst447" not used
+Warning (275008): Primitive "NOT" of instance "inst448" not used
+Warning (275008): Primitive "NOT" of instance "inst449" not used
+Warning (275008): Primitive "NOT" of instance "inst450" not used
+Warning (275008): Primitive "NOT" of instance "inst451" not used
+Warning (275008): Primitive "NOT" of instance "inst452" not used
+Warning (275008): Primitive "NOT" of instance "inst453" not used
+Warning (275008): Primitive "NOT" of instance "inst454" not used
+Warning (275008): Primitive "NOT" of instance "inst457" not used
+Warning (275008): Primitive "NOT" of instance "inst458" not used
+Warning (275008): Primitive "NOT" of instance "inst459" not used
+Warning (275008): Primitive "NOT" of instance "inst460" not used
+Warning (275008): Primitive "NOT" of instance "inst461" not used
+Warning (275008): Primitive "NOT" of instance "inst462" not used
 Info (12128): Elaborating entity "XOR3" for hierarchy "XOR3:inst298"
 Info (12130): Elaborated megafunction instantiation "XOR3:inst298"
-Info (19000): Inferred 1 megafunctions from design logic
+Info (19000): Inferred 3 megafunctions from design logic
+    Info (276034): Inferred altshift_taps megafunction from the following design logic: "inst93_rtl_0"
+        Info (286033): Parameter NUMBER_OF_TAPS set to 1
+        Info (286033): Parameter TAP_DISTANCE set to 69
+        Info (286033): Parameter WIDTH set to 1
     Info (276034): Inferred altshift_taps megafunction from the following design logic: "Register_C_1_rtl_0"
         Info (286033): Parameter NUMBER_OF_TAPS set to 1
         Info (286033): Parameter TAP_DISTANCE set to 66
         Info (286033): Parameter WIDTH set to 1
+    Info (276034): Inferred altshift_taps megafunction from the following design logic: "inst1_rtl_0"
+        Info (286033): Parameter NUMBER_OF_TAPS set to 1
+        Info (286033): Parameter TAP_DISTANCE set to 65
+        Info (286033): Parameter WIDTH set to 1
+Info (12130): Elaborated megafunction instantiation "altshift_taps:inst93_rtl_0"
+Info (12133): Instantiated megafunction "altshift_taps:inst93_rtl_0" with the following parameter:
+    Info (12134): Parameter "NUMBER_OF_TAPS" = "1"
+    Info (12134): Parameter "TAP_DISTANCE" = "69"
+    Info (12134): Parameter "WIDTH" = "1"
+Info (12021): Found 1 design units, including 1 entities, in source file db/shift_taps_i6m.tdf
+    Info (12023): Found entity 1: shift_taps_i6m
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_ke81.tdf
+    Info (12023): Found entity 1: altsyncram_ke81
+Info (12021): Found 1 design units, including 1 entities, in source file db/cntr_5rf.tdf
+    Info (12023): Found entity 1: cntr_5rf
+Info (12021): Found 1 design units, including 1 entities, in source file db/cmpr_tgc.tdf
+    Info (12023): Found entity 1: cmpr_tgc
 Info (12130): Elaborated megafunction instantiation "altshift_taps:Register_C_1_rtl_0"
 Info (12133): Instantiated megafunction "altshift_taps:Register_C_1_rtl_0" with the following parameter:
     Info (12134): Parameter "NUMBER_OF_TAPS" = "1"
@@ -549,20 +1008,194 @@ Info (12021): Found 1 design units, including 1 entities, in source file db/alts
     Info (12023): Found entity 1: altsyncram_ce81
 Info (12021): Found 1 design units, including 1 entities, in source file db/cntr_1rf.tdf
     Info (12023): Found entity 1: cntr_1rf
+Info (12130): Elaborated megafunction instantiation "altshift_taps:inst1_rtl_0"
+Info (12133): Instantiated megafunction "altshift_taps:inst1_rtl_0" with the following parameter:
+    Info (12134): Parameter "NUMBER_OF_TAPS" = "1"
+    Info (12134): Parameter "TAP_DISTANCE" = "65"
+    Info (12134): Parameter "WIDTH" = "1"
+Info (12021): Found 1 design units, including 1 entities, in source file db/shift_taps_e6m.tdf
+    Info (12023): Found entity 1: shift_taps_e6m
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_ae81.tdf
+    Info (12023): Found entity 1: altsyncram_ae81
+Info (12021): Found 1 design units, including 1 entities, in source file db/cntr_0rf.tdf
+    Info (12023): Found entity 1: cntr_0rf
+Info (12021): Found 1 design units, including 1 entities, in source file db/cmpr_sgc.tdf
+    Info (12023): Found entity 1: cmpr_sgc
 Info (13000): Registers with preset signals will power-up high
 Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 433 device resources after synthesis - the final resource count might be different
+Warning (21074): Design contains 160 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "Key_1"
+    Warning (15610): No output dependent on input pin "Key_2"
+    Warning (15610): No output dependent on input pin "Key_3"
+    Warning (15610): No output dependent on input pin "Key_4"
+    Warning (15610): No output dependent on input pin "Key_5"
+    Warning (15610): No output dependent on input pin "Key_6"
+    Warning (15610): No output dependent on input pin "Key_7"
+    Warning (15610): No output dependent on input pin "Key_8"
+    Warning (15610): No output dependent on input pin "Key_9"
+    Warning (15610): No output dependent on input pin "Key_10"
+    Warning (15610): No output dependent on input pin "Key_11"
+    Warning (15610): No output dependent on input pin "Key_12"
+    Warning (15610): No output dependent on input pin "Key_13"
+    Warning (15610): No output dependent on input pin "Key_14"
+    Warning (15610): No output dependent on input pin "Key_15"
+    Warning (15610): No output dependent on input pin "Key_16"
+    Warning (15610): No output dependent on input pin "Key_17"
+    Warning (15610): No output dependent on input pin "Key_18"
+    Warning (15610): No output dependent on input pin "Key_19"
+    Warning (15610): No output dependent on input pin "Key_20"
+    Warning (15610): No output dependent on input pin "Key_21"
+    Warning (15610): No output dependent on input pin "Key_22"
+    Warning (15610): No output dependent on input pin "Key_23"
+    Warning (15610): No output dependent on input pin "Key_24"
+    Warning (15610): No output dependent on input pin "Key_25"
+    Warning (15610): No output dependent on input pin "Key_26"
+    Warning (15610): No output dependent on input pin "Key_27"
+    Warning (15610): No output dependent on input pin "Key_28"
+    Warning (15610): No output dependent on input pin "Key_29"
+    Warning (15610): No output dependent on input pin "Key_30"
+    Warning (15610): No output dependent on input pin "Key_31"
+    Warning (15610): No output dependent on input pin "Key_32"
+    Warning (15610): No output dependent on input pin "Key_33"
+    Warning (15610): No output dependent on input pin "Key_34"
+    Warning (15610): No output dependent on input pin "Key_35"
+    Warning (15610): No output dependent on input pin "Key_36"
+    Warning (15610): No output dependent on input pin "Key_37"
+    Warning (15610): No output dependent on input pin "Key_38"
+    Warning (15610): No output dependent on input pin "Key_39"
+    Warning (15610): No output dependent on input pin "Key_40"
+    Warning (15610): No output dependent on input pin "Key_41"
+    Warning (15610): No output dependent on input pin "Key_43"
+    Warning (15610): No output dependent on input pin "Key_42"
+    Warning (15610): No output dependent on input pin "Key_44"
+    Warning (15610): No output dependent on input pin "Key_45"
+    Warning (15610): No output dependent on input pin "Key_46"
+    Warning (15610): No output dependent on input pin "Key_47"
+    Warning (15610): No output dependent on input pin "Key_48"
+    Warning (15610): No output dependent on input pin "Key_49"
+    Warning (15610): No output dependent on input pin "Key_50"
+    Warning (15610): No output dependent on input pin "Key_51"
+    Warning (15610): No output dependent on input pin "Key_52"
+    Warning (15610): No output dependent on input pin "Key_53"
+    Warning (15610): No output dependent on input pin "Key_54"
+    Warning (15610): No output dependent on input pin "Key_55"
+    Warning (15610): No output dependent on input pin "Key_56"
+    Warning (15610): No output dependent on input pin "Key_57"
+    Warning (15610): No output dependent on input pin "Key_58"
+    Warning (15610): No output dependent on input pin "Key_59"
+    Warning (15610): No output dependent on input pin "Key_60"
+    Warning (15610): No output dependent on input pin "Key_61"
+    Warning (15610): No output dependent on input pin "Key_62"
+    Warning (15610): No output dependent on input pin "Key_63"
+    Warning (15610): No output dependent on input pin "Key_64"
+    Warning (15610): No output dependent on input pin "Key_65"
+    Warning (15610): No output dependent on input pin "Key_66"
+    Warning (15610): No output dependent on input pin "Key_67"
+    Warning (15610): No output dependent on input pin "Key_68"
+    Warning (15610): No output dependent on input pin "Key_69"
+    Warning (15610): No output dependent on input pin "Key_70"
+    Warning (15610): No output dependent on input pin "Key_71"
+    Warning (15610): No output dependent on input pin "Key_72"
+    Warning (15610): No output dependent on input pin "Key_73"
+    Warning (15610): No output dependent on input pin "Key_74"
+    Warning (15610): No output dependent on input pin "Key_75"
+    Warning (15610): No output dependent on input pin "Key_76"
+    Warning (15610): No output dependent on input pin "Key_77"
+    Warning (15610): No output dependent on input pin "Key_78"
+    Warning (15610): No output dependent on input pin "Key_79"
+    Warning (15610): No output dependent on input pin "Key_80"
+    Warning (15610): No output dependent on input pin "IV_1"
+    Warning (15610): No output dependent on input pin "IV_2"
+    Warning (15610): No output dependent on input pin "IV_3"
+    Warning (15610): No output dependent on input pin "IV_4"
+    Warning (15610): No output dependent on input pin "IV_5"
+    Warning (15610): No output dependent on input pin "IV_6"
+    Warning (15610): No output dependent on input pin "IV_7"
+    Warning (15610): No output dependent on input pin "IV_8"
+    Warning (15610): No output dependent on input pin "IV_9"
+    Warning (15610): No output dependent on input pin "IV_10"
+    Warning (15610): No output dependent on input pin "IV_11"
+    Warning (15610): No output dependent on input pin "IV_12"
+    Warning (15610): No output dependent on input pin "IV_13"
+    Warning (15610): No output dependent on input pin "IV_14"
+    Warning (15610): No output dependent on input pin "IV_15"
+    Warning (15610): No output dependent on input pin "IV_16"
+    Warning (15610): No output dependent on input pin "IV_17"
+    Warning (15610): No output dependent on input pin "IV_18"
+    Warning (15610): No output dependent on input pin "IV_19"
+    Warning (15610): No output dependent on input pin "IV_20"
+    Warning (15610): No output dependent on input pin "IV_21"
+    Warning (15610): No output dependent on input pin "IV_22"
+    Warning (15610): No output dependent on input pin "IV_23"
+    Warning (15610): No output dependent on input pin "IV_24"
+    Warning (15610): No output dependent on input pin "IV_25"
+    Warning (15610): No output dependent on input pin "IV_26"
+    Warning (15610): No output dependent on input pin "IV_27"
+    Warning (15610): No output dependent on input pin "IV_28"
+    Warning (15610): No output dependent on input pin "IV_29"
+    Warning (15610): No output dependent on input pin "IV_30"
+    Warning (15610): No output dependent on input pin "IV_31"
+    Warning (15610): No output dependent on input pin "IV_32"
+    Warning (15610): No output dependent on input pin "IV_33"
+    Warning (15610): No output dependent on input pin "IV_34"
+    Warning (15610): No output dependent on input pin "IV_35"
+    Warning (15610): No output dependent on input pin "IV_36"
+    Warning (15610): No output dependent on input pin "IV_37"
+    Warning (15610): No output dependent on input pin "IV_38"
+    Warning (15610): No output dependent on input pin "IV_39"
+    Warning (15610): No output dependent on input pin "IV_40"
+    Warning (15610): No output dependent on input pin "IV_41"
+    Warning (15610): No output dependent on input pin "IV_42"
+    Warning (15610): No output dependent on input pin "IV_43"
+    Warning (15610): No output dependent on input pin "IV_44"
+    Warning (15610): No output dependent on input pin "IV_45"
+    Warning (15610): No output dependent on input pin "IV_46"
+    Warning (15610): No output dependent on input pin "IV_47"
+    Warning (15610): No output dependent on input pin "IV_48"
+    Warning (15610): No output dependent on input pin "IV_49"
+    Warning (15610): No output dependent on input pin "IV_50"
+    Warning (15610): No output dependent on input pin "IV_51"
+    Warning (15610): No output dependent on input pin "IV_52"
+    Warning (15610): No output dependent on input pin "IV_53"
+    Warning (15610): No output dependent on input pin "IV_54"
+    Warning (15610): No output dependent on input pin "IV_55"
+    Warning (15610): No output dependent on input pin "IV_56"
+    Warning (15610): No output dependent on input pin "IV_57"
+    Warning (15610): No output dependent on input pin "IV_58"
+    Warning (15610): No output dependent on input pin "IV_59"
+    Warning (15610): No output dependent on input pin "IV_60"
+    Warning (15610): No output dependent on input pin "IV_61"
+    Warning (15610): No output dependent on input pin "IV_62"
+    Warning (15610): No output dependent on input pin "IV_63"
+    Warning (15610): No output dependent on input pin "IV_64"
+    Warning (15610): No output dependent on input pin "IV_65"
+    Warning (15610): No output dependent on input pin "IV_66"
+    Warning (15610): No output dependent on input pin "IV_75"
+    Warning (15610): No output dependent on input pin "IV_76"
+    Warning (15610): No output dependent on input pin "IV_77"
+    Warning (15610): No output dependent on input pin "IV_78"
+    Warning (15610): No output dependent on input pin "IV_79"
+    Warning (15610): No output dependent on input pin "IV_80"
+    Warning (15610): No output dependent on input pin "IV_67"
+    Warning (15610): No output dependent on input pin "IV_68"
+    Warning (15610): No output dependent on input pin "IV_69"
+    Warning (15610): No output dependent on input pin "IV_70"
+    Warning (15610): No output dependent on input pin "IV_71"
+    Warning (15610): No output dependent on input pin "IV_72"
+    Warning (15610): No output dependent on input pin "IV_73"
+    Warning (15610): No output dependent on input pin "IV_74"
+Info (21057): Implemented 335 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 164 input pins
     Info (21059): Implemented 6 output pins
-    Info (21061): Implemented 262 logic cells
-    Info (21064): Implemented 1 RAM segments
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 755 megabytes
-    Info: Processing ended: Sat Apr 14 14:43:24 2018
-    Info: Elapsed time: 00:00:18
-    Info: Total CPU time (on all processors): 00:00:36
+    Info (21061): Implemented 162 logic cells
+    Info (21064): Implemented 3 RAM segments
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 482 warnings
+    Info: Peak virtual memory: 752 megabytes
+    Info: Processing ended: Sun Apr 15 12:21:52 2018
+    Info: Elapsed time: 00:00:14
+    Info: Total CPU time (on all processors): 00:00:32
 
 
