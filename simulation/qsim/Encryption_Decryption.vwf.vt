@@ -19,7 +19,7 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "04/15/2018 12:27:39"
+// Generated on "04/16/2018 13:32:20"
                                                                         
 // Verilog Self-Checking Test Bench (with test vectors) for design :    trivium1
 // 
@@ -382,6 +382,17 @@ assign sampler_tx = sample;
 endmodule
 
 module trivium1_vlg_check_tst (
+	bit1,
+	bit2,
+	bit3,
+	bit4,
+	bit5,
+	bit6,
+	bit7,
+	bit8,
+	bit9,
+	bit10,
+	bit11,
 	Cipher,
 	filter_out,
 	KEYSTREAM,
@@ -390,6 +401,17 @@ module trivium1_vlg_check_tst (
 	pulse_200000,
 	sampler_rx
 );
+input  bit1;
+input  bit2;
+input  bit3;
+input  bit4;
+input  bit5;
+input  bit6;
+input  bit7;
+input  bit8;
+input  bit9;
+input  bit10;
+input  bit11;
 input  Cipher;
 input  filter_out;
 input  KEYSTREAM;
@@ -398,6 +420,17 @@ input  pulse_1152;
 input  pulse_200000;
 input sampler_rx;
 
+reg  bit1_expected;
+reg  bit2_expected;
+reg  bit3_expected;
+reg  bit4_expected;
+reg  bit5_expected;
+reg  bit6_expected;
+reg  bit7_expected;
+reg  bit8_expected;
+reg  bit9_expected;
+reg  bit10_expected;
+reg  bit11_expected;
 reg  Cipher_expected;
 reg  filter_out_expected;
 reg  KEYSTREAM_expected;
@@ -405,6 +438,17 @@ reg  Message_Decrypted_expected;
 reg  pulse_1152_expected;
 reg  pulse_200000_expected;
 
+reg  bit1_prev;
+reg  bit2_prev;
+reg  bit3_prev;
+reg  bit4_prev;
+reg  bit5_prev;
+reg  bit6_prev;
+reg  bit7_prev;
+reg  bit8_prev;
+reg  bit9_prev;
+reg  bit10_prev;
+reg  bit11_prev;
 reg  Cipher_prev;
 reg  filter_out_prev;
 reg  KEYSTREAM_prev;
@@ -427,7 +471,7 @@ reg trigger;
 integer i;
 integer nummismatches;
 
-reg [1:6] on_first_change ;
+reg [1:17] on_first_change ;
 
 
 initial
@@ -435,13 +479,24 @@ begin
 trigger = 0;
 i = 0;
 nummismatches = 0;
-on_first_change = 6'b1;
+on_first_change = 17'b1;
 end
 
 // update real /o prevs
 
 always @(trigger)
 begin
+	bit1_prev = bit1;
+	bit2_prev = bit2;
+	bit3_prev = bit3;
+	bit4_prev = bit4;
+	bit5_prev = bit5;
+	bit6_prev = bit6;
+	bit7_prev = bit7;
+	bit8_prev = bit8;
+	bit9_prev = bit9;
+	bit10_prev = bit10;
+	bit11_prev = bit11;
 	Cipher_prev = Cipher;
 	filter_out_prev = filter_out;
 	KEYSTREAM_prev = KEYSTREAM;
@@ -489,7 +544,7 @@ begin
 	Message_Decrypted_expected = #999000 1'b0;
 end 
 // generate trigger
-always @(Cipher_expected or Cipher or filter_out_expected or filter_out or KEYSTREAM_expected or KEYSTREAM or Message_Decrypted_expected or Message_Decrypted or pulse_1152_expected or pulse_1152 or pulse_200000_expected or pulse_200000)
+always @(bit1_expected or bit1 or bit2_expected or bit2 or bit3_expected or bit3 or bit4_expected or bit4 or bit5_expected or bit5 or bit6_expected or bit6 or bit7_expected or bit7 or bit8_expected or bit8 or bit9_expected or bit9 or bit10_expected or bit10 or bit11_expected or bit11 or Cipher_expected or Cipher or filter_out_expected or filter_out or KEYSTREAM_expected or KEYSTREAM or Message_Decrypted_expected or Message_Decrypted or pulse_1152_expected or pulse_1152 or pulse_200000_expected or pulse_200000)
 begin
 	trigger <= ~trigger;
 end
@@ -499,59 +554,59 @@ begin
 `ifdef debug_tbench
 	$display("Scanning pattern %d @time = %t",i,$realtime );
 	i = i + 1;
-	$display("| expected Cipher = %b | expected filter_out = %b | expected KEYSTREAM = %b | expected Message_Decrypted = %b | expected pulse_1152 = %b | expected pulse_200000 = %b | ",Cipher_expected_prev,filter_out_expected_prev,KEYSTREAM_expected_prev,Message_Decrypted_expected_prev,pulse_1152_expected_prev,pulse_200000_expected_prev);
-	$display("| real Cipher = %b | real filter_out = %b | real KEYSTREAM = %b | real Message_Decrypted = %b | real pulse_1152 = %b | real pulse_200000 = %b | ",Cipher_prev,filter_out_prev,KEYSTREAM_prev,Message_Decrypted_prev,pulse_1152_prev,pulse_200000_prev);
+	$display("| expected bit1 = %b | expected bit2 = %b | expected bit3 = %b | expected bit4 = %b | expected bit5 = %b | expected bit6 = %b | expected bit7 = %b | expected bit8 = %b | expected bit9 = %b | expected bit10 = %b | expected bit11 = %b | expected Cipher = %b | expected filter_out = %b | expected KEYSTREAM = %b | expected Message_Decrypted = %b | expected pulse_1152 = %b | expected pulse_200000 = %b | ",bit1_expected_prev,bit2_expected_prev,bit3_expected_prev,bit4_expected_prev,bit5_expected_prev,bit6_expected_prev,bit7_expected_prev,bit8_expected_prev,bit9_expected_prev,bit10_expected_prev,bit11_expected_prev,Cipher_expected_prev,filter_out_expected_prev,KEYSTREAM_expected_prev,Message_Decrypted_expected_prev,pulse_1152_expected_prev,pulse_200000_expected_prev);
+	$display("| real bit1 = %b | real bit2 = %b | real bit3 = %b | real bit4 = %b | real bit5 = %b | real bit6 = %b | real bit7 = %b | real bit8 = %b | real bit9 = %b | real bit10 = %b | real bit11 = %b | real Cipher = %b | real filter_out = %b | real KEYSTREAM = %b | real Message_Decrypted = %b | real pulse_1152 = %b | real pulse_200000 = %b | ",bit1_prev,bit2_prev,bit3_prev,bit4_prev,bit5_prev,bit6_prev,bit7_prev,bit8_prev,bit9_prev,bit10_prev,bit11_prev,Cipher_prev,filter_out_prev,KEYSTREAM_prev,Message_Decrypted_prev,pulse_1152_prev,pulse_200000_prev);
 `endif
 	if (
 		( Cipher_expected_prev !== 1'bx ) && ( Cipher_prev !== Cipher_expected_prev )
 		&& ((Cipher_expected_prev !== last_Cipher_exp) ||
-			on_first_change[1])
+			on_first_change[12])
 	)
 	begin
 		$display ("ERROR! Vector Mismatch for output port Cipher :: @time = %t",  $realtime);
 		$display ("     Expected value = %b", Cipher_expected_prev);
 		$display ("     Real value = %b", Cipher_prev);
 		nummismatches = nummismatches + 1;
-		on_first_change[1] = 1'b0;
+		on_first_change[12] = 1'b0;
 		last_Cipher_exp = Cipher_expected_prev;
 	end
 	if (
 		( filter_out_expected_prev !== 1'bx ) && ( filter_out_prev !== filter_out_expected_prev )
 		&& ((filter_out_expected_prev !== last_filter_out_exp) ||
-			on_first_change[2])
+			on_first_change[13])
 	)
 	begin
 		$display ("ERROR! Vector Mismatch for output port filter_out :: @time = %t",  $realtime);
 		$display ("     Expected value = %b", filter_out_expected_prev);
 		$display ("     Real value = %b", filter_out_prev);
 		nummismatches = nummismatches + 1;
-		on_first_change[2] = 1'b0;
+		on_first_change[13] = 1'b0;
 		last_filter_out_exp = filter_out_expected_prev;
 	end
 	if (
 		( KEYSTREAM_expected_prev !== 1'bx ) && ( KEYSTREAM_prev !== KEYSTREAM_expected_prev )
 		&& ((KEYSTREAM_expected_prev !== last_KEYSTREAM_exp) ||
-			on_first_change[3])
+			on_first_change[14])
 	)
 	begin
 		$display ("ERROR! Vector Mismatch for output port KEYSTREAM :: @time = %t",  $realtime);
 		$display ("     Expected value = %b", KEYSTREAM_expected_prev);
 		$display ("     Real value = %b", KEYSTREAM_prev);
 		nummismatches = nummismatches + 1;
-		on_first_change[3] = 1'b0;
+		on_first_change[14] = 1'b0;
 		last_KEYSTREAM_exp = KEYSTREAM_expected_prev;
 	end
 	if (
 		( Message_Decrypted_expected_prev !== 1'bx ) && ( Message_Decrypted_prev !== Message_Decrypted_expected_prev )
 		&& ((Message_Decrypted_expected_prev !== last_Message_Decrypted_exp) ||
-			on_first_change[4])
+			on_first_change[15])
 	)
 	begin
 		$display ("ERROR! Vector Mismatch for output port Message_Decrypted :: @time = %t",  $realtime);
 		$display ("     Expected value = %b", Message_Decrypted_expected_prev);
 		$display ("     Real value = %b", Message_Decrypted_prev);
 		nummismatches = nummismatches + 1;
-		on_first_change[4] = 1'b0;
+		on_first_change[15] = 1'b0;
 		last_Message_Decrypted_exp = Message_Decrypted_expected_prev;
 	end
 
@@ -738,6 +793,17 @@ reg Key_80;
 reg last3_ip;
 reg message;
 // wires                                               
+wire bit1;
+wire bit2;
+wire bit3;
+wire bit4;
+wire bit5;
+wire bit6;
+wire bit7;
+wire bit8;
+wire bit9;
+wire bit10;
+wire bit11;
 wire Cipher;
 wire filter_out;
 wire KEYSTREAM;
@@ -750,6 +816,17 @@ wire sampler;
 // assign statements (if any)                          
 trivium1 i1 (
 // port map - connection between master ports and signals/registers   
+	.bit1(bit1),
+	.bit2(bit2),
+	.bit3(bit3),
+	.bit4(bit4),
+	.bit5(bit5),
+	.bit6(bit6),
+	.bit7(bit7),
+	.bit8(bit8),
+	.bit9(bit9),
+	.bit10(bit10),
+	.bit11(bit11),
 	.Cipher(Cipher),
 	.clkn(clkn),
 	.encip(encip),
@@ -1122,6 +1199,17 @@ trivium1_vlg_sample_tst tb_sample (
 );
 
 trivium1_vlg_check_tst tb_out(
+	.bit1(bit1),
+	.bit2(bit2),
+	.bit3(bit3),
+	.bit4(bit4),
+	.bit5(bit5),
+	.bit6(bit6),
+	.bit7(bit7),
+	.bit8(bit8),
+	.bit9(bit9),
+	.bit10(bit10),
+	.bit11(bit11),
 	.Cipher(Cipher),
 	.filter_out(filter_out),
 	.KEYSTREAM(KEYSTREAM),
